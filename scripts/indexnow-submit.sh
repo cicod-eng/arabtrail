@@ -19,15 +19,14 @@ payload = json.dumps({
     "keyLocation": f"https://{host}/{key}.txt",
     "urlList": urls,
 }).encode("utf-8")
-req = urllib.request.Request(
-    "https://api.indexnow.org/indexnow",
-    data=payload,
-    headers={"Content-Type": "application/json; charset=utf-8"},
-)
-try:
-    with urllib.request.urlopen(req, timeout=30) as r:
-        print(f"IndexNow 响应 {r.status}，已提交 {len(urls)} 个 URL")
-except urllib.error.HTTPError as e:
-    print(f"IndexNow 提交失败 HTTP {e.code}: {e.read().decode('utf-8', 'ignore')}")
-    sys.exit(1)
+for endpoint in ("https://api.indexnow.org/indexnow", "https://www.bing.com/indexnow"):
+    req = urllib.request.Request(
+        endpoint, data=payload,
+        headers={"Content-Type": "application/json; charset=utf-8"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            print(f"{endpoint} 响应 {r.status}，已提交 {len(urls)} 个 URL")
+    except urllib.error.HTTPError as e:
+        print(f"{endpoint} 提交失败 HTTP {e.code}: {e.read().decode('utf-8', 'ignore')}")
 PY
