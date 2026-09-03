@@ -145,11 +145,18 @@ img { max-width: 100%; height: auto; }
 .faq summary { cursor: pointer; font-weight: 700; font-size: 0.98rem; color: var(--green-dark); }
 .faq details p { margin: 10px 0 0; color: var(--muted); }
 
-/* CTA（金色块） */
+/* CTA（金色块，基础页用） */
 .cta { background: var(--accent); color: #fff; border-radius: var(--radius); padding: 18px 20px; margin: 24px 0; }
 .cta a { color: #fff; font-weight: 700; text-decoration: underline; }
 .cta p { margin: 0 0 8px; }
 .cta p:last-child { margin: 0; }
+
+/* Binance 注册卡片（文章结尾统一 CTA） */
+.signup-card { background: var(--surface); border: 2px solid var(--accent); border-radius: var(--radius); padding: 22px 24px; margin: 28px 0; }
+.signup-card h3 { margin: 0 0 8px; font-size: 1.25rem; font-weight: 800; color: var(--green-dark); }
+.signup-card .signup-desc { margin: 0 0 16px; color: var(--muted); font-size: 0.92rem; }
+.signup-card .btn { margin-bottom: 12px; }
+.signup-card .signup-disclosure { margin: 0; font-size: 0.8rem; color: var(--muted); }
 
 /* Affiliate disclosure */
 .disclosure { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); margin-top: 32px; padding-top: 16px; }
