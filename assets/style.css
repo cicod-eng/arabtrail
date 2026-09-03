@@ -160,6 +160,7 @@ img { max-width: 100%; height: auto; }
 
 /* Affiliate disclosure */
 .disclosure { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); margin-top: 32px; padding-top: 16px; }
+.sources { font-size: 0.8rem; color: var(--muted); margin-top: 8px; }
 
 /* 相关文章 */
 .related { margin: 28px 0; }
