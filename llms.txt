@@ -1,0 +1,28 @@
+# ArabTrail
+
+> دليل عملي للمستخدم العربي في عالم العملات الرقمية: التسجيل، الشراء، التحويل، السحب، والأمان — خطوة بخطوة باللغة العربية، مع أدلة مخصصة للسعودية والإمارات ومصر والكويت.
+
+## الأقسام الرئيسية
+
+- [منصات التداول](https://arabtrail.com/exchanges/): أدلة التسجيل والاستخدام لمنصتي Binance وOKX
+- [أساسيات العملات الرقمية](https://arabtrail.com/basics/): المفاهيم الأساسية للمبتدئين
+- [USDT](https://arabtrail.com/usdt/): شراء وتحويل وسحب عملة USDT
+- [P2P](https://arabtrail.com/p2p/): الشراء والبيع المباشر بين المستخدمين
+- [المحافظ](https://arabtrail.com/wallets/): تخزين الأصول وحمايتها
+- [الأمان](https://arabtrail.com/security/): حماية الحساب من الاختراق والاحتيال
+- [الدول](https://arabtrail.com/countries/): أدلة محلية للسعودية والإمارات ومصر والكويت
+
+## أدلة أساسية
+
+- [ما هي USDT؟](https://arabtrail.com/what-is-usdt/): شرح العملة المستقرة الأكثر استخدامًا
+- [التسجيل في Binance](https://arabtrail.com/register-binance/): خطوات إنشاء الحساب وتفعيله
+- [التسجيل في OKX](https://arabtrail.com/register-okx/): خطوات إنشاء الحساب
+- [توثيق حساب Binance (KYC)](https://arabtrail.com/binance-kyc/): إكمال التحقق من الهوية
+- [شرح Binance P2P](https://arabtrail.com/binance-p2p/): الشراء والبيع بأمان
+- [سحب USDT إلى محفظة خارجية](https://arabtrail.com/withdraw-usdt/): خطوات السحب الآمن
+- [تفعيل 2FA](https://arabtrail.com/enable-2fa/): حماية الحساب بالمصادقة الثنائية
+- [هل Binance آمن؟](https://arabtrail.com/is-binance-safe/): الأمان والمخاطر والتنظيم
+- [Binance أم OKX](https://arabtrail.com/binance-vs-okx/): مقارنة للمبتدئين
+- [TRC20 أم BEP20](https://arabtrail.com/usdt-trc20-or-bep20/): اختيار شبكة التحويل
+- [USDT أم USDC](https://arabtrail.com/usdt-vs-usdc/): الفرق بين العملتين المستقرتين
+- [الاحتيال في P2P](https://arabtrail.com/p2p-scams/): أشهر عمليات الاحتيال وكيف تتجنبها
