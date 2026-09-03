@@ -5,129 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ArabTrail — دليل عملي للعملات الرقمية للمستخدم العربي</title>
   <meta name="description" content="دليل عملي خطوة بخطوة للمستخدم العربي: التسجيل في Binance، شراء USDT، التداول عبر P2P، والمزيد بالعربية.">
-  <style>
-    :root {
-      --bg: #f7f5f0;
-      --surface: #ffffff;
-      --ink: #1a1a1a;
-      --muted: #6b6b6b;
-      --accent: #c9952a;
-      --border: #e6e1d6;
-    }
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, "Noto Naskh Arabic", "Noto Kufi Arabic", Arial, sans-serif;
-      line-height: 1.7;
-    }
-    /* 阿拉伯语正文略微放大行高，提升可读性 */
-    a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
-
-    header {
-      border-bottom: 1px solid var(--border);
-      background: var(--surface);
-    }
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 60px;
-    }
-    .brand {
-      font-weight: 800;
-      font-size: 1.25rem;
-      letter-spacing: 0;
-    }
-    .brand .latin { direction: ltr; unicode-bidi: isolate; }
-    nav a { margin-inline-start: 18px; color: var(--muted); font-size: 0.95rem; }
-
-    main { padding: 48px 0 64px; }
-    .hero h1 {
-      font-size: 2rem;
-      line-height: 1.35;
-      margin: 0 0 12px;
-    }
-    .hero p.lead { color: var(--muted); font-size: 1.05rem; margin: 0 0 28px; }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px 22px;
-      margin-bottom: 16px;
-    }
-    .card h2 { font-size: 1.15rem; margin: 0 0 6px; }
-    .card p { color: var(--muted); margin: 0; font-size: 0.95rem; }
-    .tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      border-radius: 999px;
-      padding: 2px 10px;
-      margin-bottom: 8px;
-    }
-    /* 数字/英文必须用 ltr 隔离，避免混排错位 */
-    .num { direction: ltr; unicode-bidi: isolate; }
-
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 28px 0;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <header>
-    <div class="wrap nav">
-      <span class="brand"><span class="latin">ArabTrail</span></span>
-      <nav>
-        <a href="#guide">الدليل</a>
-        <a href="#about">من نحن</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand"><span class="ltr">ArabTrail</span></a>
+      <nav class="nav-links">
+        <a href="/#guide">الأدلة</a>
+        <a href="/countries/saudi-arabia/">السعودية</a>
+        <a href="/countries/egypt/">مصر</a>
+        <a href="/countries/uae/">الإمارات</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="wrap">
+    <div class="container">
       <section class="hero">
         <h1>دليلك العملي للعملات الرقمية، خطوة بخطوة</h1>
         <p class="lead">
-          من التسجيل في <span class="latin">Binance</span> إلى شراء
-          <span class="latin">USDT</span> والتداول عبر
-          <span class="latin">P2P</span> — شرح واضح بالعربية مع خطوات حقيقية ولقطات شاشة.
+          من التسجيل في <span class="ltr">Binance</span> إلى شراء
+          <span class="ltr">USDT</span> والتداول عبر
+          <span class="ltr">P2P</span> — شرح واضح بالعربية مع خطوات حقيقية ومصادر رسمية.
         </p>
       </section>
 
-      <section id="guide">
-        <!-- 占位：后续换成真实文章列表，从竞争库反推的第一批关键词 -->
-        <div class="card">
-          <span class="tag">قريبًا</span>
-          <h2>كيفية التسجيل في Binance خطوة بخطوة</h2>
-          <p>توثيق الحساب (KYC)، تفعيل الأمان، وأول عملية شراء — دليل 2026.</p>
+      <section class="country-grid" id="guide">
+        <div class="country-card">
+          <h3><a href="/countries/saudi-arabia/">السعودية</a></h3>
+          <p>شراء USDT بالريال السعودي، STC Pay، والبنوك المحلية.</p>
         </div>
-        <div class="card">
-          <span class="tag">قريبًا</span>
-          <h2>شراء USDT في السعودية بأرخص طريقة</h2>
-          <p>مقارنة بين P2P والبطاقة البنكية، مع مثال بالريال السعودي <span class="num">SAR</span>.</p>
+        <div class="country-card">
+          <h3><a href="/countries/egypt/">مصر</a></h3>
+          <p>USDT بالجنيه المصري، InstaPay، وVodafone Cash.</p>
         </div>
-        <div class="card">
-          <span class="tag">قريبًا</span>
-          <h2>تحويل USDT على الشبكة الصحيحة: TRC20 أم BEP20؟</h2>
-          <p>تجنّب الخطأ المكلف الذي يقع فيه معظم المبتدئين.</p>
+        <div class="country-card">
+          <h3><a href="/countries/uae/">الإمارات</a></h3>
+          <p>USDT بالدرهم الإماراتي، والتحويل البنكي.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">أحدث الأدلة</h2>
+        <div class="post-list">
+          <article class="post-card">
+            <h3><a href="/buy-usdt-saudi-arabia/">كيفية شراء USDT على Binance في السعودية</a></h3>
+            <p>شرح خطوة بخطوة: من إنشاء الحساب إلى استلام USDT، مع الرسوم الفعلية.</p>
+            <span class="post-meta">آخر تحديث: سبتمبر 2026</span>
+          </article>
+          <article class="post-card">
+            <h3><a href="/register-binance/">كيفية التسجيل في Binance وتوثيق الحساب (KYC)</a></h3>
+            <p>دليل التسجيل الكامل مع متطلبات التحقق ونصائح الأمان.</p>
+            <span class="post-meta">قريبًا</span>
+          </article>
+          <article class="post-card">
+            <h3><a href="/usdt-trc20-or-bep20/">تحويل USDT على الشبكة الصحيحة: TRC20 أم BEP20؟</a></h3>
+            <p>تجنّب الخطأ المكلف الذي يقع فيه معظم المبتدئين عند التحويل.</p>
+            <span class="post-meta">قريبًا</span>
+          </article>
+          <article class="post-card">
+            <h3><a href="/binance-vs-okx/">Binance أم OKX: أيهما أنسب للمبتدئين؟</a></h3>
+            <p>مقارنة عملية حسب الرسوم، P2P، والاستخدام في الدول العربية.</p>
+            <span class="post-meta">قريبًا</span>
+          </article>
         </div>
       </section>
     </div>
   </main>
 
-  <footer>
-    <div class="wrap" id="about">
+  <footer class="site-footer">
+    <div class="container">
       <p>ArabTrail — دليل عملي للمستخدم العربي. المحتوى لأغراض تعليمية فقط وليس نصيحة مالية.</p>
+      <div class="footer-links">
+        <a href="/about/">من نحن</a>
+        <a href="/disclaimer/">إخلاء مسؤولية</a>
+        <a href="/privacy/">سياسة الخصوصية</a>
+      </div>
     </div>
   </footer>
 </body>
