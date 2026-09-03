@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-KEY="b54ddcdda8137c32ad489a7c86516dec"
+KEY="5c0eac9948e44c07aa3e7aead6d3a4b0"
 HOST="arabtrail.com"
 
 # 从 sitemap.xml 提取全部 <loc> URL
