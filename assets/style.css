@@ -47,8 +47,8 @@ img { max-width: 100%; height: auto; }
   position: sticky; top: 0; z-index: 10;
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 62px; }
-.brand { font-weight: 800; font-size: 1.3rem; color: #fff; }
-.brand .ltr { color: var(--accent); }
+.brand { display: inline-flex; align-items: center; }
+.brand img { display: block; height: 34px; width: auto; }
 .nav-links { display: flex; gap: 20px; }
 .nav-links a { color: rgba(255,255,255,0.82); font-size: 0.95rem; }
 .nav-links a:hover { color: var(--accent); text-decoration: none; }
