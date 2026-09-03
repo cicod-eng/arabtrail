@@ -200,6 +200,9 @@ img { max-width: 100%; height: auto; }
 .topic-link h4 a:hover { color: var(--green); }
 .topic-link p { margin: 0; color: var(--muted); font-size: 0.85rem; }
 
+/* 基础科普入口（首页 2 列） */
+.basics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+
 /* 按钮 */
 .btn { display: inline-block; padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; border: 2px solid transparent; cursor: pointer; }
 .btn-primary { background: var(--accent); color: #fff; }
@@ -232,6 +235,7 @@ img { max-width: 100%; height: auto; }
   .country-grid { grid-template-columns: 1fr; }
   .hub-grid { grid-template-columns: 1fr; }
   .topic-links { grid-template-columns: 1fr; }
+  .basics-grid { grid-template-columns: 1fr; }
   .trust-grid { grid-template-columns: 1fr; }
   .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .nav-links a { flex-shrink: 0; }
