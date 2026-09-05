@@ -11,6 +11,12 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
 User-agent: CCBot
 Disallow: /
 
@@ -44,7 +50,7 @@ Disallow: /
 User-agent: FacebookBot
 Disallow: /
 
-User-agent: meta-externalagent
+User-agent: meta-externalagents
 Disallow: /
 
 User-agent: Applebot-Extended
