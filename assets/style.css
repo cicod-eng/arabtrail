@@ -130,7 +130,7 @@ img { max-width: 100%; height: auto; }
 /* 对比表格 */
 .table-wrap { overflow-x: auto; margin: 18px 0; }
 .table-wrap table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); font-size: 0.93rem; }
-.table-wrap th, .table-wrap td { padding: 10px 14px; text-align: right; border-bottom: 1px solid var(--border); }
+.table-wrap th, .table-wrap td { padding: 10px 14px; text-align: right; border-bottom: 1px solid var(--border); border-inline-end: 1px solid var(--border); }
 .table-wrap th { background: #faf4e4; font-weight: 700; color: var(--green-dark); }
 .table-wrap tr:last-child td { border-bottom: none; }
 
