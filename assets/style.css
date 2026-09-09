@@ -127,6 +127,19 @@ img { max-width: 100%; height: auto; }
 .callout.warning { border-inline-start-color: var(--danger); background: #fdf1f0; }
 .callout.warning .callout-title { color: var(--danger); }
 
+/* 证据卡（كيف تحققنا） */
+.evidence-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; margin: 20px 0; border-inline-start: 4px solid var(--green); }
+.evidence-card .evidence-title { font-weight: 800; color: var(--green-dark); margin: 0 0 12px; font-size: 1.02rem; }
+.evidence-card ul { margin: 0; padding: 0; list-style: none; }
+.evidence-card li { margin: 9px 0; font-size: 0.93rem; line-height: 1.6; }
+.evidence-card li:last-child { margin-bottom: 0; }
+.ev-tag { display: inline-block; font-size: 0.75rem; font-weight: 700; padding: 1px 10px; border-radius: 12px; white-space: nowrap; margin-inline-end: 8px; vertical-align: 1px; }
+.ev-tag.hands-on { background: var(--green); color: #fff; }
+.ev-tag.interface { background: var(--accent); color: #fff; }
+.ev-tag.official { background: var(--green-soft); color: var(--green-dark); border: 1px solid var(--green); }
+.evidence-card .evidence-foot { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); font-size: 0.8rem; color: var(--muted); line-height: 1.7; }
+.evidence-card .evidence-foot .ev-date { color: var(--green-dark); font-weight: 700; }
+
 /* 对比表格 */
 .table-wrap { overflow-x: auto; margin: 18px 0; }
 .table-wrap table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); font-size: 0.93rem; }
