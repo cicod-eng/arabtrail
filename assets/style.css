@@ -87,6 +87,7 @@ img { max-width: 100%; height: auto; }
 .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
 .footer-links a { color: rgba(255,255,255,0.82); }
 .footer-links a:hover { color: var(--accent); }
+.footer-group { width: 100%; font-weight: 700; color: var(--accent); font-size: 0.78rem; margin-top: 6px; }
 
 /* ===== 文章页通用 ===== */
 .article { padding: 28px 0 48px; }
