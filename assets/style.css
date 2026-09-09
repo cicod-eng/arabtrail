@@ -227,7 +227,7 @@ img { max-width: 100%; height: auto; }
 .btn-primary:hover { background: var(--accent-dark); color: #fff; text-decoration: none; }
 .btn-secondary { border-color: var(--green); color: var(--green); }
 .btn-secondary:hover { background: var(--green); color: #fff; text-decoration: none; }
-.hero .btn-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+.btn-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
 
 /* 新手步骤卡 */
 .start-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
