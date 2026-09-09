@@ -91,7 +91,11 @@
 ## صفحات الموقع
 
 - [من نحن](https://arabtrail.com/about/)
+- [فريق التحرير](https://arabtrail.com/team/)
 - [سياسة التحرير](https://arabtrail.com/editorial-policy/)
+- [كيف نختبر ونراجع المعلومات](https://arabtrail.com/how-we-test/)
+- [سياسة التصحيح](https://arabtrail.com/corrections-policy/)
+- [الإفصاح عن الروابط التابعة](https://arabtrail.com/affiliate-disclosure/)
 - [اتصل بنا](https://arabtrail.com/contact/)
 - [إخلاء مسؤولية](https://arabtrail.com/disclaimer/)
 - [سياسة الخصوصية](https://arabtrail.com/privacy/)
