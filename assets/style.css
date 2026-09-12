@@ -190,6 +190,7 @@ img { max-width: 100%; height: auto; }
 .topic-title { font-size: 1.3rem; margin: 0 0 16px; font-weight: 800; color: var(--green-dark); display: flex; align-items: center; gap: 10px; }
 .topic-title::before { content: ""; width: 4px; height: 1.2em; background: var(--accent); border-radius: 2px; display: inline-block; flex-shrink: 0; }
 .topic-sub { color: var(--muted); font-size: 0.95rem; margin: -6px 0 16px; }
+.about-copy { color: var(--ink); font-size: 1rem; margin: 0 0 12px; max-width: 640px; }
 
 /* 新手路径（quickstart 胶囊） */
 .quickstart { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
