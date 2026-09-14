@@ -60,7 +60,6 @@
           <a href="/countries/" class="btn btn-secondary">ابدأ حسب بلدك</a>
         </div>
         <div class="search-box">
-          <label class="search-label" for="search">ابحث في <span class="ltr">ArabTrail</span></label>
           <div id="search"></div>
         </div>
       </section>
@@ -340,7 +339,7 @@
   <script src="/pagefind/pagefind-ui.js"></script>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
-      new PagefindUI({ element: "#search", showSubResults: true });
+      new PagefindUI({ element: "#search", showSubResults: true, translations: { placeholder: "ابحث عن مقال…" } });
     });
   </script>
 </body>
