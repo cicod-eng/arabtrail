@@ -49,7 +49,7 @@
           { "@type": "Question", "name": "ما الفرق بين Fawri وFawri+؟", "acceptedAnswer": { "@type": "Answer", "text": "Fawri تحويل قياسي بلا حد أقصى مطلق ويُعالج عادة خلال يوم عمل، أما Fawri+ فهو أسرع (خلال 24 ساعة) لكن بحد يومي قدره 3000 دينار بحريني لكل IBAN." } },
           { "@type": "Question", "name": "لماذا يظهر سعر USDT بالدينار أقل من واحد؟", "acceptedAnswer": { "@type": "Answer", "text": "لأن الدينار البحريني مربوط بالدولار عند 2.659، أي أن الدولار الواحد يساوي نحو 0.376 دينار. لذلك يظهر USDT (المرتبط بالدولار) بسعر قريب من 0.376 دينار، وهذا ليس سعرًا منخفضًا بل انعكاس لارتفاع قيمة الدينار نفسه." } },
           { "@type": "Question", "name": "هل توجد ضريبة على أرباح العملات الرقمية في البحرين؟", "acceptedAnswer": { "@type": "Answer", "text": "لا يوجد نظام عام لضريبة الدخل الشخصي أو ضريبة أرباح رأس المال على الأفراد، لذلك لا توجد ضريبة منفصلة على أرباح تداول الأفراد. أما الوضع الضريبي للشركات أو الأنشطة التجارية فيختلف." } },
-          { "@type": "Question", "name": "هل يمكن الإيداع ببطاقة أو عبر BenefitPay؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم في بعض المنصات: تدعم Rain الإيداع بالبطاقة وبطريقة BenefitPay (أول منصة تشفير في البحرين تدمجها)، كما تدعم CoinMENA البطاقة والتحويل البنكي. تختلف الطرق المتاحة حسب حسابك والمنصة." } }
+          { "@type": "Question", "name": "هل يمكن الإيداع ببطاقة أو عبر BenefitPay؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم في بعض المنصات: تدعم Rain الإيداع بالبطاقة، ويمكن إرسال التحويل إلى حسابها عبر Fawri/Fawri+ باستخدام تطبيق BenefitPay. كما تدعم CoinMENA البطاقة والتحويل البنكي. تختلف الطرق المتاحة حسب حسابك والمنصة." } }
         ]
       }
     ]
@@ -120,7 +120,7 @@
           <tr><th>المنصة</th><th>الترخيص</th><th>إيداع الدينار</th><th>أنسب لـ</th></tr>
           <tr><td><span class="ltr">Rain</span></td><td><span class="ltr">CBB</span> الفئة الثالثة (أول منصة مرخّصة في الخليج، <span class="ltr">2019</span>)</td><td>تحويل بنكي + بطاقة + <span class="ltr">Fawri/Fawri+</span> + <span class="ltr">BenefitPay</span></td><td>شراء <span class="ltr">USDT</span> مباشرة بالدينار بأوسع طرق دفع محلية</td></tr>
           <tr><td><span class="ltr">CoinMENA</span></td><td><span class="ltr">CBB</span> الفئة الثالثة (+ ترخيص <span class="ltr">VARA</span> في دبي)</td><td>تحويل بنكي (محلي <span class="ltr">1-2</span> يوم) + بطاقة + <span class="ltr">Fawri/Fawri+</span> عبر <span class="ltr">Benefit</span></td><td><span class="ltr">USDT</span> مع تنويع لأكثر من <span class="ltr">50</span> عملة + مكتب <span class="ltr">OTC</span> للمبالغ الكبيرة</td></tr>
-          <tr><td><span class="ltr">Binance Bahrain</span></td><td><span class="ltr">CBB</span> الفئة الرابعة (ترخيص كامل)</td><td>تحويل بنكي محلي <span class="ltr">Fawri/Fawri+</span></td><td>نطاق أوسع من المنتجات لمن يريد أكثر من مجرد شراء <span class="ltr">USDT</span></td></tr>
+          <tr><td><span class="ltr">Binance Bahrain</span></td><td><span class="ltr">CBB</span> الفئة الرابعة (ترخيص كامل)</td><td>تحويل بنكي بالـ<span class="ltr">BHD</span> + بطاقة بنكية + <span class="ltr">Beyon Money</span></td><td>نطاق أوسع من المنتجات لمن يريد أكثر من مجرد شراء <span class="ltr">USDT</span></td></tr>
         </table>
         <p style="font-size:0.8rem;color:var(--muted);margin-top:6px;">هذه أبرز ثلاثة وليست القائمة الكاملة؛ فهناك منصات مرخصة أخرى مثل <span class="ltr">ATME</span> التي تدعم <span class="ltr">BHD</span> و<span class="ltr">USDT/USDC</span>. تحقّق دائمًا من قائمة <span class="ltr">CBB</span> الرسمية.</p>
       </div>
@@ -131,13 +131,13 @@
       <ul>
         <li><strong><span class="ltr">Fawri</span></strong>: تحويل قياسي بلا حد أقصى مطلق، يُعالج عادة خلال يوم عمل واحد، ويُستخدم غالبًا للمبالغ الأكبر من <span class="ltr">3000</span> دينار.</li>
         <li><strong><span class="ltr">Fawri+</span></strong>: الأسرع، يُنفَّذ خلال <span class="ltr">24</span> ساعة، لكن بحد يومي قدره <span class="ltr">3000</span> دينار بحريني لكل <span class="ltr">IBAN</span>. للمبالغ الأكبر من ذلك، استخدم <span class="ltr">Fawri</span> العادي.</li>
-        <li><strong><span class="ltr">BenefitPay</span></strong>: طبّقت <span class="ltr">Rain</span> هذا الخيار كأول منصة تشفير في البحرين، فيتيح الشراء مباشرة من تطبيقات البنوك البحرينية المشاركة دون الخروج من التطبيق.</li>
+        <li><strong><span class="ltr">BenefitPay</span></strong>: يمكن استخدام تطبيق <span class="ltr">BenefitPay</span> لإرسال التحويل إلى حساب <span class="ltr">Rain</span> عبر <span class="ltr">Fawri</span> أو <span class="ltr">Fawri+</span> بحسب تعليمات الإيداع الظاهرة في <span class="ltr">Rain</span>.</li>
         <li><strong>التحويل البنكي الدولي</strong>: على <span class="ltr">CoinMENA</span> قد يستغرق من <span class="ltr">4</span> إلى <span class="ltr">6</span> أيام عمل، بينما التحويل المحلي أسرع (<span class="ltr">1-2</span> يوم).</li>
         <li><strong>البطاقة</strong>: متاحة على <span class="ltr">Rain</span> و<span class="ltr">CoinMENA</span>، لكنها غالبًا أعلى تكلفة من التحويل البنكي.</li>
       </ul>
       <div class="callout warning">
         <span class="callout-title">تنبيه: </span>
-        الرسوم تختلف حسب المنصة وطريقة الدفع وأي عروض سارية، ولا توجد تعرفة موحدة. في مراجعة منشورة لأحد المراجعين ظهرت رسوم تحويل بنكي على <span class="ltr">Rain</span> نحو <span class="ltr">1.5%</span> والبطاقة نحو <span class="ltr">4%</span>، لكن هذه أرقام قابلة للتغيير — راجع الرسوم النهائية داخل المنصة قبل تأكيد أي إيداع.
+        الرسوم ليست موحدة بين المنصات وطرق الإيداع. على سبيل المثال، توضح <span class="ltr">Rain</span> حاليًا أنها لا تفرض رسوم إيداع على التحويلات المحلية عبر <span class="ltr">Fawri</span> و<span class="ltr">Fawri+</span>، بينما قد تختلف رسوم البطاقة أو التحويلات الدولية. لذلك اعتمد دائمًا على شاشة الرسوم النهائية داخل حسابك قبل التأكيد.
       </div>
 
       <h2 id="steps">خطوات الشراء بالترتيب</h2>
@@ -145,7 +145,7 @@
       <ol>
         <li><strong>اختر منصة مرخصة</strong>: قرر أولًا ماذا تريد (شراء <span class="ltr">USDT</span> فقط أم منتجات أوسع)، ثم تحقق من ترخيص المنصة في قائمة <span class="ltr">CBB</span>.</li>
         <li><strong>أنشئ الحساب وأكمل <span class="ltr">KYC</span></strong>: ستحتاج بطاقة <span class="ltr">CPR</span> أو جواز السفر، وقد يُطلب إثبات عنوان. بعض المنصات تكمل التحقق في نفس اليوم.</li>
-        <li><strong>أودع الدينار</strong>: اختر <span class="ltr">Fawri/Fawri+</span> للمبالغ الصغيرة أو التحويل البنكي للمبالغ الكبيرة، وادفع من حسابك البنكي المطابق لاسمك.</li>
+        <li><strong>أودع الدينار</strong>: إذا كنت تستخدم <span class="ltr">Rain</span> أو <span class="ltr">CoinMENA</span>، يمكن أن يكون <span class="ltr">Fawri+</span> مناسبًا للتحويلات حتى <span class="ltr">3,000</span> د.ب، بينما يُستخدم <span class="ltr">Fawri</span> عادةً للمبالغ الأكبر. أما <span class="ltr">Binance Bahrain</span> فاتبع تعليمات التحويل البنكي أو وسائل الإيداع الأخرى الظاهرة داخل حسابك، لأن القنوات المتاحة تختلف حسب المنصة.</li>
         <li><strong>اشترِ <span class="ltr">USDT</span></strong>: إما عبر زوج <span class="ltr">USDT/BHD</span> مباشرة، أو عبر ميزة التحويل الفوري (<span class="ltr">Convert</span>) على <span class="ltr">Binance Bahrain</span>.</li>
         <li><strong>تحقق من الاستلام</strong>: بعد تنفيذ الطلب، تأكد من ظهور <span class="ltr">USDT</span> في رصيدك، وقرر هل تبقيه على المنصة أم تسحبه إلى محفظتك.</li>
       </ol>
@@ -158,12 +158,15 @@
       <div class="formula">التكلفة الفعلية لكل <span class="ltr">USDT</span> = إجمالي ما دفعته بالدينار، شاملًا الرسوم، ÷ صافي <span class="ltr">USDT</span> المستلم</div>
       <p>عرض يبدو سعره أقل قد يحمل رسومًا أعلى أو حدًا أدنى أكبر، فاقرأ شروط الطلب كاملة قبل التأكيد.</p>
 
+      <h2 id="cheap">أرخص طريقة لشراء <span class="ltr">USDT</span> في البحرين</h2>
+      <p>في العادة، ابدأ بمقارنة التحويل البنكي المحلي مع البطاقة. على <span class="ltr">Rain</span> مثلًا، التحويل المحلي عبر <span class="ltr">Fawri/Fawri+</span> لا يحمل حاليًا رسوم إيداع من <span class="ltr">Rain</span>، بينما قد تحمل البطاقات أو طرق الدفع الأخرى رسومًا مختلفة. لكن لا تقارن رسوم الإيداع وحدها؛ قارن أيضًا سعر تنفيذ <span class="ltr">USDT</span> والفرق بين سعر السوق والسعر النهائي المعروض لك.</p>
+
       <h2 id="verify">كيف تتأكد من ترخيص المنصة؟</h2>
       <p>الخطوة الأهم في البحرين ليست إيجاد منصة، بل التأكد من ترخيصها. لا تكتفِ بشعار «منظّم» أو «متوافق» تضعه المنصة على صفحتها، بل ارجع إلى السجل الرسمي لدى مصرف البحرين المركزي (<span class="ltr">cbb.gov.bh</span>) وتحقق من اسم الكيان نفسه، وليس اسم العلامة التجارية.</p>
       <p>فبعض المواقع تستخدم أسماء مشابهة لمنصات مرخّصة لجذب المستخدمين. الفارق بين «<span class="ltr">Binance Bahrain</span>» المرخّصة (فئة رابعة) و«<span class="ltr">Binance</span>» العالمية كيانان تنظيميان مختلفان، والترخيص المحلي خاص بالكيان البحريني. التفاصيل الكاملة لطريقة التحقق في <a href="/countries/bahrain/#verify">قسم التحقق ضمن دليل البحرين</a>.</p>
 
       <h2 id="tax">الضرائب: لا ضريبة دخل شخصية</h2>
-      <p>لا يوجد في البحرين حتى وقت التحقق نظام عام لضريبة الدخل الشخصي أو ضريبة أرباح رأس المال على الأفراد. فبالنسبة للفرد الذي يشتري ويبيع <span class="ltr">USDT</span> لحسابه الشخصي، لا تُفرض حاليًا ضريبة دخل شخصية أو ضريبة عامة على أرباح رأس المال.</p>
+      <p>حتى تاريخ التحقق، لا يوجد في البحرين نظام عام لضريبة الدخل الشخصي، كما أن أرباح رأس المال والاستثمار للأفراد ليست خاضعة عمومًا للضريبة. لا توجد ضريبة خاصة منفصلة على أرباح تداول العملات المشفرة للأفراد حاليًا.</p>
       <p>لكن هذا لا ينطبق تلقائيًا على الشركات أو من يمارس التداول كنشاط تجاري منظم، فالوضع الضريبي للكيانات يختلف. ولأن القوانين الضريبية قابلة للتغيير، تحقّق من الوضع الحالي قبل اتخاذ أي قرار مالي مهم.</p>
 
       <h2 id="risks">مخاطر تبقى حتى مع منصة مرخصة</h2>
@@ -203,7 +206,7 @@
         </details>
         <details>
           <summary>هل يمكن الإيداع ببطاقة أو عبر <span class="ltr">BenefitPay</span>؟</summary>
-          <p>نعم في بعض المنصات: تدعم <span class="ltr">Rain</span> الإيداع بالبطاقة وبطريقة <span class="ltr">BenefitPay</span> (أول منصة تشفير في البحرين تدمجها)، كما تدعم <span class="ltr">CoinMENA</span> البطاقة والتحويل البنكي. تختلف الطرق المتاحة حسب حسابك والمنصة.</p>
+          <p>نعم في بعض المنصات: تدعم <span class="ltr">Rain</span> الإيداع بالبطاقة، ويمكن إرسال التحويل إلى حسابها عبر <span class="ltr">Fawri/Fawri+</span> باستخدام تطبيق <span class="ltr">BenefitPay</span>. كما تدعم <span class="ltr">CoinMENA</span> البطاقة والتحويل البنكي. تختلف الطرق المتاحة حسب حسابك والمنصة.</p>
         </details>
       </div>
 
@@ -238,7 +241,7 @@
         إفصاح: قد يحصل ArabTrail على عمولة إذا سجّلت عبر بعض الروابط التابعة، دون تكلفة إضافية عليك.
       </p>
 
-      <p class="sources">المصادر: <a href="https://www.cbb.gov.bh/fact-sheet/" rel="nofollow noopener">مصرف البحرين المركزي — صحيفة الحقائق (قائمة الجهات المرخّصة)</a> · <a href="https://www.cbb.gov.bh/monetary-policy/" rel="nofollow noopener">مصرف البحرين المركزي — السياسة النقدية (تثبيت الدينار عند <span class="ltr">2.659</span>)</a> · <a href="https://www.rain.com/en/support/articles/10757034-fawri-and-fawri-deposits" rel="nofollow noopener"><span class="ltr">Rain</span> — الإيداع عبر <span class="ltr">Fawri/Fawri+</span></a> · <a href="https://www.rain.com/en-ae/learn/deposit-methods-based-on-your-country" rel="nofollow noopener"><span class="ltr">Rain</span> — طرق الإيداع حسب الدولة</a> · <a href="https://www.gccbusinessnews.com/rain-integrate-benefitpay-crypto-purchases/" rel="nofollow noopener"><span class="ltr">Rain</span> — دمج <span class="ltr">BenefitPay</span> لشراء العملات الرقمية</a> · <a href="https://www.coinmena.com/ar/how-to-buy/usdt" rel="nofollow noopener"><span class="ltr">CoinMENA</span> — كيفية شراء <span class="ltr">USDT</span></a> · <a href="https://support.coinmena.com/hc/en-us/articles/39051497992849-How-do-I-fund-my-CoinMENA-wallet-via-bank" rel="nofollow noopener"><span class="ltr">CoinMENA</span> — تمويل المحفظة عبر التحويل البنكي</a> · <a href="https://taxsummaries.pwc.com/bahrain/individual/taxes-on-personal-income" rel="nofollow noopener"><span class="ltr">PwC</span> — ملخص الضرائب على الدخل الشخصي في البحرين</a></p>
+      <p class="sources">المصادر: <a href="https://www.cbb.gov.bh/fact-sheet/" rel="nofollow noopener">مصرف البحرين المركزي — صحيفة الحقائق (قائمة الجهات المرخّصة)</a> · <a href="https://www.cbb.gov.bh/monetary-policy/" rel="nofollow noopener">مصرف البحرين المركزي — السياسة النقدية (تثبيت الدينار عند <span class="ltr">2.659</span>)</a> · <a href="https://www.rain.com/en/support/articles/10757034-fawri-and-fawri-deposits" rel="nofollow noopener"><span class="ltr">Rain</span> — الإيداع عبر <span class="ltr">Fawri/Fawri+</span></a> · <a href="https://www.rain.com/en/support/articles/10757054-bank-transfer-fees-for-deposits/" rel="nofollow noopener"><span class="ltr">Rain</span> — رسوم التحويل البنكي للإيداع</a> · <a href="https://www.coinmena.com/ar/how-to-buy/usdt" rel="nofollow noopener"><span class="ltr">CoinMENA</span> — كيفية شراء <span class="ltr">USDT</span></a> · <a href="https://support.coinmena.com/hc/en-us/articles/39051497992849-How-do-I-fund-my-CoinMENA-wallet-via-bank" rel="nofollow noopener"><span class="ltr">CoinMENA</span> — تمويل المحفظة عبر التحويل البنكي</a> · <a href="https://www.binance.com/en/support/faq/detail/d1c137bcdde34b0b8ba8d154e617bfac" rel="nofollow noopener"><span class="ltr">Binance</span> — إيداع العملة النقدية في <span class="ltr">Binance Bahrain</span> عبر التحويل البنكي</a> · <a href="https://www.binance.com/en-BH/support/faq/detail/456995ac1e434a3bba35d6f0cb62d4ea" rel="nofollow noopener"><span class="ltr">Binance</span> — الإيداع بالـ<span class="ltr">BHD</span> عبر <span class="ltr">Beyon Money</span></a> · <a href="https://taxsummaries.pwc.com/bahrain/individual/taxes-on-personal-income" rel="nofollow noopener"><span class="ltr">PwC</span> — ملخص الضرائب على الدخل الشخصي في البحرين</a></p>
     </div>
   </main>
 
