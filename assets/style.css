@@ -129,6 +129,8 @@ img { max-width: 100%; height: auto; }
 .callout .callout-title { font-weight: 700; display: block; margin-bottom: 4px; color: var(--green-dark); }
 .callout.warning { border-inline-start-color: var(--danger); background: #fdf1f0; }
 .callout.warning .callout-title { color: var(--danger); }
+.answer-box { background: #fdf8e8; border: 1px solid var(--accent); border-inline-start: 4px solid var(--accent); border-radius: var(--radius); padding: 16px 18px; margin: 18px 0; font-size: 1rem; line-height: 1.9; }
+.answer-box .answer-title { font-weight: 800; display: block; margin-bottom: 6px; color: #8a6d1a; font-size: 1.05rem; }
 
 /* 证据卡（كيف تحققنا） */
 .evidence-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; margin: 20px 0; border-inline-start: 4px solid var(--green); }
