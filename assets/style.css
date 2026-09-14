@@ -250,6 +250,23 @@ img { max-width: 100%; height: auto; }
 .trust-card h3 { margin: 0 0 6px; font-size: 1rem; font-weight: 800; color: var(--green-dark); }
 .trust-card p { margin: 0; color: var(--muted); font-size: 0.85rem; }
 
+/* ===== 站内搜索（Pagefind）===== */
+.search-box { margin: 28px 0 4px; max-width: 560px; }
+.search-label { display: block; font-weight: 800; margin-bottom: 8px; color: var(--green-dark); font-size: 0.95rem; }
+#search .pagefind-ui {
+  direction: rtl;
+  text-align: right;
+  --pagefind-ui-primary: var(--green);
+  --pagefind-ui-text: var(--ink);
+  --pagefind-ui-background: var(--surface);
+  --pagefind-ui-border: var(--border);
+  --pagefind-ui-tag: var(--green-soft);
+  --pagefind-ui-font: inherit;
+  --pagefind-ui-scale: 1;
+}
+#search .pagefind-ui__search-input { text-align: right; }
+#search .pagefind-ui__search-input::placeholder { color: var(--muted); }
+
 /* 响应式 */
 @media (max-width: 640px) {
   .hero h1 { font-size: 1.55rem; }

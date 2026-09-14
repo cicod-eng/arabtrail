@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
   <link rel="canonical" href="https://arabtrail.com/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
@@ -46,7 +47,7 @@
     </div>
   </header>
 
-  <main>
+  <main data-pagefind-body>
     <div class="container">
       <!-- 1. Hero -->
       <section class="hero">
@@ -57,6 +58,10 @@
         <div class="btn-row">
           <a href="/binance-vs-okx/" class="btn btn-primary">قارن <span class="ltr">Binance</span> و<span class="ltr">OKX</span></a>
           <a href="/countries/" class="btn btn-secondary">ابدأ حسب بلدك</a>
+        </div>
+        <div class="search-box">
+          <label class="search-label" for="search">ابحث في <span class="ltr">ArabTrail</span></label>
+          <div id="search"></div>
         </div>
       </section>
 
@@ -331,5 +336,12 @@
       </div>
     </div>
   </footer>
+
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      new PagefindUI({ element: "#search", showSubResults: true });
+    });
+  </script>
 </body>
 </html>
