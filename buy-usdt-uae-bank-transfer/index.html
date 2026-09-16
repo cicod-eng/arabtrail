@@ -46,8 +46,8 @@
         "mainEntity": [
           { "@type": "Question", "name": "هل يمكن شراء USDT بالدرهم عبر التحويل البنكي في الإمارات؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم، توجد قنوات منظمة لذلك، أبرزها إيداع AED مباشرة في Binance FZE ثم الشراء أو التداول، وزوج USDT/AED على Bybit، ومنصات مرخّصة أخرى مثل Rain. تختلف المتطلبات والرسوم حسب المنصة." } },
           { "@type": "Question", "name": "هل ما زالت قناة Roma متاحة؟", "acceptedAnswer": { "@type": "Answer", "text": "لا، أوقفت Binance قناة شراء وبيع USDT وUSDC عبر التحويل البنكي Roma اعتبارًا من 12 سبتمبر 2026. المسار البنكي الحالي هو الإيداع المباشر بالدرهم في Binance FZE." } },
-          { "@type": "Question", "name": "هل شراء USDT قانوني في الإمارات؟", "acceptedAnswer": { "@type": "Answer", "text": "شراء USDT والاحتفاظ به وتداوله قانوني في الإمارات على المنصات المرخّصة. لكن USDT غير مسجّل كرمز دفع بموجب نظام العملات المستقرة لدى المصرف المركزي، فلا يمكن استخدامه للدفع في المتاجر." } },
-          { "@type": "Question", "name": "كم تستغرق تسوية التحويل البنكي؟", "acceptedAnswer": { "@type": "Answer", "text": "تتم معظم المعاملات خلال 30 دقيقة وقد تصل إلى يوم عمل واحد حسب البنك وقيمة المعاملة، وبعض المنصات قد يستغرق أول إيداع لديها عدة أيام." } }
+          { "@type": "Question", "name": "هل شراء USDT قانوني في الإمارات؟", "acceptedAnswer": { "@type": "Answer", "text": "يمكن للمستخدمين المؤهلين في الإمارات الوصول إلى خدمات شراء وتداول USDT عبر مزوّدي خدمات مرخّصين أو منظّمين ضمن الأطر المعمول بها. لكن الجهة التنظيمية وشروط المنتج تختلف بحسب الإمارة والكيان والخدمة، كما أن قواعد استخدام العملات المستقرة للدفع تختلف عن قواعد شرائها أو تداولها." } },
+          { "@type": "Question", "name": "كم تستغرق تسوية التحويل البنكي؟", "acceptedAnswer": { "@type": "Answer", "text": "تختلف المدة حسب المنصة والبنك. تشير Rain إلى أن التحويلات المحلية في الإمارات تظهر عادة خلال نحو 24 ساعة، بينما توضح Bybit أن تحويلات AED تكون سريعة عادةً لكن بعض الحالات قد تستغرق حتى خمسة أيام عمل. اعتمد على الوقت المتوقع الظاهر في المنصة قبل التحويل." } }
         ]
       }
     ]
@@ -90,7 +90,7 @@
       <div class="evidence-card">
         <div class="evidence-title">آخر مراجعة تنظيمية: <span class="ltr">16</span> سبتمبر <span class="ltr">2026</span></div>
         <ul>
-          <li><span class="ev-tag official">مصدر رسمي</span> قنوات الشراء بالدرهم من صفحات الدعم الرسمية لـ <span class="ltr">Binance</span>، والوضع التنظيمي لسلطة دبي لتنظيم الأصول الافتراضية (<span class="ltr">VARA</span>) للمنصات المرخّصة في الإمارات.</li>
+          <li><span class="ev-tag official">مصدر رسمي</span> قنوات الشراء والرسوم من صفحات الدعم الرسمية لـ <span class="ltr">Binance</span> و<span class="ltr">Bybit</span> و<span class="ltr">Rain</span>، والسجلات التنظيمية لـ <span class="ltr">VARA</span> (دبي) و<span class="ltr">FSRA</span>/<span class="ltr">ADGM</span> (أبوظبي) والمصرف المركزي (<span class="ltr">CBUAE</span>).</li>
           <li><span class="ev-tag interface">تحقق من الواجهة</span> الرسوم ومتطلبات الأهلية كما تظهر في واجهات المنصات وقت الفحص.</li>
         </ul>
         <div class="evidence-foot"><span class="ev-date">آخر تحقق: <span class="ltr">16</span> سبتمبر <span class="ltr">2026</span></span> · لا نقبل مدفوعات مقابل تغيير أي تقييم · <a href="/how-we-test/">منهجية التحقق</a></div>
@@ -100,9 +100,9 @@
         <div class="toc-title">محتويات الدليل</div>
         <ol>
           <li><a href="#fze">إيداع AED في Binance FZE</a></li>
-          <li><a href="#bybit">زوج USDT/AED على Bybit</a></li>
+          <li><a href="#bybit">إيداع AED والتداول عبر USDT/AED على Bybit</a></li>
           <li><a href="#rain">منصة Rain المرخّصة</a></li>
-          <li><a href="#local">منصات محلية أخرى</a></li>
+          <li><a href="#local">منصات مرخّصة أخرى</a></li>
           <li><a href="#steps">خطوات الشراء بالتحويل البنكي</a></li>
           <li><a href="#fees">مقارنة الرسوم</a></li>
           <li><a href="#risks">ما يجب الانتباه إليه</a></li>
@@ -115,24 +115,20 @@
       <p>ومن البدائل البنكية المتاحة للمستخدمين المؤهلين <strong>إيداع الدرهم مباشرة في <span class="ltr">Binance</span> <span class="ltr">FZE</span> — الكيان المحلي المرخّص في دبي — ثم استخدام رصيد <span class="ltr">AED</span> لشراء أو تداول <span class="ltr">USDT</span></strong>. بحسب <a href="https://www.binance.com/en-AE/support/faq/detail/fece121a1a604d479360cd567857017a" rel="nofollow noopener">تعليمات Binance لإيداع AED</a>، يعتمد المسار على رقم <span class="ltr">vIBAN</span> مخصص لحسابك، ويجب أن يكون الحساب البنكي باسمك أنت.</p>
       <p>تشير التعليمات إلى أن الحد الأدنى للإيداع البنكي هو <span class="ltr">10</span> دراهم، وأن المنصة لا تفرض رسومًا على الإيداع، مع احتمال رسوم أو تأخير من البنك نفسه. وتتوفر أزواج تداول فوري مقوّمة بالدرهم للمستخدمين المؤهلين عبر <span class="ltr">Binance</span> <span class="ltr">FZE</span>.</p>
 
-      <h2 id="bybit">زوج <span class="ltr">USDT/AED</span> على <span class="ltr">Bybit</span></h2>
-      <p>أطلقت <span class="ltr">Bybit</span> أزواج تداول بالدرهم تشمل <span class="ltr">USDT/AED</span> إضافة إلى <span class="ltr">BTC/AED</span> و<span class="ltr">ETH/AED</span> و<span class="ltr">SOL/AED</span>، ما يتيح التداول مباشرة بالدرهم عبر التحويلات البنكية المحلية دون الحاجة إلى تحويل العملة مسبقًا.</p>
-      <p>هذه الخدمة خاضعة لقيود ومتطلبات أهلية، وبعض العروض غير متاحة لسكان إمارة دبي تحديدًا. راجع شروط <span class="ltr">Bybit</span> لحسابك وموقعك قبل الاعتماد عليها.</p>
+      <h2 id="bybit">إيداع <span class="ltr">AED</span> والتداول عبر <span class="ltr">USDT/AED</span> على <span class="ltr">Bybit</span></h2>
+      <p>تتيح <span class="ltr">Bybit</span> للمستخدمين المؤهلين في الإمارات إيداع وسحب الدرهم الإماراتي عبر تحويل بنكي محلي، ثم استخدام رصيد <span class="ltr">AED</span> في المنتجات المتاحة للحساب.</p>
+      <p>كما توفر المنصة أزواج تداول فوري مقوّمة بالدرهم، من بينها <span class="ltr">USDT/AED</span>. ووفق تحديث الرسوم المنشور من <span class="ltr">Bybit</span>، تبلغ رسوم التداول على أزواج <span class="ltr">AED</span>، بما فيها <span class="ltr">USDT/AED</span>، نسبة <span class="ltr">0.55%</span> منذ <span class="ltr">1</span> يونيو <span class="ltr">2026</span>.</p>
+      <p>بحسب دليل <span class="ltr">Bybit</span> الحالي، الحد الأدنى لإيداع <span class="ltr">AED</span> عبر التحويل البنكي المحلي هو <span class="ltr">100</span> درهم، ولا تفرض المنصة رسومًا على الإيداع، بينما تبلغ رسوم السحب البنكي <span class="ltr">25</span> درهمًا.</p>
+      <p><strong>الأهلية مهمة:</strong> خدمة <span class="ltr">AED</span> متاحة فقط لبعض الحسابات المؤهلة، وتشير تعليمات <span class="ltr">Bybit</span> إلى قيود مرتبطة بتاريخ التسجيل والجهة القانونية التي تخدم الحساب. كما أن <span class="ltr">Bybit</span> <span class="ltr">Virtual Asset Platform Operator</span> لا يقدّم خدمات لسكان دبي. لذلك تحقق من الجهة التي يتبع لها حسابك ومن ظهور خيار <span class="ltr">AED</span> داخل حسابك قبل التحويل.</p>
 
       <h2 id="rain">منصة <span class="ltr">Rain</span> المرخّصة</h2>
-      <p><span class="ltr">Rain</span> منصة مرخّصة من سلطة تنظيم الخدمات المالية (<span class="ltr">FSRA</span>) التابعة لسوق أبوظبي العالمي (<span class="ltr">ADGM</span>)، وتقدم تسعيرًا مباشرًا لـ <span class="ltr">USDT</span> مقابل الدرهم مع إيداعات بنكية مجانية بالدرهم. تُسوّى التحويلات خلال يوم عمل واحد، وقد يستغرق أول إيداع لديها حتى أربعة أيام.</p>
+      <p><span class="ltr">Rain Trading Limited</span> مرخّصة من سلطة تنظيم الخدمات المالية <span class="ltr">FSRA</span> في سوق أبوظبي العالمي <span class="ltr">ADGM</span> لتقديم خدمات مرتبطة بالأصول الافتراضية في الإمارات. وتوضح <span class="ltr">Rain</span> أن الإيداعات البنكية المحلية بالدرهم لا تُفرض عليها رسوم إيداع، وأن التحويل المحلي في الإمارات يظهر عادة خلال نحو <span class="ltr">24</span> ساعة، بينما قد تختلف المدة بحسب البنك وطريقة الإيداع.</p>
       <p>كونها مرخّصة لا يعني بالضرورة توفر نفس العملات أو السيولة أو طرق الدفع التي تجدها في الأسواق الدولية الكبرى، فتحقق من الخدمات المتاحة لحسابك.</p>
 
-      <h2 id="local">منصات محلية أخرى</h2>
-      <p>توجد منصات محلية أخرى مرخّصة أو موجهة لسوق الإمارات، منها:</p>
-      <div class="table-wrap">
-        <table>
-          <tr><th>المنصة</th><th>أبرز ما يميزها</th></tr>
-          <tr><td><span class="ltr">Kaza Wallet</span></td><td>إيداع درهم عبر تحويل بنكي محلي ثم استبدال فوري بـ <span class="ltr">USDT</span>؛ تدعم بنوك <span class="ltr">ENBD</span> و<span class="ltr">FAB</span> و<span class="ltr">ADCB</span> و<span class="ltr">ADIB</span></td></tr>
-          <tr><td><span class="ltr">LCT</span></td><td>بورصة مرخّصة من <span class="ltr">VARA</span> تدعم الشراء/البيع بالدرهم مع <span class="ltr">USDT</span> و<span class="ltr">BTC</span> و<span class="ltr">ETH</span></td></tr>
-        </table>
-      </div>
-      <p>هذه أمثلة، وليست توصية. تختلف الرسوم والحدود والأهلية، فراجع صفحة كل منصة.</p>
+      <h2 id="local">منصات مرخّصة أخرى</h2>
+      <p>إلى جانب القنوات المذكورة أعلاه، توجد جهات أخرى مرخّصة لتقديم خدمات الأصول الافتراضية في الإمارات.</p>
+      <p>من بينها <span class="ltr">LCT Global FZE</span>، التي تظهر في سجل <span class="ltr">VARA</span> بترخيص نشط لخدمات التبادل، ويسمح نطاق ترخيصها بتبادل الأصول الافتراضية مقابل العملات الورقية وبالعكس.</p>
+      <p>لكن وجود الترخيص لا يعني تلقائيًا أن كل أصل أو زوج تداول أو طريقة إيداع متاحة في الوقت نفسه. تحقق من دعم <span class="ltr">AED</span> و<span class="ltr">USDT</span> داخل حسابك قبل إرسال أي تحويل بنكي.</p>
 
       <h2 id="steps">خطوات الشراء بالتحويل البنكي</h2>
       <p>هذا مسار عام يظهر في القنوات المرخّصة، وقد تختلف التفاصيل حسب المنصة:</p>
@@ -150,16 +146,16 @@
         <table>
           <tr><th>القناة</th><th>أبرز الرسوم الظاهرة وقت الفحص</th></tr>
           <tr><td><span class="ltr">Binance</span> <span class="ltr">FZE</span></td><td>إيداع بالدرهم مجاني بحد أدنى <span class="ltr">10</span> دراهم</td></tr>
-          <tr><td><span class="ltr">Rain</span></td><td>إيداعات بنكية مجانية بالدرهم</td></tr>
-          <tr><td><span class="ltr">Kaza Wallet</span></td><td>عمولة إيداع بنكي نحو <span class="ltr">3%</span> + <span class="ltr">4</span> دراهم، وعمولة تبديل نحو <span class="ltr">1%</span></td></tr>
+          <tr><td><span class="ltr">Bybit</span></td><td>إيداع <span class="ltr">AED</span> مجاني بحد أدنى <span class="ltr">100</span> درهم، سحب <span class="ltr">25</span> درهمًا، تداول أزواج <span class="ltr">AED</span> <span class="ltr">0.55%</span></td></tr>
+          <tr><td><span class="ltr">Rain</span></td><td>إيداعات بنكية محلية بالدرهم مجانية</td></tr>
         </table>
       </div>
       <p>هذه أرقام منشورة وقت الفحص وقد تتغير. احسب دائمًا التكلفة الفعلية شاملة الرسوم، وقارن بين القنوات للمبلغ الذي تنوي تحويله.</p>
 
       <h2 id="risks">ما يجب الانتباه إليه</h2>
       <ul>
-        <li><strong><span class="ltr">USDT</span> ليس رمز دفع مسجّلًا</strong>: ينظّم المصرف المركزي العملات المستقرة كرموز دفع، و<span class="ltr">USDT</span> غير مسجّل بموجب هذا النظام، فلا يمكن استخدامه للدفع في المتاجر، رغم أن شراءه والاحتفاظ به مسموح.</li>
-        <li><strong>قيود أهلية</strong>: بعض القنوات مثل <span class="ltr">Bybit</span> قد تستثني سكان إمارة دبي أو تخضع لشروط إضافية.</li>
+        <li><strong>استخدام <span class="ltr">USDT</span> للدفع يخضع لقيود تنظيمية</strong>: ينظّم مصرف الإمارات المركزي خدمات رموز الدفع واستخدام الرموز المستقرة كوسيلة دفع وفق إطار ترخيص وتسجيل محدد. لا ينبغي افتراض أن مجرد إمكانية شراء <span class="ltr">USDT</span> أو تداوله تعني إمكانية استخدامه بحرية كوسيلة دفع لدى التجار داخل الإمارات. تحقق من وضع الرمز ومقدم الخدمة والاستخدام المقصود وفق قواعد المصرف المركزي الحالية.</li>
+        <li><strong>قيود أهلية</strong>: بعض القنوات مثل <span class="ltr">Bybit</span> لا تقدّم خدماتها لسكان دبي، وقد تخضع حسابات أخرى لشروط مرتبطة بتاريخ التسجيل والجهة القانونية.</li>
         <li><strong>رسوم متغيرة</strong>: رسوم الإيداع والتبديل تختلف حسب المنصة والمبلغ.</li>
         <li><strong>مخاطر الأصول</strong>: <span class="ltr">USDT</span> أصل رقمي عالي المخاطر، وقيمته ليست مضمونة من أي جهة رسمية.</li>
       </ul>
@@ -177,11 +173,11 @@
         </details>
         <details>
           <summary>هل شراء USDT قانوني في الإمارات؟</summary>
-          <p>شراء <span class="ltr">USDT</span> والاحتفاظ به وتداوله قانوني في الإمارات على المنصات المرخّصة. لكن <span class="ltr">USDT</span> غير مسجّل كرمز دفع بموجب نظام العملات المستقرة لدى المصرف المركزي، فلا يمكن استخدامه للدفع في المتاجر.</p>
+          <p>يمكن للمستخدمين المؤهلين في الإمارات الوصول إلى خدمات شراء وتداول <span class="ltr">USDT</span> عبر مزوّدي خدمات مرخّصين أو منظّمين ضمن الأطر المعمول بها. لكن الجهة التنظيمية وشروط المنتج تختلف بحسب الإمارة والكيان والخدمة، كما أن قواعد استخدام العملات المستقرة للدفع تختلف عن قواعد شرائها أو تداولها.</p>
         </details>
         <details>
           <summary>كم تستغرق تسوية التحويل البنكي؟</summary>
-          <p>تتم معظم المعاملات خلال <span class="ltr">30</span> دقيقة وقد تصل إلى يوم عمل واحد حسب البنك وقيمة المعاملة، وبعض المنصات قد يستغرق أول إيداع لديها عدة أيام.</p>
+          <p>تختلف المدة حسب المنصة والبنك. تشير <span class="ltr">Rain</span> إلى أن التحويلات المحلية في الإمارات تظهر عادة خلال نحو <span class="ltr">24</span> ساعة، بينما توضح <span class="ltr">Bybit</span> أن تحويلات <span class="ltr">AED</span> تكون سريعة عادةً لكن بعض الحالات قد تستغرق حتى خمسة أيام عمل. اعتمد على الوقت المتوقع الظاهر في المنصة قبل التحويل.</p>
         </details>
       </div>
 
@@ -210,7 +206,7 @@
         إفصاح: قد يحصل ArabTrail على عمولة إذا سجّلت عبر بعض الروابط التابعة، دون تكلفة إضافية عليك.
       </p>
 
-      <p class="sources">المصادر: <a href="https://www.binance.com/en-AE/support/faq/detail/fece121a1a604d479360cd567857017a" rel="nofollow noopener">Binance — إيداع AED في Binance FZE</a> · <a href="https://www.binance.com/en-AE/support/announcement/detail/d11f3214048541ca8c6d9e451290ced5" rel="nofollow noopener">Binance — إيقاف قناة Roma</a> · <a href="https://blog.kazawallet.com/ar/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%B4%D8%B1%D8%A7%D8%A1-usdt-%D9%81%D9%8A-%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA" rel="nofollow noopener">Kaza Wallet — شراء USDT في الإمارات</a></p>
+      <p class="sources">المصادر: <a href="https://www.binance.com/en-AE/support/faq/detail/fece121a1a604d479360cd567857017a" rel="nofollow noopener">Binance — إيداع AED في Binance FZE</a> · <a href="https://www.binance.com/en-AE/support/announcement/detail/d11f3214048541ca8c6d9e451290ced5" rel="nofollow noopener">Binance — إيقاف قناة Roma</a> · <a href="https://www.bybit.com/en/learn/bybit-guide/deposit-withdraw-aed" rel="nofollow noopener">Bybit — إيداع وسحب AED</a> · <a href="https://www.bybit.com/en/help-center/article/How-to-Deposit-Fiat-Currencies-on-Bybit" rel="nofollow noopener">Bybit — إيداع العملات الورقية</a> · <a href="https://www.bybit.com/en/help-center/article/Service-Restricted-Countries" rel="nofollow noopener">Bybit — الدول المقيدة</a> · <a href="https://www.adgm.com/public-registers/fsra/firms/financial-firms/rain-trading-limited-210063" rel="nofollow noopener">ADGM — Rain Trading Limited</a> · <a href="https://www.rain.com/en/support/articles/12807904-rain-uae-fees" rel="nofollow noopener">Rain — رسوم الإمارات</a> · <a href="https://www.rain.com/en/support/articles/10757044-deposit-funds-to-your-rain-account" rel="nofollow noopener">Rain — إيداع الأموال</a> · <a href="https://www.vara.ae/en/licenses-and-register/public-register/lct-global-fze/" rel="nofollow noopener">VARA — LCT Global FZE</a> · <a href="https://rulebook.centralbank.ae/en/rulebook/payment-token-services-regulation" rel="nofollow noopener">CBUAE — لائحة خدمات رموز الدفع</a></p>
     </div>
   </main>
 
