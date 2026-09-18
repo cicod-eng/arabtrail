@@ -499,6 +499,8 @@ img { max-width: 100%; height: auto; }
 .country-page .country-action-card h3 { margin: 0 0 10px; color: var(--country-text); }
 .country-page .country-action-card p { margin: 0 0 16px; color: var(--country-muted); line-height: 1.7; }
 .country-page .country-action-cta { color: var(--country-blue); font-weight: 700; }
+.country-page .country-buy-note { margin: 24px 0 0; color: var(--country-muted); font-size: 0.95rem; line-height: 1.85; max-width: 720px; }
+.country-page .country-buy-note strong { color: var(--country-text); }
 .country-page .platform-logo-box img { max-width: 32px; max-height: 32px; }
 .country-page .platform-card h3 { margin: 0 0 4px; color: var(--country-text); }
 .country-page .platform-card ul { margin: 16px 0 22px; padding-inline-start: 20px; color: var(--country-muted); }
