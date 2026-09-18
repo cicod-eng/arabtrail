@@ -436,6 +436,10 @@ img { max-width: 100%; height: auto; }
   --country-green-soft: #F2F8F5;
   --country-warning: #D97706;
   --country-warning-soft: #FFF7E8;
+  --country-danger: #B42318;
+  --country-danger-dark: #8A1C13;
+  --country-danger-soft: #FFF3F1;
+  --country-danger-border: #F4C7C3;
 }
 
 .country-page .container { max-width: 1180px; }
@@ -484,6 +488,15 @@ img { max-width: 100%; height: auto; }
 .country-page .country-status-card strong { display: block; color: var(--country-green); margin-bottom: 6px; }
 .country-page .country-status-card p { margin: 0; color: var(--country-muted); font-size: 0.95rem; line-height: 1.8; }
 
+/* 限制型市场警示卡（红色档，克制） */
+.country-page .country-restriction-card { display: flex; gap: 16px; margin: 26px 0; padding: 22px 24px; border: 1px solid var(--country-danger-border); border-inline-start: 4px solid var(--country-danger); border-radius: 16px; background: var(--country-danger-soft); }
+.country-page .country-restriction-card__icon { flex: 0 0 30px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--country-danger); color: #fff; font-weight: 800; font-size: 16px; }
+.country-page .country-restriction-card strong { display: block; color: var(--country-danger-dark); margin-bottom: 6px; }
+.country-page .country-restriction-card p { margin: 0; color: var(--country-muted); font-size: 0.95rem; line-height: 1.8; }
+.country-page .country-list { margin: 0; padding-inline-start: 22px; color: var(--country-text); line-height: 1.9; font-size: 0.98rem; }
+.country-page .country-list li { margin-bottom: 10px; }
+.country-page .country-list li:last-child { margin-bottom: 0; }
+
 /* 核验区（复用全站 .verify-status 徽章视觉） */
 .country-page .verify-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
 .country-page .verify-card { padding: 24px; border: 1px solid #DCEDE3; border-radius: 16px; background: var(--country-green-soft); }
@@ -521,6 +534,7 @@ img { max-width: 100%; height: auto; }
 .country-page .step-number { flex: 0 0 48px; color: var(--country-blue); font-size: 22px; font-weight: 800; }
 .country-page .country-step h3 { margin: 0 0 6px; color: var(--country-text); }
 .country-page .country-step p { margin: 0; color: var(--country-muted); }
+.country-page .country-steps-foot { margin: 22px 0 0; color: var(--country-muted); font-size: 0.95rem; line-height: 1.85; max-width: 720px; }
 .country-page .country-step:hover h3 { color: var(--country-blue); }
 
 /* 相关指南 */
