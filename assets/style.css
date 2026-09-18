@@ -1067,3 +1067,97 @@ img { max-width: 100%; height: auto; }
     font-size: 17px;
   }
 }
+/* ============================================================
+   Binance Guide v1（单篇教程页）—— 作用域 .binance-guide
+   继承 Binance Hub 视觉；绿色只用于「已核验」语义
+   ============================================================ */
+.binance-guide {
+  --guide-blue: #173B5E;
+  --guide-text: #102A43;
+  --guide-muted: #667085;
+  --guide-border: #E6E9ED;
+  --guide-soft: #F8F9FB;
+  --guide-cream: #F7F4EE;
+  --guide-green: #1F8A5B;
+  --guide-green-soft: #F2F8F5;
+  --guide-warning: #D97706;
+  --guide-warning-soft: #FFF7E8;
+  --guide-red: #B42318;
+  --guide-red-soft: #FFF3F1;
+}
+
+.binance-guide a { color: var(--guide-blue); }
+.binance-guide a:hover { color: var(--guide-green); }
+
+/* 标题色 */
+.binance-guide .article h1 { color: var(--guide-text); font-size: clamp(1.75rem, 3.5vw, 2.15rem); line-height: 1.35; }
+.binance-guide .article h2 { color: var(--guide-text); }
+
+/* 分类标签 + lead + meta */
+.binance-guide .guide-kicker { display: inline-block; margin-bottom: 10px; color: var(--guide-blue); font-size: 14px; font-weight: 700; }
+.binance-guide .guide-lead { color: var(--guide-muted); font-size: 1.06rem; line-height: 1.9; margin: 0 0 16px; max-width: 720px; }
+.binance-guide .guide-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--guide-muted); font-size: 0.85rem; margin-bottom: 18px; }
+.binance-guide .guide-meta a { color: var(--guide-blue); }
+.binance-guide .guide-meta .guide-meta-dot { color: var(--guide-border); }
+
+/* 核验徽章：绿色语义（保留绿） */
+.binance-guide .verify-status { background: var(--guide-green-soft); color: var(--guide-green); border-color: #DCEDE3; margin-bottom: 0; }
+
+/* 摘要卡 */
+.binance-guide .summary-card { border-color: var(--guide-border); }
+.binance-guide .summary-card th { background: var(--guide-soft); color: var(--guide-text); }
+.binance-guide .summary-card th, .binance-guide .summary-card td { border-color: var(--guide-border); }
+
+/* 证据卡 → 紧凑状态行 */
+.binance-guide .evidence-card { background: var(--guide-soft); border: 1px solid var(--guide-border); border-inline-start: 1px solid var(--guide-border); border-radius: 12px; padding: 16px 18px; margin: 20px 0; }
+.binance-guide .evidence-card .evidence-title { color: var(--guide-text); font-size: 0.88rem; margin: 0 0 12px; }
+.binance-guide .evidence-card ul { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0; padding: 0; list-style: none; }
+.binance-guide .evidence-card li { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--guide-muted); line-height: 1.6; }
+.binance-guide .evidence-card .evidence-foot { border-top-color: var(--guide-border); color: var(--guide-muted); }
+.binance-guide .evidence-card .evidence-foot .ev-date { color: var(--guide-blue); }
+.binance-guide .ev-tag.hands-on { background: var(--guide-green); color: #fff; }
+.binance-guide .ev-tag.interface { background: #EEF2F7; color: var(--guide-blue); }
+.binance-guide .ev-tag.official { background: var(--guide-green-soft); color: var(--guide-green); border: 1px solid #DCEDE3; }
+
+/* 目录 */
+.binance-guide .toc { border-color: var(--guide-border); border-inline-start: 4px solid var(--guide-blue); }
+.binance-guide .toc-title { color: var(--guide-text); }
+.binance-guide .toc a { color: var(--guide-blue); }
+
+/* 步骤 */
+.binance-guide .step { border-color: var(--guide-border); }
+.binance-guide .step-num { background: var(--guide-blue); color: #fff; }
+.binance-guide .step h2, .binance-guide .step h3 { color: var(--guide-text); }
+
+/* 提示框 */
+.binance-guide .callout { border-inline-start-color: var(--guide-blue); background: var(--guide-soft); }
+.binance-guide .callout .callout-title { color: var(--guide-text); }
+.binance-guide .callout.warning { border-inline-start-color: var(--guide-warning); background: var(--guide-warning-soft); }
+.binance-guide .callout.warning .callout-title { color: var(--guide-warning); }
+
+/* FAQ */
+.binance-guide .faq details { border-color: var(--guide-border); }
+.binance-guide .faq summary { color: var(--guide-text); }
+
+/* 下一步 */
+.binance-guide .related { background: var(--guide-soft); border: 1px solid var(--guide-border); border-radius: 12px; padding: 20px 22px; }
+.binance-guide .related h2 { color: var(--guide-text); }
+.binance-guide .related li a { color: var(--guide-blue); }
+
+/* CTA 中性化 */
+.binance-guide .signup-card { border: 1px solid var(--guide-border); background: var(--guide-soft); }
+.binance-guide .signup-card h3 { color: var(--guide-text); }
+.binance-guide .signup-card .btn { background: var(--guide-blue); color: #fff; border-color: var(--guide-blue); }
+
+/* 截图槽位：有真图才渲染，无图不输出 DOM（模板预留） */
+.binance-guide .guide-screenshot { margin: 16px 0; border: 1px solid var(--guide-border); border-radius: 12px; overflow: hidden; }
+.binance-guide .guide-screenshot img { display: block; width: 100%; height: auto; }
+.binance-guide .guide-screenshot figcaption { padding: 10px 14px; font-size: 0.82rem; color: var(--guide-muted); background: var(--guide-soft); }
+.binance-guide .guide-screenshot--portrait { max-width: 440px; }
+
+/* 移动端 */
+@media (max-width: 700px) {
+  .binance-guide .toc ol { max-height: 160px; overflow-y: auto; }
+  .binance-guide .evidence-card ul { flex-direction: column; gap: 6px; }
+  .binance-guide .guide-meta { gap: 6px; }
+}
