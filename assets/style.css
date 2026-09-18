@@ -478,6 +478,12 @@ img { max-width: 100%; height: auto; }
 .country-page .country-alert strong { color: var(--country-text); }
 .country-page .country-alert p { margin: 7px 0 0; color: var(--country-muted); font-size: 0.95rem; line-height: 1.7; }
 
+/* 监管状态卡（持牌市场，绿色） */
+.country-page .country-status-card { display: flex; gap: 16px; margin: 26px 0; padding: 22px 24px; border: 1px solid #DCEDE3; border-radius: 16px; background: var(--country-green-soft); }
+.country-page .country-status-card__icon { flex: 0 0 30px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--country-green); color: #fff; font-weight: 800; font-size: 16px; }
+.country-page .country-status-card strong { display: block; color: var(--country-green); margin-bottom: 6px; }
+.country-page .country-status-card p { margin: 0; color: var(--country-muted); font-size: 0.95rem; line-height: 1.8; }
+
 /* 核验区（复用全站 .verify-status 徽章视觉） */
 .country-page .verify-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
 .country-page .verify-card { padding: 24px; border: 1px solid #DCEDE3; border-radius: 16px; background: var(--country-green-soft); }
