@@ -64,7 +64,7 @@ img { max-width: 100%; height: auto; }
 .hero .lead { color: var(--muted); font-size: 1.06rem; margin: 0; max-width: 620px; }
 
 /* ===== 国家入口 ===== */
-.country-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 28px 0 8px; }
+.country-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 1fr; gap: 16px; margin: 28px 0 8px; }
 .country-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 20px; min-height: 176px; display: flex; flex-direction: column; gap: 8px; transition: border-color .15s, transform .15s, box-shadow .15s; }
 .country-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 4px 14px rgba(9,71,52,.08); }
 .country-flag { width: 48px; height: 32px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border); flex-shrink: 0; }
@@ -86,6 +86,18 @@ img { max-width: 100%; height: auto; }
 .post-card h3 a:hover { color: var(--green); }
 .post-card p { margin: 0 0 8px; color: var(--muted); font-size: 0.92rem; }
 .post-meta { font-size: 0.8rem; color: var(--muted); }
+.post-feature { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; border-inline-start: 4px solid var(--accent); transition: border-color .15s; }
+.post-feature:hover { border-color: var(--accent); }
+.post-feature h3 { margin: 0 0 8px; font-size: 1.15rem; }
+.post-feature h3 a { color: var(--ink); }
+.post-feature h3 a:hover { color: var(--green); }
+.post-feature p { margin: 0 0 10px; color: var(--muted); font-size: 0.95rem; }
+.post-minor { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.post-minor-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; transition: border-color .15s; }
+.post-minor-item:hover { border-color: var(--accent); }
+.post-minor-item h4 { margin: 0; font-size: 0.98rem; font-weight: 700; line-height: 1.45; }
+.post-minor-item h4 a { color: var(--ink); }
+.post-minor-item h4 a:hover { color: var(--green); }
 
 /* ===== Footer ===== */
 .site-footer { border-top: 3px solid var(--accent); margin-top: 56px; padding: 28px 0; color: var(--muted); font-size: 0.85rem; background: var(--green-dark); }
@@ -162,6 +174,8 @@ img { max-width: 100%; height: auto; }
 .verify-card p { margin: 0 0 10px; color: var(--muted); font-size: 0.9rem; }
 .verify-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
 .verify-date { font-size: 0.8rem; color: var(--muted); }
+.verify-status { display: inline-flex; align-items: center; gap: 4px; background: var(--green-soft); color: var(--green-dark); border: 1px solid var(--green); font-size: 0.72rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+.verify-status img { width: 13px; height: 13px; flex-shrink: 0; }
 
 /* 对比表格 */
 .table-wrap { overflow-x: auto; margin: 18px 0; }
@@ -213,6 +227,9 @@ img { max-width: 100%; height: auto; }
 .topic-title::before { content: ""; width: 4px; height: 1.2em; background: var(--accent); border-radius: 2px; display: inline-block; flex-shrink: 0; }
 .topic-sub { color: var(--muted); font-size: 0.95rem; margin: -6px 0 16px; }
 .about-copy { color: var(--ink); font-size: 1rem; margin: 0 0 12px; max-width: 640px; }
+.about-points { list-style: none; margin: 0 0 14px; padding: 0; max-width: 640px; }
+.about-points li { position: relative; padding-inline-start: 22px; margin: 8px 0; color: var(--ink); font-size: 0.95rem; line-height: 1.6; }
+.about-points li::before { content: "•"; position: absolute; inset-inline-start: 4px; color: var(--accent); font-weight: 700; }
 
 /* 新手路径（quickstart 胶囊） */
 .quickstart { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
@@ -242,6 +259,10 @@ img { max-width: 100%; height: auto; }
 .topic-link h4 a { color: var(--ink); }
 .topic-link h4 a:hover { color: var(--green); }
 .topic-link p { margin: 0; color: var(--muted); font-size: 0.85rem; }
+/* USDT/P2P 与钱包/安全两块做视觉区分 */
+#usdt-p2p .topic-link { border-inline-start: 3px solid var(--accent); }
+#wallet-safety .topic-link { border-inline-start: 3px solid var(--green); }
+.topic-icon { width: 20px; height: 20px; flex-shrink: 0; }
 
 /* 基础科普入口（首页 2 列） */
 .basics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
@@ -302,6 +323,7 @@ img { max-width: 100%; height: auto; }
   .verify-list { grid-template-columns: 1fr; }
   .hub-grid { grid-template-columns: 1fr; }
   .topic-links { grid-template-columns: 1fr; }
+  .post-minor { grid-template-columns: 1fr; }
   .basics-grid { grid-template-columns: 1fr; }
   .trust-grid { grid-template-columns: 1fr; }
   .article h1 { font-size: 1.45rem; }
