@@ -371,3 +371,10 @@ img { max-width: 100%; height: auto; }
   src: url(/assets/fonts/tajawal-800-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/* 团队页作者卡 */
+.author-card { display: flex; gap: 16px; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; margin: 18px 0; }
+.author-card .author-avatar { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.author-card .author-name { margin: 0 0 8px; font-weight: 800; font-size: 1.2rem; color: var(--green-dark); }
+.author-card .author-role { font-weight: 500; color: var(--muted); font-size: 0.95rem; }
+.author-card .author-bio { margin: 0; color: var(--ink); font-size: 0.95rem; line-height: 1.7; }
