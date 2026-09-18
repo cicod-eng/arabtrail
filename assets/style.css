@@ -378,3 +378,4 @@ img { max-width: 100%; height: auto; }
 .author-card .author-name { margin: 0 0 8px; font-weight: 800; font-size: 1.2rem; color: var(--green-dark); }
 .author-card .author-role { font-weight: 500; color: var(--muted); font-size: 0.95rem; }
 .author-card .author-bio { margin: 0; color: var(--ink); font-size: 0.95rem; line-height: 1.7; }
+.author-note { margin: 18px 0 0; font-size: 0.95rem; color: var(--ink); font-style: italic; }
