@@ -1134,6 +1134,8 @@ img { max-width: 100%; height: auto; }
 .binance-guide .callout .callout-title { color: var(--guide-text); }
 .binance-guide .callout.warning { border-inline-start-color: var(--guide-warning); background: var(--guide-warning-soft); }
 .binance-guide .callout.warning .callout-title { color: var(--guide-warning); }
+.binance-guide .callout.danger { border-inline-start-color: var(--guide-red); background: var(--guide-red-soft); }
+.binance-guide .callout.danger .callout-title { color: var(--guide-red); }
 
 /* FAQ */
 .binance-guide .faq details { border-color: var(--guide-border); }
