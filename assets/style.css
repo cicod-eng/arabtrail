@@ -535,6 +535,14 @@ img { max-width: 100%; height: auto; }
 .country-page .country-step h3 { margin: 0 0 6px; color: var(--country-text); }
 .country-page .country-step p { margin: 0; color: var(--country-muted); }
 .country-page .country-steps-foot { margin: 22px 0 0; color: var(--country-muted); font-size: 0.95rem; line-height: 1.85; max-width: 720px; }
+
+/* 克制版推广 CTA（限制型市场用，非大黄底） */
+.country-page .country-cta-card { padding: 24px 26px; border: 1px solid var(--country-border); border-radius: 16px; background: var(--country-soft); max-width: 720px; }
+.country-page .country-cta-card h3 { margin: 0 0 10px; color: var(--country-text); font-size: 1.15rem; }
+.country-page .country-cta-card p { margin: 0 0 12px; color: var(--country-muted); line-height: 1.7; font-size: 0.95rem; }
+.country-page .country-cta-card .cta-disclosure { font-size: 0.85rem; }
+.country-page .country-cta-card .cta-link { display: inline-block; color: var(--country-blue); font-weight: 700; text-decoration: none; }
+.country-page .country-cta-card .cta-link:hover { text-decoration: underline; }
 .country-page .country-step:hover h3 { color: var(--country-blue); }
 
 /* 相关指南 */
