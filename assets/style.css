@@ -1157,6 +1157,11 @@ img { max-width: 100%; height: auto; }
 .binance-guide .guide-screenshot figcaption { padding: 10px 14px; font-size: 0.82rem; color: var(--guide-muted); background: var(--guide-soft); }
 .binance-guide .guide-screenshot--portrait { max-width: 440px; }
 
+/* 支付前检查表：真勾选视觉 */
+.binance-guide .checklist { list-style: none; margin: 16px 0; padding: 0; }
+.binance-guide .checklist li { position: relative; padding-inline-start: 32px; margin: 11px 0; line-height: 1.7; }
+.binance-guide .checklist li::before { content: "✓"; position: absolute; inset-inline-start: 0; top: 1px; width: 21px; height: 21px; border-radius: 6px; background: var(--guide-green-soft); color: var(--guide-green); font-weight: 800; font-size: 13px; line-height: 21px; text-align: center; }
+
 /* 移动端 */
 @media (max-width: 700px) {
   .binance-guide .toc ol { max-height: 160px; overflow-y: auto; }
