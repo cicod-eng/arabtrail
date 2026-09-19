@@ -1289,6 +1289,8 @@ img { max-width: 100%; height: auto; }
 /* section 标题：三种形态（A 重要入口 / B 目录 / C 日志），字号随级别分层 */
 .home .sec { max-width: 720px; margin-bottom: 32px; }
 .home .sec h2 { margin: 0 0 10px; font-size: 32px; line-height: 1.25; font-weight: 800; color: var(--green-dark); }
+.home .sec h2 a { color: inherit; text-decoration: none; }
+.home .sec h2 a:hover { color: var(--green); }
 .home .lv2 .sec h2 { font-size: 28px; }
 .home .lv3 .sec h2 { font-size: 24px; }
 .home .sec p { margin: 0; font-size: 16px; line-height: 1.8; color: var(--muted); }
