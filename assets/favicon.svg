@@ -4,7 +4,7 @@
       <circle cx="32" cy="32" r="30"/>
     </clipPath>
   </defs>
-  <circle cx="32" cy="32" r="30" fill="#094734"/>
+  <circle cx="32" cy="32" r="30" fill="#122A4A"/>
   <g clip-path="url(#fc)" fill="#d4af37">
     <rect x="17" y="17" width="30" height="30" rx="1"/>
     <rect x="17" y="17" width="30" height="30" rx="1" transform="rotate(45 32 32)"/>

@@ -5,7 +5,7 @@
     </clipPath>
   </defs>
   <!-- 深绿圆底 -->
-  <circle cx="22" cy="22" r="20" fill="#094734"/>
+  <circle cx="22" cy="22" r="20" fill="#122A4A"/>
   <!-- 亮金八角星（阿拉伯几何） -->
   <g clip-path="url(#c)" fill="#d4af37">
     <rect x="9" y="9" width="26" height="26" rx="1"/>
@@ -14,5 +14,5 @@
   <!-- 中心上升箭头：路径 + 增长（白色） -->
   <path d="M22 27 V16 M16 20.5 L22 15 L28 20.5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- 双色 wordmark -->
-  <text x="48" y="30" font-family="Tajawal, Arial, sans-serif" font-size="22" font-weight="800" fill="#094734">Arab<tspan fill="#d4af37">Trail</tspan></text>
+  <text x="48" y="30" font-family="Tajawal, Arial, sans-serif" font-size="22" font-weight="800" fill="#122A4A">Arab<tspan fill="#d4af37">Trail</tspan></text>
 </svg>

@@ -67,257 +67,190 @@
     </div>
   </header>
 
-  <main class="country-page" data-pagefind-body>
-
-    <!-- 1. Country Hero -->
-    <section class="country-hero">
-      <div class="country-hero__inner">
-        <div class="country-hero__content">
-          <img class="country-flag" src="/assets/flags/saudi-arabia.svg" alt="علم السعودية" width="60" height="40">
-          <div class="country-eyebrow">دليل حسب الدولة</div>
-          <h1>العملات الرقمية في السعودية</h1>
-          <p class="country-hero__lead">الوضع التنظيمي، وطرق شراء <span class="ltr">USDT</span> بالريال السعودي، والفرق بين المنصات المتاحة للمستخدم داخل السعودية.</p>
-          <div class="country-tags">
-            <span class="ltr">SAR</span>
-            <span class="ltr">USDT</span>
-            <span class="ltr">Binance</span>
-            <span class="ltr">OKX</span>
-            <span class="ltr">P2P</span>
-          </div>
-          <div class="country-hero__meta">
-            <span class="verified-mark">✓</span> آخر تحقق: سبتمبر <span class="ltr">2026</span>
-          </div>
-        </div>
+  <main data-pagefind-body class="hub">
+    <!-- Hero -->
+    <div class="container container--country hub-hero">
+      <nav class="breadcrumb" aria-label="مسار التنقل"><a href="/">الرئيسية</a> › <a href="/countries/">الدول</a> › السعودية</nav>
+      <div class="hub-hero__inner">
+        <img class="hub-hero__flag" src="/assets/flags/saudi-arabia.svg" alt="علم السعودية" width="46" height="32">
+        <h1>العملات الرقمية في السعودية</h1>
+        <p class="hub-hero__lead">الوضع التنظيمي، وطرق شراء <span class="ltr">USDT</span> بالريال، والفرق بين المنصات المتاحة للمستخدم داخل السعودية.</p>
+        <span class="hub-status hub-status--developing">غير مرخّص محليًا</span>
+        <p class="hub-hero__meta">آخر تحقق <strong>سبتمبر 2026</strong> · مصادر رسمية + فحص واجهات</p>
       </div>
-    </section>
+    </div>
 
-    <!-- 2. Quick Facts -->
-    <section class="country-section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">نظرة سريعة</span>
-          <h2>أهم المعلومات عن السعودية</h2>
-        </div>
-        <div class="country-facts">
-          <article class="fact-card">
-            <div class="fact-value"><span class="ltr">SAR</span></div>
-            <div class="fact-label">العملة المحلية</div>
-            <p>الريال السعودي</p>
-          </article>
-          <article class="fact-card">
-            <div class="fact-value"><span class="ltr">SAMA</span> / <span class="ltr">CMA</span></div>
-            <div class="fact-label">جهات تنظيمية</div>
-            <p>جهات سعودية رسمية ذات صلة</p>
-          </article>
-          <article class="fact-card">
-            <div class="fact-value">غير معلن</div>
-            <div class="fact-label">ترخيص محلي</div>
-            <p>لم نجد ترخيصًا محليًا معلنًا للمنصتين</p>
-          </article>
-          <article class="fact-card">
-            <div class="fact-value"><span class="ltr">P2P</span></div>
-            <div class="fact-label">الشراء بالريال</div>
-            <p>حسب ما يظهر في الحساب وقت الاستخدام</p>
-          </article>
-          <article class="fact-card">
-            <div class="fact-value">سبتمبر <span class="ltr">2026</span></div>
-            <div class="fact-label">آخر تحقق</div>
-            <p>مصادر رسمية + فحص واجهات</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. الوضع التنظيمي -->
-    <section class="country-section country-section--soft" id="regulation">
-      <div class="container country-reading-width">
-        <div class="section-heading">
-          <span class="section-kicker">التنظيم</span>
+    <!-- 当前状态 -->
+    <section class="hub-section hub-section--soft" id="status">
+      <div class="container container--country">
+        <div class="hub-head">
+          <span class="hub-kicker">الوضع الحالي</span>
           <h2>الوضع التنظيمي</h2>
         </div>
-        <div class="country-alert">
-          <div class="country-alert__icon" aria-hidden="true">!</div>
-          <div>
-            <strong>توفر الخدمة لا يعني وجود ترخيص محلي.</strong>
-            <p>قد تظهر بعض خدمات المنصات الدولية للمستخدم داخل السعودية، لكن ذلك لا يعني أنها تعمل بموجب ترخيص محلي سعودي.</p>
+        <div class="hub-notice hub-notice--warning">
+          <span class="hub-notice__icon">!</span>
+          <div class="hub-notice__body">
+            <p><strong>لا يوجد ترخيص محلي واضح للمنصات الدولية.</strong></p>
+            <p><strong>ماذا يعني ذلك؟</strong> أوضحت الجهات السعودية (البنك المركزي <span class="ltr">SAMA</span> وهيئة السوق المالية <span class="ltr">CMA</span> ووزارة المالية) أن العملات الافتراضية ليست عملات معتمدة داخل المملكة. حتى سبتمبر <span class="ltr">2026</span> لم نجد إعلانًا عن ترخيص محلي لـ<span class="ltr">Binance</span> أو <span class="ltr">OKX</span>.</p>
+            <p><strong>ما الذي لا يعنيه ذلك؟</strong> أن تظهر خدمة في حسابك لا يعني أنها مرخّصة محليًا — فالوصول للمنصة الدولية شيء، والحماية التنظيمية المحلية شيء آخر.</p>
+            <p><a href="/how-we-test/">المصدر الرسمي ←</a></p>
           </div>
         </div>
-        <p>أوضحت الجهات السعودية الرسمية أن العملات الافتراضية ليست عملات معتمدة داخل المملكة، وأن التعامل بها يقع خارج المظلة الرقابية المحلية. صدرت هذه التحذيرات عبر اللجنة الدائمة للتوعية والتحذير من نشاط المتاجرة بالأوراق المالية غير المرخص، التي تضم جهات منها البنك المركزي السعودي (<span class="ltr">SAMA</span>) وهيئة السوق المالية (<span class="ltr">CMA</span>)، وأعادت وزارة المالية التأكيد على الموقف نفسه.</p>
-        <p>وحتى آخر تحقق في سبتمبر <span class="ltr">2026</span>، لم نجد في المصادر الرسمية التي راجعناها إعلانًا عن إطار ترخيص محلي يسمح لـ<span class="ltr">Binance</span> أو <span class="ltr">OKX</span> بتقديم خدمات الأصول الافتراضية داخل السعودية، ولا عن تغيير جوهري في الموقف التنظيمي المذكور.</p>
-        <p>عمليًا، يعني ذلك أن بعض الخدمات قد تظهر للمستخدم عبر منصات دولية، بينما لا توجد حماية تنظيمية محلية مماثلة لما يوجد في الأسواق التي لديها إطار ترخيص واضح.</p>
       </div>
     </section>
 
-    <!-- 4. التحقق -->
-    <section class="country-section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">آخر مراجعة</span>
-          <h2>ما الذي تحققنا منه في سبتمبر <span class="ltr">2026</span>؟</h2>
-          <p>هذه ملاحظات لحظية وليست ضمانات ثابتة؛ اعتمد على ما يظهر في حسابك وقت الاستخدام.</p>
+    <!-- 用户能做什么 -->
+    <section class="hub-section" id="can-do">
+      <div class="container container--country">
+        <div class="hub-head">
+          <span class="hub-kicker">عمليًا</span>
+          <h2>ماذا يمكنك أن تفعل؟</h2>
         </div>
-        <p class="country-verify-note">تعود أهم البيانات التنظيمية المنشورة التي نعتمد عليها إلى <span class="ltr">2018</span> و<span class="ltr">2019</span>، لذلك أجرينا مراجعة جديدة في سبتمبر <span class="ltr">2026</span> للتحقق مما إذا ظهر ترخيص محلي جديد أو تغير جوهري في وضع الخدمات الدولية.</p>
-        <div class="verify-grid">
-          <article class="verify-card">
-            <div class="verify-status"><img src="/assets/icons/badge-check.svg" alt="" width="13" height="13">تم التحقق</div>
-            <h3><span class="ltr">SAR</span> / <span class="ltr">USDT</span></h3>
-            <p>ظهرت صفحات أو واجهات <span class="ltr">SAR/USDT</span> وقت الفحص، ويختلف السعر عن مرجع <span class="ltr">3.75</span> حسب العرض وطريقة الدفع.</p>
-            <div class="verify-type">تحقق من الواجهة</div>
-          </article>
-          <article class="verify-card">
-            <div class="verify-status"><img src="/assets/icons/badge-check.svg" alt="" width="13" height="13">تم التحقق</div>
-            <h3>طرق الدفع</h3>
-            <p>ظهرت تحويلات بنكية محلية ووسائل تختلف حسب الإعلان.</p>
-            <div class="verify-type">تحقق من الواجهة</div>
-          </article>
-          <article class="verify-card">
-            <div class="verify-status"><img src="/assets/icons/badge-check.svg" alt="" width="13" height="13">تم التحقق</div>
-            <h3>الترخيص المحلي</h3>
-            <p>لم نجد ترخيصًا محليًا معلنًا لـ<span class="ltr">Binance</span> أو <span class="ltr">OKX</span>.</p>
-            <div class="verify-type">مصادر رسمية</div>
-          </article>
-        </div>
-        <p class="country-verify-source">تحققنا عبر <strong>مصادر رسمية</strong> (بيانات وتحذيرات الجهات السعودية، منها <span class="ltr">SAMA</span> ووزارة المالية) و<strong>فحص الواجهة</strong> (مدى ظهور عروض <span class="ltr">SAR/USDT</span> وطرق الدفع المحلية في أسواق <span class="ltr">P2P</span> كما تظهر للمستخدم). لا نقبل مدفوعات مقابل تغيير أي تقييم · <a href="/how-we-test/">منهجية التحقق</a></p>
-      </div>
-    </section>
-
-    <!-- 5. شراء USDT -->
-    <section class="country-section country-section--cream">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">شراء <span class="ltr">USDT</span></span>
-          <h2>طرق شراء <span class="ltr">USDT</span> في السعودية</h2>
-          <p>يرتبط الريال السعودي بالدولار الأمريكي بسعر صرف ثابت تقريبًا (<span class="ltr">3.75</span> ريال لكل دولار) يُستخدم كمرجع، لكن سعر الإعلان في <span class="ltr">P2P</span> يتحدد بالعرض والطلب وطريقة الدفع وهامش البائع.</p>
-        </div>
-        <div class="country-action-grid">
-          <a href="/buy-usdt-saudi-arabia/" class="country-action-card">
-            <div class="action-icon" aria-hidden="true">$</div>
-            <h3>شراء <span class="ltr">USDT</span> عبر <span class="ltr">Binance P2P</span></h3>
-            <p>ما يظهر في السوق، الدفع بالريال، اختيار العرض والمخاطر.</p>
-            <span class="country-action-cta">عرض الدليل ←</span>
-          </a>
-          <a href="/saudi-arabia-buy-usdt-methods/" class="country-action-card">
-            <div class="action-icon" aria-hidden="true">₮</div>
-            <h3>مقارنة طرق شراء <span class="ltr">USDT</span></h3>
-            <p>قارن <span class="ltr">P2P</span> والشراء المباشر والخيارات المتاحة قبل اختيار الطريقة.</p>
-            <span class="country-action-cta">قارن الطرق ←</span>
-          </a>
+        <div>
+          <div class="hub-cap"><span class="hub-cap__name">إنشاء حساب <span class="ltr">Binance</span></span><span class="hub-cap__state">متاح</span></div>
+          <div class="hub-cap"><span class="hub-cap__name">التحقق من الهوية <span class="ltr">KYC</span></span><span class="hub-cap__state">متاح</span></div>
+          <div class="hub-cap"><span class="hub-cap__name">شراء <span class="ltr">USDT</span></span><span class="hub-cap__state">عبر <span class="ltr">P2P</span></span></div>
+          <div class="hub-cap"><span class="hub-cap__name"><span class="ltr">P2P</span> بالريال</span><span class="hub-cap__state">حسب التوفر</span></div>
+          <div class="hub-cap"><span class="hub-cap__name">السحب إلى محفظة</span><span class="hub-cap__state">حسب الشبكة</span></div>
         </div>
       </div>
     </section>
 
-    <!-- 6. Binance / OKX -->
-    <section class="country-section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">المنصات</span>
-          <h2><span class="ltr">Binance</span> و <span class="ltr">OKX</span> في السعودية</h2>
-          <p>كلاهما منصتان دوليتان قد تظهر خدماتهما للمستخدم داخل السعودية، لكن ظهور الخدمة لا يعني وجود ترخيص محلي. قارن بينهما في <a href="/binance-vs-okx/"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</a>، وراجع <a href="/is-binance-safe/">هل <span class="ltr">Binance</span> آمن؟</a> لفهم معنى الأمان والتنظيم في منصة دولية.</p>
+    <!-- 支付方式 -->
+    <section class="hub-section hub-section--soft" id="payment">
+      <div class="container container--country">
+        <div class="hub-head">
+          <span class="hub-kicker">الدفع</span>
+          <h2>طرق الدفع في السعودية</h2>
         </div>
-        <div class="platform-grid">
-          <article class="platform-card">
-            <div class="platform-logo-box"><img src="/assets/binance-logo.webp" alt="Binance" width="32" height="32"></div>
+        <div class="hub-table-wrap">
+          <table class="hub-table">
+            <thead>
+              <tr><th>الطريقة</th><th>أين تُستخدم؟</th><th>أهم ملاحظة</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>تحويل بنكي</td><td><span class="ltr">P2P</span></td><td>تطابق اسم الحساب قبل التحويل</td></tr>
+              <tr><td><span class="ltr">STC Pay</span></td><td><span class="ltr">P2P</span> / حسب الإعلان</td><td>تحقق من خيار الدفع في كل عرض</td></tr>
+              <tr><td>بطاقة</td><td>شراء مباشر</td><td>قارن الرسوم قبل التأكيد</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 平台情况 -->
+    <section class="hub-section" id="platforms">
+      <div class="container container--country">
+        <div class="hub-head">
+          <span class="hub-kicker">المنصات</span>
+          <h2><span class="ltr">Binance</span> و<span class="ltr">OKX</span> في السعودية</h2>
+          <p>كلاهما منصة دولية قد تظهر خدماتها للمستخدم، دون ترخيص محلي معلن.</p>
+        </div>
+        <div class="hub-cols hub-cols--2">
+          <div class="hub-col">
             <h3><span class="ltr">Binance</span></h3>
             <ul>
               <li><span class="ltr">P2P</span> بالريال حسب التوفر</li>
               <li><span class="ltr">KYC</span> مطلوب للخدمات الأساسية</li>
               <li>لم نجد ترخيصًا محليًا معلنًا</li>
             </ul>
-            <a href="/binance/" class="text-link">عرض دليل <span class="ltr">Binance</span> ←</a>
-          </article>
-          <article class="platform-card">
-            <div class="platform-logo-box"><img src="/assets/okx-logo.webp" alt="OKX" width="32" height="32"></div>
+            <a class="hub-col__more" href="/binance/">دليل <span class="ltr">Binance</span> ←</a>
+          </div>
+          <div class="hub-col">
             <h3><span class="ltr">OKX</span></h3>
             <ul>
               <li>خدمات دولية حسب الحساب والمنطقة</li>
-              <li>قد تظهر خيارات <span class="ltr">P2P</span> وشراء مختلفة</li>
+              <li>قد تختلف خيارات الشراء و<span class="ltr">P2P</span></li>
               <li>لم نجد ترخيصًا محليًا معلنًا</li>
             </ul>
-            <a href="/okx/" class="text-link">عرض دليل <span class="ltr">OKX</span> ←</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. ابدأ من هنا -->
-    <section class="country-section country-section--soft">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">ابدأ من هنا</span>
-          <h2>مسار مقترح للمبتدئ</h2>
-        </div>
-        <div class="country-steps">
-          <a href="#regulation" class="country-step">
-            <span class="step-number">01</span>
-            <div>
-              <h3>افهم الوضع التنظيمي</h3>
-              <p>اعرف الفرق بين توفر الخدمة والترخيص المحلي.</p>
-            </div>
-          </a>
-          <a href="/saudi-arabia-buy-usdt-methods/" class="country-step">
-            <span class="step-number">02</span>
-            <div>
-              <h3>اختر طريقة شراء <span class="ltr">USDT</span></h3>
-              <p>قارن الطرق قبل أول عملية.</p>
-            </div>
-          </a>
-          <a href="/register-binance/" class="country-step">
-            <span class="step-number">03</span>
-            <div>
-              <h3>أنشئ الحساب وأكمل <span class="ltr">KYC</span></h3>
-              <p>استخدم القنوات الرسمية فقط.</p>
-            </div>
-          </a>
-          <a href="/p2p-choose-seller/" class="country-step">
-            <span class="step-number">04</span>
-            <div>
-              <h3>استخدم <span class="ltr">P2P</span> بحذر</h3>
-              <p>افحص البائع ووسيلة الدفع قبل التحويل.</p>
-            </div>
-          </a>
-          <a href="/withdraw-usdt/" class="country-step">
-            <span class="step-number">05</span>
-            <div>
-              <h3>اسحب إلى محفظتك بأمان</h3>
-              <p>طابق الشبكة قبل تأكيد السحب.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. أدلة السعودية -->
-    <section class="country-section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">أدلة السعودية</span>
-          <h2>المزيد من الأدلة</h2>
-        </div>
-        <div class="guide-groups">
-          <div class="guide-group">
-            <h3>شراء <span class="ltr">USDT</span></h3>
-            <a href="/buy-usdt-saudi-arabia/">شراء <span class="ltr">USDT</span> عبر <span class="ltr">Binance P2P</span></a>
-            <a href="/saudi-arabia-buy-usdt-methods/">طرق شراء <span class="ltr">USDT</span> في السعودية</a>
-          </div>
-          <div class="guide-group">
-            <h3>المنصات</h3>
-            <a href="/binance-vs-okx/"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</a>
-            <a href="/register-binance/">التسجيل في <span class="ltr">Binance</span></a>
-          </div>
-          <div class="guide-group">
-            <h3>الأمان والتحويل</h3>
-            <a href="/p2p-choose-seller/">اختيار بائع موثوق في <span class="ltr">P2P</span></a>
-            <a href="/p2p-scams/">عمليات الاحتيال في <span class="ltr">P2P</span></a>
-            <a href="/withdraw-usdt/">سحب <span class="ltr">USDT</span> إلى محفظة خارجية</a>
+            <a class="hub-col__more" href="/okx/">دليل <span class="ltr">OKX</span> ←</a>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="container country-page__foot">
-      <p class="updated">إعداد: <a href="/team/">فريق تحرير <span class="ltr">ArabTrail</span></a> · <a href="/how-we-test/">منهجية التحقق</a></p>
-    </div>
+    <!-- 本地教程 -->
+    <section class="hub-section hub-section--soft" id="guides">
+      <div class="container container--country">
+        <div class="hub-head">
+          <span class="hub-kicker">أدلة السعودية</span>
+          <h2>الأدلة الأكثر فائدة لك</h2>
+        </div>
+        <div class="hub-links">
+          <a class="hub-link" href="/buy-usdt-saudi-arabia/"><span class="hub-link__text"><span class="hub-link__title">شراء <span class="ltr">USDT</span> عبر <span class="ltr">Binance P2P</span></span><span class="hub-link__desc">ما يظهر في السوق والدفع بالريال واختيار العرض</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/saudi-arabia-buy-usdt-methods/"><span class="hub-link__text"><span class="hub-link__title">طرق شراء <span class="ltr">USDT</span> بالريال السعودي</span><span class="hub-link__desc">قارن <span class="ltr">P2P</span> والشراء المباشر قبل اختيار الطريقة</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/binance-vs-okx/"><span class="hub-link__text"><span class="hub-link__title"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</span><span class="hub-link__desc">مقارنة عملية حسب البلد و<span class="ltr">P2P</span> والرسوم</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/register-binance/"><span class="hub-link__text"><span class="hub-link__title">التسجيل في <span class="ltr">Binance</span></span><span class="hub-link__desc">الخطوات والتحقق من الهوية</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/p2p-choose-seller/"><span class="hub-link__text"><span class="hub-link__title">اختيار بائع موثوق في <span class="ltr">P2P</span></span><span class="hub-link__desc">معايير اختيار الطرف المقابل</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/withdraw-usdt/"><span class="hub-link__text"><span class="hub-link__title">سحب <span class="ltr">USDT</span> إلى محفظة خارجية</span><span class="hub-link__desc">طابق الشبكة قبل تأكيد السحب</span></span><span class="hub-link__arrow">←</span></a>
+        </div>
+      </div>
+    </section>
 
+    <!-- 本地风险 -->
+    <section class="hub-section" id="risks">
+      <div class="container container--country">
+        <div class="hub-head">
+          <span class="hub-kicker">مخاطر محلية</span>
+          <h2>ما الذي تنتبه إليه تحديدًا؟</h2>
+        </div>
+        <div class="hub-cols hub-cols--3">
+          <div class="hub-col">
+            <h3>التنظيم</h3>
+            <p>لا توجد حماية تنظيمية محلية للمتعاملين عبر المنصات الدولية.</p>
+          </div>
+          <div class="hub-col">
+            <h3>البنوك والدفع</h3>
+            <p>بعض البنوك قد تقيّد أو تراجع التحويلات المرتبطة بالعملات الرقمية.</p>
+          </div>
+          <div class="hub-col">
+            <h3><span class="ltr">P2P</span></h3>
+            <p>خطر الاحتيال أعلى في الأسواق غير المرخّصة؛ افحص البائع والدفع قبل التحويل.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核验日志 -->
+    <section class="hub-section hub-section--soft" id="verified">
+      <div class="container container--country">
+        <div class="hub-head">
+          <h2>آخر مراجعة</h2>
+        </div>
+        <div class="hub-vlog">
+          <div class="hub-vlog-row"><span class="hub-vlog-date">سبتمبر 2026</span><span class="hub-vlog-topic">مراجعة وجود ترخيص محلي جديد</span><span class="hub-vlog-badge">مصادر رسمية</span></div>
+          <div class="hub-vlog-row"><span class="hub-vlog-date">سبتمبر 2026</span><span class="hub-vlog-topic">عروض <span class="ltr">SAR/USDT</span> وطرق الدفع</span><span class="hub-vlog-badge">تحقق من الواجهة</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="hub-section" id="faq">
+      <div class="container container--country">
+        <div class="hub-head">
+          <span class="hub-kicker">أسئلة شائعة</span>
+          <h2>أسئلة عن السعودية</h2>
+        </div>
+        <div class="hub-cols hub-cols--2">
+          <div class="hub-col">
+            <h3>هل <span class="ltr">Binance</span> مرخّص في السعودية؟</h3>
+            <p>لم نجد ترخيصًا محليًا معلنًا حتى سبتمبر <span class="ltr">2026</span>؛ الخدمات التي تظهر تأتي من المنصة الدولية.</p>
+          </div>
+          <div class="hub-col">
+            <h3>هل يمكن شراء <span class="ltr">USDT</span> بالريال السعودي؟</h3>
+            <p>عمليًا تظهر عروض <span class="ltr">P2P</span> بالريال، ويختلف السعر عن مرجع <span class="ltr">3.75</span> حسب العرض وطريقة الدفع.</p>
+          </div>
+          <div class="hub-col">
+            <h3>هل <span class="ltr">P2P</span> متاح؟</h3>
+            <p>يظهر حسب الحساب ووقت الاستخدام؛ تحقق مما يظهر داخل حسابك.</p>
+          </div>
+          <div class="hub-col">
+            <h3>ما طرق الدفع المستخدمة؟</h3>
+            <p>التحويل البنكي و<span class="ltr">STC Pay</span> هما الأكثر شيوعًا في عروض <span class="ltr">P2P</span>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

@@ -31,10 +31,13 @@
       { "@type": "CollectionPage", "name": "المحافظ والتحويل", "url": "https://arabtrail.com/wallets/", "inLanguage": "ar",
         "mainEntity": { "@type": "ItemList", "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "ما هي المحفظة الرقمية؟", "url": "https://arabtrail.com/what-is-wallet/" },
-          { "@type": "ListItem", "position": 2, "name": "المحفظة أم المنصة؟", "url": "https://arabtrail.com/wallet-vs-exchange/" },
-          { "@type": "ListItem", "position": 3, "name": "إرسال USDT إلى محفظة خارجية", "url": "https://arabtrail.com/withdraw-usdt/" },
-          { "@type": "ListItem", "position": 4, "name": "اختيار شبكة التحويل", "url": "https://arabtrail.com/choose-network/" },
-          { "@type": "ListItem", "position": 5, "name": "ما هي عبارة الاسترداد؟", "url": "https://arabtrail.com/seed-phrase/" }
+          { "@type": "ListItem", "position": 2, "name": "ما هو المفتاح الخاص؟", "url": "https://arabtrail.com/what-is-private-key/" },
+          { "@type": "ListItem", "position": 3, "name": "ما هي عبارة الاسترداد؟", "url": "https://arabtrail.com/seed-phrase/" },
+          { "@type": "ListItem", "position": 4, "name": "المحفظة أم المنصة؟", "url": "https://arabtrail.com/wallet-vs-exchange/" },
+          { "@type": "ListItem", "position": 5, "name": "إرسال USDT إلى محفظة خارجية", "url": "https://arabtrail.com/withdraw-usdt/" },
+          { "@type": "ListItem", "position": 6, "name": "اختيار شبكة التحويل", "url": "https://arabtrail.com/choose-network/" },
+          { "@type": "ListItem", "position": 7, "name": "USDT لم يصل", "url": "https://arabtrail.com/usdt-transfer-not-arriving/" },
+          { "@type": "ListItem", "position": 8, "name": "استخدام شبكة خاطئة", "url": "https://arabtrail.com/usdt-wrong-network/" }
         ] } },
       { "@type": "BreadcrumbList", "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://arabtrail.com/" },
@@ -64,20 +67,179 @@
     </div>
   </header>
 
-  <main data-pagefind-body>
-    <div class="container article">
+  <main data-pagefind-body class="hub">
+    <div class="container hub-hero">
       <nav class="breadcrumb" aria-label="مسار التنقل"><a href="/">الرئيسية</a> › المحافظ</nav>
-      <h1>المحافظ والتحويل</h1>
-      <p class="topic-sub">تعرف على كيفية تخزين العملات الرقمية وتحويلها بأمان بين المنصات والمحافظ.</p>
-
-      <div class="topic-links">
-        <div class="topic-link"><h4><a href="/what-is-wallet/">ما هي المحفظة الرقمية؟</a></h4><p>كيف تعمل المحافظ.</p></div>
-        <div class="topic-link"><h4><a href="/wallet-vs-exchange/">المحفظة أم المنصة؟</a></h4><p>الفرق بينهما ومتى تستخدم كلًا.</p></div>
-        <div class="topic-link"><h4><a href="/withdraw-usdt/">إرسال <span class="ltr">USDT</span> إلى محفظة خارجية</a></h4><p>خطوات السحب بأمان.</p></div>
-        <div class="topic-link"><h4><a href="/choose-network/">اختيار شبكة التحويل</a></h4><p>كيف تختار الشبكة الصحيحة.</p></div>
-        <div class="topic-link"><h4><a href="/seed-phrase/">ما هي عبارة الاسترداد؟</a></h4><p>لماذا هي مفتاح أموالك.</p></div>
+      <div class="hub-hero__inner">
+        <h1>محافظ العملات الرقمية</h1>
+        <p class="hub-hero__lead">افهم المفاتيح وعبارة الاسترداد قبل الانتقال إلى الحفظ الذاتي.</p>
+        <div class="hub-cta-row">
+          <a href="#basics" class="hub-btn hub-btn--primary">ابدأ من أساسيات المحفظة</a>
+          <a href="#practical" class="hub-btn hub-btn--text">انتقل إلى الاستخدام العملي</a>
+        </div>
+        <p class="hub-hero__meta">آخر مراجعة <strong>19 سبتمبر 2026</strong> · مراجعة بشرية · مصادر رسمية</p>
       </div>
+      <nav class="hub-anchor-nav" aria-label="أقسام الصفحة">
+        <a href="#basics">الأساسيات</a>
+        <a href="#practical">الاستخدام العملي</a>
+        <a href="#types">أنواع المحافظ</a>
+        <a href="#wallet-security">أمان المحفظة</a>
+        <a href="#problems">مشاكل شائعة</a>
+      </nav>
     </div>
+
+    <!-- 第一块：四步学习路线 -->
+    <section class="hub-section hub-section--soft" id="basics">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">مسار التعلّم</span>
+          <h2>ابدأ بالأساسيات</h2>
+          <p>أربع خطوات تفهم بها المحفظة من الفكرة إلى الاستخدام الآمن.</p>
+        </div>
+        <div class="hub-steps hub-steps--4">
+          <div class="hub-step">
+            <span class="hub-step__num">01</span>
+            <span class="hub-step__bar"></span>
+            <a href="/what-is-wallet/"><span class="hub-step__title">ما هي المحفظة؟</span><span class="hub-step__desc">كيف تعمل وأين تُخزن العملات.</span></a>
+          </div>
+          <div class="hub-step">
+            <span class="hub-step__num">02</span>
+            <span class="hub-step__bar"></span>
+            <a href="/what-is-private-key/"><span class="hub-step__title">المفتاح الخاص</span><span class="hub-step__desc">لماذا هو التحكم الكامل بأموالك.</span></a>
+          </div>
+          <div class="hub-step">
+            <span class="hub-step__num">03</span>
+            <span class="hub-step__bar"></span>
+            <a href="/seed-phrase/"><span class="hub-step__title">عبارة الاسترداد</span><span class="hub-step__desc">12 أو 24 كلمة تحمي محفظتك.</span></a>
+          </div>
+          <div class="hub-step">
+            <span class="hub-step__num">04</span>
+            <span class="hub-step__bar"></span>
+            <a href="/wallet-vs-exchange/"><span class="hub-step__title">المحفظة أم المنصة؟</span><span class="hub-step__desc">متى تستخدم كلًا منهما.</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第二块：实操列表 -->
+    <section class="hub-section" id="practical">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">التطبيق</span>
+          <h2>الاستخدام العملي</h2>
+          <p>خطوات السحب والتحويل واختيار الشبكة، خطوة بخطوة.</p>
+        </div>
+        <div class="hub-links">
+          <a class="hub-link" href="/withdraw-usdt/"><span class="hub-link__text"><span class="hub-link__title">إرسال <span class="ltr">USDT</span> إلى محفظة خارجية</span><span class="hub-link__desc">خطوات السحب من المنصة بأمان</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/choose-network/"><span class="hub-link__text"><span class="hub-link__title">اختيار شبكة التحويل</span><span class="hub-link__desc">كيف تختار الشبكة الصحيحة</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/transfer-usdt/"><span class="hub-link__text"><span class="hub-link__title">تحويل <span class="ltr">USDT</span></span><span class="hub-link__desc">النقل بين المحافظ والمنصات</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/usdt-transfer-not-arriving/"><span class="hub-link__text"><span class="hub-link__title">التحويل لم يصل</span><span class="hub-link__desc">ماذا تفعل إذا تأخرت الأموال</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/usdt-wrong-network/"><span class="hub-link__text"><span class="hub-link__title">استخدمت شبكة خاطئة</span><span class="hub-link__desc">هل يمكن استرداد الأموال؟</span></span><span class="hub-link__arrow">←</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第三块：钱包类型对比表 -->
+    <section class="hub-section" id="types">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">المقارنة</span>
+          <h2>أنواع المحافظ</h2>
+          <p>الفرق الجوهري: من يملك المفتاح الخاص؟</p>
+        </div>
+        <div class="hub-table-wrap">
+          <table class="hub-table">
+            <thead>
+              <tr><th>النوع</th><th>من يملك المفتاح</th><th>الأفضل لـ</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>محفظة غير احتجازية</td><td>أنت</td><td>الحفظ طويل الأمد</td></tr>
+              <tr><td>محفظة المنصة (احتجازية)</td><td>المنصة</td><td>التداول اليومي</td></tr>
+              <tr><td>محفظة باردة (أجهزة)</td><td>أنت</td><td>المبالغ الكبيرة</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第四块：钱包安全 -->
+    <section class="hub-section hub-section--soft" id="wallet-security">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">الأمان</span>
+          <h2>أمان المحفظة</h2>
+          <p>ثلاث قواعد أساسية للحفظ الذاتي.</p>
+        </div>
+        <div class="hub-cols hub-cols--3">
+          <div class="hub-col">
+            <h3>لا تشارك</h3>
+            <p>المفتاح الخاص وعبارة الاسترداد ملكك وحدك، ولا يطلبهما أي دعم رسمي أبدًا.</p>
+          </div>
+          <div class="hub-col">
+            <h3>تحقق قبل التوقيع</h3>
+            <p>اقرأ الموقع والعقد والموافقات قبل تأكيد أي معاملة من المحفظة.</p>
+          </div>
+          <div class="hub-col">
+            <h3>النسخ الاحتياطي</h3>
+            <p>احتفظ بعبارة الاسترداد في مكان آمن وغير متصل بالإنترنت.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第五块：发送前检查 -->
+    <section class="hub-section" id="send-check">
+      <div class="container container--narrow">
+        <div class="hub-notice hub-notice--warning">
+          <span class="hub-notice__icon">!</span>
+          <div class="hub-notice__body">
+            <p><strong>قبل أن ترسل العملات،</strong> تحقق من هذه النقاط الأربع:</p>
+            <ul>
+              <li>تحقق من العنوان حرفًا بحرف.</li>
+              <li>تأكد أن شبكة الاستلام مطابقة لشبكة الإرسال.</li>
+              <li>جرّب مبلغًا صغيرًا أولًا إن أمكن.</li>
+              <li>لا تشارك المفتاح الخاص أو عبارة الاسترداد مع أحد.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第六块：常见问题 -->
+    <section class="hub-section" id="problems">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">استكشاف الأخطاء</span>
+          <h2>مشاكل شائعة</h2>
+          <p>حلول مباشرة لأكثر المشاكل التي يواجهها المستخدمون عند التحويل.</p>
+        </div>
+        <div class="hub-links">
+          <a class="hub-link" href="/usdt-transfer-not-arriving/"><span class="hub-link__text"><span class="hub-link__title"><span class="ltr">USDT</span> لم يصل بعد</span><span class="hub-link__desc">تأخر أو عدم وصول التحويل</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/usdt-wrong-network/"><span class="hub-link__text"><span class="hub-link__title">أرسلت على شبكة خاطئة</span><span class="hub-link__desc">خطأ في اختيار الشبكة</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/choose-network/"><span class="hub-link__text"><span class="hub-link__title">لا أعرف أي شبكة أختار</span><span class="hub-link__desc">الفرق بين <span class="ltr">TRC20</span> و<span class="ltr">BEP20</span> وغيرها</span></span><span class="hub-link__arrow">←</span></a>
+          <a class="hub-link" href="/what-is-gas-fee/"><span class="hub-link__text"><span class="hub-link__title">رسوم التحويل مرتفعة</span><span class="hub-link__desc">ما هي رسوم <span class="ltr">Gas</span> ولماذا تختلف</span></span><span class="hub-link__arrow">←</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部：تابع التعلّم + 核验 -->
+    <section class="hub-section">
+      <div class="container">
+        <div class="hub-head">
+          <h2>تابع التعلّم</h2>
+        </div>
+        <div class="hub-follow">
+          <a href="/basics/">الأساسيات</a>
+          <a href="/usdt/"><span class="ltr">USDT</span></a>
+          <a href="/p2p/"><span class="ltr">P2P</span></a>
+          <a href="/security/">الأمان</a>
+        </div>
+        <div class="hub-vlog" style="margin-top:56px">
+          <div class="hub-vlog-row"><span class="hub-vlog-date">19 سبتمبر 2026</span><span class="hub-vlog-topic">مسار تعلّم المحفظة وقوائم التحويل</span><span class="hub-vlog-badge">مراجعة بشرية</span></div>
+          <div class="hub-vlog-row"><span class="hub-vlog-date">17 سبتمبر 2026</span><span class="hub-vlog-topic">روابط أدلة المحافظ</span><span class="hub-vlog-badge">فحص يدوي</span></div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

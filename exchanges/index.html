@@ -71,41 +71,240 @@
     </div>
   </header>
 
-  <main data-pagefind-body>
-    <div class="container article">
+  <main data-pagefind-body class="hub">
+    <div class="container hub-hero">
       <nav class="breadcrumb" aria-label="مسار التنقل"><a href="/">الرئيسية</a> › منصات التداول</nav>
-      <h1>منصات التداول</h1>
-      <p class="topic-sub">شروحات عملية لأهم منصات العملات الرقمية المستخدمة في المنطقة العربية، من التسجيل والتحقق إلى الشراء والرسوم.</p>
-
-      <div class="hub-grid">
-        <div class="hub-card primary">
-          <h3 class="ltr">Binance</h3>
-          <p class="hub-desc">من التسجيل وتوثيق الحساب إلى شراء <span class="ltr">USDT</span> واستخدام <span class="ltr">P2P</span> والسحب إلى المحفظة.</p>
-          <ul>
-            <li><a href="/register-binance/">التسجيل في <span class="ltr">Binance</span></a></li>
-            <li><a href="/binance-kyc/">التحقق من الهوية <span class="ltr">KYC</span></a></li>
-            <li><a href="/buy-usdt-saudi-arabia/">شراء <span class="ltr">USDT</span></a></li>
-            <li><a href="/binance-p2p/"><span class="ltr">Binance P2P</span></a></li>
-            <li><a href="/binance-fees/">رسوم <span class="ltr">Binance</span></a></li>
-            <li><a href="/is-binance-safe/">هل <span class="ltr">Binance</span> آمن؟</a></li>
-          </ul>
-          <a href="/binance/" class="btn btn-primary">عرض جميع أدلة <span class="ltr">Binance</span></a>
+      <div class="hub-hero__inner">
+        <h1>منصات التداول</h1>
+        <p class="hub-hero__lead">قارن بين المنصات، وافهم التسجيل و<span class="ltr">KYC</span> والرسوم وطرق شراء <span class="ltr">USDT</span> قبل اختيار المنصة المناسبة لبلدك.</p>
+        <div class="hub-cta-row">
+          <a href="#choose" class="hub-btn hub-btn--primary">كيف تختار المنصة؟</a>
+          <a href="#compare" class="hub-btn hub-btn--text">قارن <span class="ltr">Binance</span> و<span class="ltr">OKX</span></a>
         </div>
-        <div class="hub-card">
-          <h3 class="ltr">OKX</h3>
-          <p class="hub-desc">شروحات التسجيل والتحقق وشراء <span class="ltr">USDT</span> واستخدام المنصة حسب الخدمات المتاحة في بلدك.</p>
-          <ul>
-            <li><a href="/register-okx/">التسجيل في <span class="ltr">OKX</span></a></li>
-            <li><a href="/okx-kyc/">التحقق من الهوية</a></li>
-            <li><a href="/buy-usdt-okx/">شراء <span class="ltr">USDT</span></a></li>
-            <li><a href="/okx-p2p/"><span class="ltr">OKX P2P</span></a></li>
-            <li><a href="/okx-fees/">رسوم <span class="ltr">OKX</span></a></li>
-            <li><a href="/binance-vs-okx/"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</a></li>
-          </ul>
-          <a href="/okx/" class="btn btn-secondary">عرض أدلة <span class="ltr">OKX</span></a>
+        <p class="hub-hero__meta">آخر مراجعة <strong>19 سبتمبر 2026</strong> · مراجعة بشرية · مصادر رسمية</p>
+      </div>
+      <nav class="hub-anchor-nav" aria-label="أقسام الصفحة">
+        <a href="#choose">كيف تختار؟</a>
+        <a href="#compare">المقارنة</a>
+        <a href="#binance"><span class="ltr">Binance</span></a>
+        <a href="#okx"><span class="ltr">OKX</span></a>
+        <a href="#countries">حسب البلد</a>
+      </nav>
+    </div>
+
+    <!-- 怎么选平台：4 维度 -->
+    <section class="hub-section hub-section--soft" id="choose">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">قبل أن تختار</span>
+          <h2>كيف تختار منصة التداول؟</h2>
+          <p>أربعة عوامل تتحكم في القرار، ولا تكفي شهرة المنصة وحدها.</p>
+        </div>
+        <div class="hub-cols">
+          <div class="hub-col">
+            <h3>الوضع التنظيمي</h3>
+            <p>هل للمنصة رخصة محلية في بلدك، أم أنها متاحة دون ترخيص واضح؟</p>
+          </div>
+          <div class="hub-col">
+            <h3>طرق الإيداع والشراء</h3>
+            <p>هل تناسبك العملة المحلية أو البطاقة أو <span class="ltr">P2P</span>؟</p>
+          </div>
+          <div class="hub-col">
+            <h3>الرسوم</h3>
+            <p>قارن تكلفة التداول الفوري والسحب والتحويل قبل الإيداع.</p>
+          </div>
+          <div class="hub-col">
+            <h3>السحب والمحافظ</h3>
+            <p>ما الشبكات المدعومة للسحب، وهل يمكنك نقل أموالك بسهولة؟</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Binance vs OKX 对比表 -->
+    <section class="hub-section" id="compare">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">المقارنة</span>
+          <h2><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</h2>
+          <p>نظرة سريعة على أبرز نقاط الاختلاف، والتفاصيل الكاملة في صفحة المقارنة.</p>
+        </div>
+        <div class="hub-table-wrap">
+          <table class="hub-table">
+            <thead>
+              <tr>
+                <th>المقارنة</th>
+                <th><span class="ltr">Binance</span></th>
+                <th><span class="ltr">OKX</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>التسجيل و<span class="ltr">KYC</span></td><td>متاح حسب البلد</td><td>متاح حسب البلد</td></tr>
+              <tr><td><span class="ltr">P2P</span></td><td>واسع في عدة أسواق</td><td>يختلف حسب العملة والدولة</td></tr>
+              <tr><td>التداول الفوري</td><td>نعم</td><td>نعم</td></tr>
+              <tr><td>المحافظ / <span class="ltr">Web3</span></td><td>متاح</td><td>متاح</td></tr>
+              <tr><td>الوضع المحلي</td><td>يختلف حسب الدولة</td><td>يختلف حسب الدولة</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="hub-notice hub-notice--info" style="margin-top:24px">
+          <span class="hub-notice__icon">ℹ</span>
+          <div class="hub-notice__body">
+            <p>لا يعني توفر الخدمة وجود ترخيص محلي؛ تحقق من صفحة بلدك قبل التسجيل.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Binance 目录 -->
+    <section class="hub-section hub-section--soft" id="binance">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">دليل المنصة</span>
+          <h2><span class="ltr">Binance</span></h2>
+          <p>أدلة التسجيل و<span class="ltr">KYC</span> وشراء <span class="ltr">USDT</span> و<span class="ltr">P2P</span> والسحب وحل المشكلات.</p>
+        </div>
+        <div class="hub-cols hub-cols--3">
+          <div class="hub-col">
+            <h3>البدء</h3>
+            <ul>
+              <li><a href="/register-binance/">التسجيل</a> ←</li>
+              <li><a href="/binance-kyc/">التحقق من الهوية <span class="ltr">KYC</span></a> ←</li>
+            </ul>
+          </div>
+          <div class="hub-col">
+            <h3>التداول والشراء</h3>
+            <ul>
+              <li><a href="/buy-usdt-binance/">شراء <span class="ltr">USDT</span></a> ←</li>
+              <li><a href="/binance-p2p/"><span class="ltr">P2P</span></a> ←</li>
+              <li><a href="/binance-fees/">الرسوم</a> ←</li>
+            </ul>
+          </div>
+          <div class="hub-col">
+            <h3>الأمان والمشكلات</h3>
+            <ul>
+              <li><a href="/is-binance-safe/">هل <span class="ltr">Binance</span> آمن؟</a> ←</li>
+              <li><a href="/binance-verification-code-not-arriving/">رمز التحقق لا يصل</a> ←</li>
+              <li><a href="/binance-account-restricted/">الحساب المقيّد</a> ←</li>
+            </ul>
+          </div>
+        </div>
+        <a class="hub-links--all" href="/binance/">جميع أدلة <span class="ltr">Binance</span> ←</a>
+      </div>
+    </section>
+
+    <!-- OKX 目录 -->
+    <section class="hub-section" id="okx">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">دليل المنصة</span>
+          <h2><span class="ltr">OKX</span></h2>
+          <p>أدلة التسجيل و<span class="ltr">KYC</span> وشراء <span class="ltr">USDT</span> و<span class="ltr">P2P</span> والرسوم حسب الخدمات المتاحة في بلدك.</p>
+        </div>
+        <div class="hub-cols hub-cols--3">
+          <div class="hub-col">
+            <h3>البدء</h3>
+            <ul>
+              <li><a href="/register-okx/">التسجيل</a> ←</li>
+              <li><a href="/okx-kyc/">التحقق من الهوية</a> ←</li>
+            </ul>
+          </div>
+          <div class="hub-col">
+            <h3>التداول والشراء</h3>
+            <ul>
+              <li><a href="/buy-usdt-okx/">شراء <span class="ltr">USDT</span></a> ←</li>
+              <li><a href="/okx-p2p/"><span class="ltr">P2P</span></a> ←</li>
+              <li><a href="/okx-fees/">الرسوم</a> ←</li>
+            </ul>
+          </div>
+          <div class="hub-col">
+            <h3>المقارنة والأمان</h3>
+            <ul>
+              <li><a href="/binance-vs-okx/"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</a> ←</li>
+              <li><a href="/is-okx-safe/">هل <span class="ltr">OKX</span> آمن؟</a> ←</li>
+            </ul>
+          </div>
+        </div>
+        <a class="hub-links--all" href="/okx/">جميع أدلة <span class="ltr">OKX</span> ←</a>
+      </div>
+    </section>
+
+    <!-- 按国家选平台 -->
+    <section class="hub-section hub-section--soft" id="countries">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">حسب البلد</span>
+          <h2>المنصة المناسبة تختلف حسب بلدك</h2>
+          <p>اختر بلدك لمعرفة الوضع التنظيمي المحلي وطرق الدفع المتاحة.</p>
+        </div>
+        <div class="hub-follow">
+          <a href="/countries/saudi-arabia/">السعودية</a>
+          <a href="/countries/uae/">الإمارات</a>
+          <a href="/countries/egypt/">مصر</a>
+          <a href="/countries/kuwait/">الكويت</a>
+          <a href="/countries/qatar/">قطر</a>
+          <a href="/countries/bahrain/">البحرين</a>
+          <a href="/countries/oman/">عُمان</a>
+        </div>
+        <div class="hub-notice hub-notice--warning" style="margin-top:28px">
+          <span class="hub-notice__icon">!</span>
+          <div class="hub-notice__body">
+            <p>ظهور <span class="ltr">Binance</span> أو <span class="ltr">OKX</span> في بلدك لا يعني تلقائيًا وجود ترخيص محلي أو توفر جميع الخدمات.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 新手流程 -->
+    <section class="hub-section" id="start">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">للبدء</span>
+          <h2>مسارك الأول على المنصة</h2>
+          <p>خمس خطوات من اختيار المنصة إلى السحب إلى محفظتك.</p>
+        </div>
+        <div class="hub-steps">
+          <div class="hub-step">
+            <span class="hub-step__num">01</span>
+            <span class="hub-step__bar"></span>
+            <a href="#choose"><span class="hub-step__title">اختيار منصة</span><span class="hub-step__desc">قارن حسب بلدك.</span></a>
+          </div>
+          <div class="hub-step">
+            <span class="hub-step__num">02</span>
+            <span class="hub-step__bar"></span>
+            <a href="/register-binance/"><span class="hub-step__title">التسجيل</span><span class="hub-step__desc">إنشاء الحساب.</span></a>
+          </div>
+          <div class="hub-step">
+            <span class="hub-step__num">03</span>
+            <span class="hub-step__bar"></span>
+            <a href="/binance-kyc/"><span class="hub-step__title"><span class="ltr">KYC</span></span><span class="hub-step__desc">التحقق من الهوية.</span></a>
+          </div>
+          <div class="hub-step">
+            <span class="hub-step__num">04</span>
+            <span class="hub-step__bar"></span>
+            <a href="/buy-usdt-binance/"><span class="hub-step__title">شراء <span class="ltr">USDT</span></span><span class="hub-step__desc">الطريقة المناسبة لك.</span></a>
+          </div>
+          <div class="hub-step">
+            <span class="hub-step__num">05</span>
+            <span class="hub-step__bar"></span>
+            <a href="/withdraw-usdt/"><span class="hub-step__title">السحب إلى محفظة</span><span class="hub-step__desc">بأمان وعبر الشبكة الصحيحة.</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核验日志 -->
+    <section class="hub-section hub-section--soft">
+      <div class="container">
+        <div class="hub-head">
+          <h2>آخر مراجعات الصفحة</h2>
+        </div>
+        <div class="hub-vlog">
+          <div class="hub-vlog-row"><span class="hub-vlog-date">19 سبتمبر 2026</span><span class="hub-vlog-topic">مراجعة روابط أدلة <span class="ltr">Binance</span> و<span class="ltr">OKX</span></span><span class="hub-vlog-badge">فحص يدوي</span></div>
+          <div class="hub-vlog-row"><span class="hub-vlog-date">17 سبتمبر 2026</span><span class="hub-vlog-topic">جدول مقارنة المنصتين</span><span class="hub-vlog-badge">مراجعة بشرية</span></div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

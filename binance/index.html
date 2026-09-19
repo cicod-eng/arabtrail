@@ -69,412 +69,233 @@
     </div>
   </header>
 
-  <main class="binance-hub" dir="rtl" data-pagefind-body>
-
-  <!-- 1. HERO -->
-  <section class="binance-hub__hero">
-    <div class="binance-hub__container">
-
-      <div class="binance-hub__hero-main">
-        <div class="binance-hub__logo-box">
-          <img src="/assets/binance-logo.webp" alt="Binance" width="44" height="44">
-        </div>
-
-        <div class="binance-hub__eyebrow">دليل المنصة</div>
-
+  <main data-pagefind-body class="hub">
+    <div class="container hub-hero">
+      <nav class="breadcrumb" aria-label="مسار التنقل"><a href="/">الرئيسية</a> › <a href="/exchanges/">منصات التداول</a> › <span class="ltr">Binance</span></nav>
+      <div class="hub-hero__inner">
         <h1>دليل <span class="ltr">Binance</span> للمستخدم العربي</h1>
-
-        <p class="binance-hub__lead">
-          التسجيل و<span class="ltr">KYC</span> وشراء <span class="ltr">USDT</span> و<span class="ltr">P2P</span> والسحب والمشكلات الشائعة،
-          مع اختلاف الوضع التنظيمي والخدمات حسب بلدك.
-        </p>
-
-        <div class="binance-hub__tags">
-          <span class="ltr">KYC</span>
-          <span class="ltr">USDT</span>
-          <span class="ltr">P2P</span>
-          <span>السحب</span>
-          <span>الأمان</span>
+        <p class="hub-hero__lead">التسجيل و<span class="ltr">KYC</span> وشراء <span class="ltr">USDT</span> و<span class="ltr">P2P</span> والسحب والمشكلات الشائعة، مع اختلاف الوضع التنظيمي والخدمات حسب بلدك.</p>
+        <div class="hub-cta-row">
+          <a href="https://www.binance.com/join?ref=FSFSL090" rel="nofollow sponsored noopener" target="_blank" class="hub-btn hub-btn--primary">أنشئ حسابك على <span class="ltr">Binance</span></a>
+          <a href="#guides" class="hub-btn hub-btn--text">استكشف الأدلة</a>
         </div>
+        <p class="hub-hero__meta">آخر تحقق <strong>سبتمبر 2026</strong> · مصادر رسمية · <a href="/how-we-test/">منهجية التحقق</a></p>
+      </div>
+      <nav class="hub-anchor-nav" aria-label="أقسام الصفحة">
+        <a href="#do">ماذا تريد أن تفعل؟</a>
+        <a href="#country-diff">حسب البلد</a>
+        <a href="#vs"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</a>
+        <a href="#guides">الأدلة</a>
+      </nav>
+    </div>
 
-        <div class="binance-hub__actions">
-          <a href="#countries" class="hub-btn hub-btn--primary">
-            ابدأ حسب بلدك
-          </a>
-
-          <a href="#guides" class="hub-btn hub-btn--secondary">
-            عرض الأدلة
-          </a>
+    <!-- 任务入口 -->
+    <section class="hub-section hub-section--soft" id="do">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">ابدأ من هنا</span>
+          <h2>ماذا تريد أن تفعل؟</h2>
+          <p>اختر مهمتك وستجد الدليل المناسب لها.</p>
         </div>
-
-        <div class="binance-hub__verified">
-          <span class="verify-status">
-            <img src="/assets/icons/badge-check.svg" alt="" aria-hidden="true">
-            تم التحقق
-          </span>
-          <span>آخر تحقق: سبتمبر <span class="ltr">2026</span></span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- 2. QUICK START -->
-  <section class="binance-hub__section">
-    <div class="binance-hub__container">
-
-      <div class="hub-heading">
-        <span class="hub-kicker">ابدأ بسرعة</span>
-        <h2>ماذا تريد أن تفعل؟</h2>
-      </div>
-
-      <div class="hub-quick-grid">
-
-        <a href="/register-binance/" class="hub-quick-card">
-          <span class="hub-quick-icon">01</span>
-          <h3>التسجيل</h3>
-          <p>إنشاء حساب <span class="ltr">Binance</span> عبر القنوات الرسمية.</p>
-        </a>
-
-        <a href="/binance-kyc/" class="hub-quick-card">
-          <span class="hub-quick-icon">02</span>
-          <h3>التحقق <span class="ltr">KYC</span></h3>
-          <p>المستندات والخطوات وأسباب الرفض.</p>
-        </a>
-
-        <a href="/buy-usdt-binance/" class="hub-quick-card">
-          <span class="hub-quick-icon">03</span>
-          <h3>شراء <span class="ltr">USDT</span></h3>
-          <p>الشراء حسب الطرق المتاحة لحسابك.</p>
-        </a>
-
-        <a href="/binance-p2p/" class="hub-quick-card">
-          <span class="hub-quick-icon">04</span>
-          <h3><span class="ltr">Binance P2P</span></h3>
-          <p>الشراء والبيع واختيار الطرف المقابل.</p>
-        </a>
-
-        <a href="/withdraw-usdt/" class="hub-quick-card">
-          <span class="hub-quick-icon">05</span>
-          <h3>السحب</h3>
-          <p>اختيار الشبكة والتحقق من الرسوم.</p>
-        </a>
-
-        <a href="#problems" class="hub-quick-card">
-          <span class="hub-quick-icon">06</span>
-          <h3>حل مشكلة</h3>
-          <p>رمز التحقق، <span class="ltr">KYC</span>، الحساب، <span class="ltr">P2P</span> والسحب.</p>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- 3. COUNTRY DIFFERENCES -->
-  <section class="binance-hub__section binance-hub__section--soft" id="countries">
-    <div class="binance-hub__container">
-
-      <div class="hub-heading">
-        <span class="hub-kicker">حسب الدولة</span>
-        <h2>وضع <span class="ltr">Binance</span> يختلف حسب بلدك</h2>
-        <p>
-          ظهور <span class="ltr">Binance</span> أو سوق <span class="ltr">P2P</span> بعملة محلية لا يعني تلقائيًا
-          وجود ترخيص محلي أو نفس مستوى الحماية التنظيمية.
-        </p>
-      </div>
-
-      <div class="hub-country-grid">
-
-        <a href="/countries/saudi-arabia/" class="hub-country-card hub-country-card--warning">
-          <img src="/assets/flags/saudi-arabia.svg" alt="علم السعودية">
-          <h3>السعودية</h3>
-          <strong class="ltr">SAR</strong>
-          <p>لم نجد ترخيصًا محليًا معلنًا.</p>
-          <span>عرض الدليل ←</span>
-        </a>
-
-        <a href="/countries/uae/" class="hub-country-card hub-country-card--licensed">
-          <img src="/assets/flags/uae.svg" alt="علم الإمارات">
-          <h3>الإمارات</h3>
-          <strong class="ltr">AED</strong>
-          <p><span class="ltr">Binance FZE</span> كيان مرخّص لدى <span class="ltr">VARA</span>.</p>
-          <span>عرض الدليل ←</span>
-        </a>
-
-        <a href="/countries/egypt/" class="hub-country-card hub-country-card--restricted">
-          <img src="/assets/flags/egypt.svg" alt="علم مصر">
-          <h3>مصر</h3>
-          <strong class="ltr">EGP</strong>
-          <p>قيود قانونية وعقوبات وأحكام قضائية.</p>
-          <span>عرض الدليل ←</span>
-        </a>
-
-        <a href="/countries/kuwait/" class="hub-country-card hub-country-card--restricted">
-          <img src="/assets/flags/kuwait.svg" alt="علم الكويت">
-          <h3>الكويت</h3>
-          <strong class="ltr">KWD</strong>
-          <p>قيود تنظيمية محلية يجب فهمها أولًا.</p>
-          <span>عرض الدليل ←</span>
-        </a>
-
-      </div>
-
-      <p class="hub-country-more">
-        <a href="/countries/" class="hub-text-link">عرض جميع الدول ←</a>
-      </p>
-    </div>
-  </section>
-
-
-  <!-- 4. STARTER PATH -->
-  <section class="binance-hub__section">
-    <div class="binance-hub__container">
-
-      <div class="hub-heading">
-        <span class="hub-kicker">للمبتدئين</span>
-        <h2>المسار الكامل لاستخدام <span class="ltr">Binance</span></h2>
-      </div>
-
-      <div class="hub-steps">
-
-        <a href="/register-binance/" class="hub-step">
-          <span>01</span>
-          <div>
-            <h3>أنشئ الحساب</h3>
-            <p>استخدم الموقع أو التطبيق الرسمي فقط.</p>
+        <div class="hub-cols hub-cols--3">
+          <div class="hub-col">
+            <h3><a href="/register-binance/">التسجيل</a></h3>
+            <p>إنشاء الحساب خطوة بخطوة.</p>
           </div>
-        </a>
-
-        <a href="/binance-kyc/" class="hub-step">
-          <span>02</span>
-          <div>
-            <h3>أكمل <span class="ltr">KYC</span></h3>
-            <p>تحقق من الهوية قبل استخدام الخدمات المطلوبة.</p>
+          <div class="hub-col">
+            <h3><a href="/binance-kyc/">التحقق <span class="ltr">KYC</span></a></h3>
+            <p>المستندات وأسباب الرفض.</p>
           </div>
-        </a>
-
-        <a href="/enable-2fa/" class="hub-step">
-          <span>03</span>
-          <div>
-            <h3>فعّل الحماية</h3>
-            <p>فعّل <span class="ltr">2FA</span> أو <span class="ltr">Passkey</span> قبل إيداع أموال.</p>
+          <div class="hub-col">
+            <h3><a href="/buy-usdt-binance/">شراء <span class="ltr">USDT</span></a></h3>
+            <p>قارن <span class="ltr">P2P</span> والبطاقة حسب بلدك.</p>
           </div>
-        </a>
-
-        <a href="/buy-usdt-binance/" class="hub-step">
-          <span>04</span>
-          <div>
-            <h3>اشترِ <span class="ltr">USDT</span></h3>
-            <p>استخدم الطريقة المتاحة والمناسبة في بلدك.</p>
+          <div class="hub-col">
+            <h3><a href="/binance-p2p/"><span class="ltr">Binance P2P</span></a></h3>
+            <p>الشراء والبيع وقواعد الأمان.</p>
           </div>
-        </a>
-
-        <a href="/withdraw-usdt/" class="hub-step">
-          <span>05</span>
-          <div>
-            <h3>اسحب أو انقل الرصيد</h3>
-            <p>طابق الشبكة والعنوان قبل التأكيد.</p>
+          <div class="hub-col">
+            <h3><a href="/binance-fees/">الرسوم</a></h3>
+            <p>التداول والسحب والإيداع.</p>
           </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- 5. FEES -->
-  <section class="binance-hub__section binance-hub__section--cream">
-    <div class="binance-hub__container">
-
-      <div class="hub-heading">
-        <span class="hub-kicker">التكاليف</span>
-        <h2>أين تدفع الرسوم فعلًا؟</h2>
-      </div>
-
-      <div class="hub-cost-grid">
-
-        <article class="hub-cost-card">
-          <h3>رسوم السحب</h3>
-          <p>تظهر قبل التأكيد وتتغير حسب العملة والشبكة.</p>
-        </article>
-
-        <article class="hub-cost-card">
-          <h3>فرق سعر <span class="ltr">P2P</span></h3>
-          <p>يظهر داخل سعر إعلان التاجر وطريقة الدفع.</p>
-        </article>
-
-        <article class="hub-cost-card">
-          <h3>رسوم التداول</h3>
-          <p>تعتمد على المنتج ومستوى الحساب والشروط الحالية.</p>
-        </article>
-
-        <article class="hub-cost-card">
-          <h3>تكلفة البنك أو البطاقة</h3>
-          <p>قد يفرضها البنك أو مزود الدفع خارج <span class="ltr">Binance</span>.</p>
-        </article>
-
-      </div>
-
-      <a href="/binance-fees/" class="hub-text-link">
-        راجع دليل رسوم <span class="ltr">Binance</span> الكامل ←
-      </a>
-
-    </div>
-  </section>
-
-
-  <!-- 6. PROBLEM SOLVING -->
-  <section class="binance-hub__section" id="problems">
-    <div class="binance-hub__container">
-
-      <div class="hub-heading">
-        <span class="hub-kicker">حل المشكلات</span>
-        <h2>مشكلة في <span class="ltr">Binance</span>؟ ابدأ من الحالة</h2>
-      </div>
-
-      <div class="hub-problem-grid">
-
-        <a href="/binance-kyc/" class="hub-problem-card">
-          <h3>رُفض <span class="ltr">KYC</span></h3>
-          <p>المستندات، الاسم، الصورة وأسباب الرفض.</p>
-        </a>
-
-        <a href="/binance-account-restricted/" class="hub-problem-card">
-          <h3>الحساب مقيّد أو مجمد</h3>
-          <p>الأسباب المحتملة والخطوات الصحيحة.</p>
-        </a>
-
-        <a href="/binance-verification-code-not-arriving/" class="hub-problem-card">
-          <h3>رمز التحقق لا يصل</h3>
-          <p>البريد، الرسائل، المصادقة والمحاولات المتكررة.</p>
-        </a>
-
-        <a href="/fake-binance-account/" class="hub-problem-card">
-          <h3>رسالة دعم مشبوهة</h3>
-          <p>كيف تميز الحساب والرابط المزيف.</p>
-        </a>
-
-        <a href="/p2p-seller-not-releasing/" class="hub-problem-card">
-          <h3>دفعت ولم يتم تحرير العملة</h3>
-          <p>متى تنتظر ومتى تفتح نزاعًا.</p>
-        </a>
-
-        <a href="/usdt-wrong-network/" class="hub-problem-card">
-          <h3>اخترت شبكة خاطئة</h3>
-          <p>ما الذي يمكن فعله قبل إرسال أي معاملة جديدة.</p>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- 7. GUIDES -->
-  <section class="binance-hub__section binance-hub__section--soft" id="guides">
-    <div class="binance-hub__container">
-
-      <div class="hub-heading">
-        <span class="hub-kicker">مكتبة <span class="ltr">Binance</span></span>
-        <h2>الأدلة الرئيسية</h2>
-      </div>
-
-      <div class="hub-guide-groups">
-
-        <div class="hub-guide-group">
-          <h3>البدء</h3>
-          <a href="/register-binance/">التسجيل في <span class="ltr">Binance</span></a>
-          <a href="/binance-kyc/">توثيق الحساب <span class="ltr">KYC</span></a>
-          <a href="/enable-2fa/">تفعيل <span class="ltr">2FA</span></a>
-          <a href="/binance-verification-code-not-arriving/">رمز التحقق لا يصل</a>
-        </div>
-
-        <div class="hub-guide-group">
-          <h3>الشراء والتحويل</h3>
-          <a href="/buy-usdt-binance/">شراء <span class="ltr">USDT</span></a>
-          <a href="/binance-p2p/">شرح <span class="ltr">Binance P2P</span></a>
-          <a href="/binance-fees/">الرسوم</a>
-          <a href="/withdraw-usdt/">سحب <span class="ltr">USDT</span></a>
-          <a href="/choose-network/">اختيار شبكة التحويل</a>
-        </div>
-
-        <div class="hub-guide-group">
-          <h3>الأمان والتنظيم</h3>
-          <a href="/is-binance-safe/">هل <span class="ltr">Binance</span> آمنة؟</a>
-          <a href="/binance-account-restricted/">تجميد الحساب</a>
-          <a href="/fake-binance-account/">الحسابات والروابط المزيفة</a>
-          <a href="/binance-vs-okx/"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- 8. METHODOLOGY -->
-  <section class="binance-hub__section">
-    <div class="binance-hub__container">
-
-      <div class="hub-method">
-        <div>
-          <span class="verify-status">
-            <img src="/assets/icons/badge-check.svg" alt="" aria-hidden="true">
-            تم التحقق
-          </span>
-
-          <h2>كيف نتحقق من معلومات <span class="ltr">Binance</span>؟</h2>
-
-          <p>
-            نراجع صفحات <span class="ltr">Binance</span> الرسمية، وسجلات الجهات التنظيمية،
-            وواجهات التسجيل و<span class="ltr">P2P</span> والسحب كما تظهر للمستخدم،
-            ثم نذكر تاريخ آخر تحقق عند تغير المعلومات.
-          </p>
-
-          <a href="/how-we-test/" class="hub-text-link">
-            اقرأ منهجية التحقق ←
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- 9. AFFILIATE CTA -->
-  <section class="binance-hub__section binance-hub__section--cream">
-    <div class="binance-hub__container">
-
-      <div class="hub-cta-card">
-        <div class="hub-cta-logo">
-          <img src="/assets/binance-logo.webp" alt="Binance">
-        </div>
-
-        <div>
-          <h2>إن قررت استخدام <span class="ltr">Binance</span></h2>
-
-          <p>
-            تأكد أولًا من وضع الخدمة والتنظيم في بلدك،
-            ثم استخدم الموقع أو التطبيق الرسمي.
-          </p>
-
-          <div class="hub-affiliate-note">
-            رمز الإحالة <strong class="ltr">FSFSL090</strong> —
-            قد يحصل <span class="ltr">ArabTrail</span> على عمولة عند التسجيل،
-            دون تكلفة إضافية عليك.
+          <div class="hub-col">
+            <h3><a href="/withdraw-usdt/">السحب</a></h3>
+            <p>إرسال <span class="ltr">USDT</span> إلى محفظة خارجية.</p>
           </div>
-
-          <a href="https://www.binance.com/join?ref=FSFSL090" rel="nofollow sponsored noopener" target="_blank" class="hub-text-link">
-            سجّل عبر الرابط الرسمي ←
-          </a>
         </div>
       </div>
+    </section>
 
+    <!-- 国家差异表 -->
+    <section class="hub-section" id="country-diff">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">حسب البلد</span>
+          <h2>ما الذي يميز <span class="ltr">Binance</span> حسب البلد؟</h2>
+          <p>ظهور <span class="ltr">Binance</span> أو سوق <span class="ltr">P2P</span> بعملة محلية لا يعني تلقائيًا وجود ترخيص محلي أو نفس مستوى الحماية التنظيمية.</p>
+        </div>
+        <div class="hub-table-wrap">
+          <table class="hub-table">
+            <thead>
+              <tr>
+                <th>الدولة</th>
+                <th>ترخيص محلي</th>
+                <th>ما يعنيه عمليًا</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>الإمارات</strong></td>
+                <td><span class="ltr">Binance FZE</span> كيان مرخّص لدى <span class="ltr">VARA</span></td>
+                <td>كيان محلي مرخّص في دبي</td>
+              </tr>
+              <tr>
+                <td><strong>السعودية</strong></td>
+                <td>لم نجد ترخيصًا محليًا معلنًا</td>
+                <td>يظهر سوق <span class="ltr">P2P</span> بالريال السعودي</td>
+              </tr>
+              <tr>
+                <td><strong>مصر</strong></td>
+                <td>قيود قانونية بموجب قانون <span class="ltr">194</span> لسنة <span class="ltr">2020</span></td>
+                <td>يظهر <span class="ltr">P2P</span> بالجنيه بمخاطرة قانونية</td>
+              </tr>
+              <tr>
+                <td><strong>الكويت</strong></td>
+                <td>قيود تنظيمية منذ <span class="ltr">2023</span></td>
+                <td>افهم الوضع قبل أي خطوة</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="hub-notice hub-notice--info" style="margin-top:24px">
+          <span class="hub-notice__icon">ℹ</span>
+          <div class="hub-notice__body">
+            <p>في الإمارات الكيان مرخّص، بينما في السعودية ومصر والكويت تظهر الخدمات عبر المنصة الدولية دون ترخيص محلي معلن. التفاصيل في <a href="/countries/">صفحات الدول</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Binance 还是 OKX -->
+    <section class="hub-section hub-section--soft" id="vs">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">المقارنة</span>
+          <h2><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</h2>
+          <p>لا توجد منصة أفضل للجميع؛ السؤال الصحيح هو ما الذي تريد فعله وفي أي بلد.</p>
+        </div>
+        <div class="hub-table-wrap">
+          <table class="hub-table">
+            <thead>
+              <tr>
+                <th>ما تريد فعله</th>
+                <th>الأقرب لغرضك</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>شراء <span class="ltr">USDT</span> عبر <span class="ltr">P2P</span> بالدرهم الإماراتي</td><td><span class="ltr">Binance</span> — لأن <span class="ltr">OKX</span> أوقفت <span class="ltr">AED</span> عبر <span class="ltr">P2P</span></td></tr>
+              <tr><td>تداول فوري بالدرهم في الإمارات</td><td>كلاهما — <span class="ltr">Binance FZE</span> و<span class="ltr">OKX</span> كلاهما مرخّص لدى <span class="ltr">VARA</span></td></tr>
+              <tr><td>شراء <span class="ltr">USDT</span> بالريال أو الجنيه عبر <span class="ltr">P2P</span></td><td>كلاهما — قارن الأسعار والسيولة</td></tr>
+              <tr><td>رسوم تداول أقل</td><td>قارن جدول الرسوم الرسمي لكل منصة — لا تعتمد على «الصانع أرخص»</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:20px; font-size:14px; color:var(--hub-muted)">المقارنة الكاملة بالرسوم وطرق الدفع وسهولة الاستخدام في <a href="/binance-vs-okx/"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</a> ←</p>
+      </div>
+    </section>
+
+    <!-- 指南目录 -->
+    <section class="hub-section" id="guides">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">دليل المنصة</span>
+          <h2>أدلة <span class="ltr">Binance</span></h2>
+          <p>كل ما تحتاجه من التسجيل إلى حل المشكلات.</p>
+        </div>
+        <div class="hub-cols hub-cols--3">
+          <div class="hub-col">
+            <h3>البدء</h3>
+            <ul>
+              <li><a href="/register-binance/">التسجيل في <span class="ltr">Binance</span></a> ←</li>
+              <li><a href="/binance-kyc/">توثيق الحساب <span class="ltr">KYC</span></a> ←</li>
+              <li><a href="/enable-2fa/">تفعيل <span class="ltr">2FA</span></a> ←</li>
+              <li><a href="/binance-verification-code-not-arriving/">رمز التحقق لا يصل</a> ←</li>
+            </ul>
+          </div>
+          <div class="hub-col">
+            <h3>الشراء والتحويل</h3>
+            <ul>
+              <li><a href="/buy-usdt-binance/">شراء <span class="ltr">USDT</span></a> ←</li>
+              <li><a href="/binance-p2p/">شرح <span class="ltr">Binance P2P</span></a> ←</li>
+              <li><a href="/binance-fees/">الرسوم</a> ←</li>
+              <li><a href="/withdraw-usdt/">سحب <span class="ltr">USDT</span></a> ←</li>
+              <li><a href="/choose-network/">اختيار شبكة التحويل</a> ←</li>
+            </ul>
+          </div>
+          <div class="hub-col">
+            <h3>الأمان والمشكلات</h3>
+            <ul>
+              <li><a href="/is-binance-safe/">هل <span class="ltr">Binance</span> آمنة؟</a> ←</li>
+              <li><a href="/binance-account-restricted/">تجميد الحساب</a> ←</li>
+              <li><a href="/fake-binance-account/">الحسابات والروابط المزيفة</a> ←</li>
+              <li><a href="/binance-vs-okx/"><span class="ltr">Binance</span> أم <span class="ltr">OKX</span>؟</a> ←</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 按国家 -->
+    <section class="hub-section hub-section--soft" id="bycountry">
+      <div class="container">
+        <div class="hub-head">
+          <span class="hub-kicker">حسب الدولة</span>
+          <h2><span class="ltr">Binance</span> في بلدك</h2>
+          <p>الوضع المحلي وطرق الدفع والترخيص يختلفان من دولة إلى أخرى.</p>
+        </div>
+        <div class="hub-follow">
+          <a href="/countries/uae/">الإمارات</a>
+          <a href="/countries/saudi-arabia/">السعودية</a>
+          <a href="/countries/egypt/">مصر</a>
+          <a href="/countries/kuwait/">الكويت</a>
+          <a href="/countries/qatar/">قطر</a>
+          <a href="/countries/bahrain/">البحرين</a>
+          <a href="/countries/oman/">عُمان</a>
+        </div>
+        <div class="hub-notice hub-notice--warning" style="margin-top:28px">
+          <span class="hub-notice__icon">!</span>
+          <div class="hub-notice__body">
+            <p>توفر <span class="ltr">Binance</span> في بلدك لا يعني تلقائيًا وجود ترخيص محلي أو توفر جميع الخدمات.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核验日志 -->
+    <section class="hub-section">
+      <div class="container">
+        <div class="hub-head">
+          <h2>آخر التحديثات</h2>
+        </div>
+        <div class="hub-vlog">
+          <div class="hub-vlog-row"><span class="hub-vlog-date">سبتمبر 2026</span><span class="hub-vlog-topic">مراجعة ترخيص <span class="ltr">Binance FZE</span> لدى <span class="ltr">VARA</span> وحالة <span class="ltr">P2P</span> حسب الدولة</span><span class="hub-vlog-badge">مصدر رسمي</span></div>
+          <div class="hub-vlog-row"><span class="hub-vlog-date">سبتمبر 2026</span><span class="hub-vlog-topic">أسواق <span class="ltr">P2P</span> وطرق الدفع حسب الدولة</span><span class="hub-vlog-badge">تحقق من الواجهة</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="container" style="max-width:1080px; padding: 0 20px 56px;">
+    <div class="signup-card">
+      <div class="signup-head">
+        <img src="/assets/binance-logo.webp" alt="Binance" class="signup-logo" width="44" height="44">
+        <h3>أنشئ حسابك على <span class="ltr">Binance</span></h3>
+      </div>
+      <p class="signup-desc">إذا لم يكن لديك حساب بعد، سجّل عبر الرابط الرسمي أدناه. التسجيل مجاني، وقد تحتاج إلى إكمال التحقق من الهوية <span class="ltr">KYC</span> للوصول إلى خدمات الشراء أو التداول المتاحة لحسابك.</p>
+      <a href="https://www.binance.com/join?ref=FSFSL090" rel="nofollow sponsored noopener" target="_blank" class="btn btn-primary">سجّل في <span class="ltr">Binance</span> الآن</a>
+      <p class="signup-disclosure">رمز الإحالة <span class="ltr">FSFSL090</span> — قد يحصل <span class="ltr">ArabTrail</span> على عمولة عند التسجيل، دون أي تكلفة إضافية عليك.</p>
     </div>
-  </section>
-
-</main>
-
+  </div>
 
   <footer class="site-footer">
     <div class="container">

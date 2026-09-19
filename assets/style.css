@@ -9,9 +9,9 @@
   --surface: #ffffff;
   --ink: #1c1a16;         /* 暖黑 */
   --muted: #6b6456;       /* 暖灰 */
-  --green: #0b6e4f;       /* 伊斯兰翡翠绿（主色） */
-  --green-dark: #094734;  /* 深绿（标题/链接） */
-  --green-soft: #e9f2ec;  /* 浅绿底（提示框） */
+  --green: #173B70;       /* 主蓝（原伊斯兰翡翠绿） */
+  --green-dark: #122A4A;  /* 深蓝（标题/链接） */
+  --green-soft: #F5F8FC;  /* 浅蓝灰底（提示框） */
   --accent: #d4af37;      /* 金色（亮金） */
   --accent-dark: #b8942a;
   --border: #e5dcc6;      /* 沙色边框 */
@@ -1175,9 +1175,9 @@ img { max-width: 100%; height: auto; }
    安全提示 = 橙，危险提示 = 红
    ============================================================ */
 .wallet-guide {
-  --wg-green: #0b6e4f;
-  --wg-green-dark: #094734;
-  --wg-green-soft: #e9f2ec;
+  --wg-green: #173B70;
+  --wg-green-dark: #122A4A;
+  --wg-green-soft: #F5F8FC;
   --wg-text: #1c1a16;
   --wg-muted: #6b6456;
   --wg-border: #e5dcc6;
@@ -1271,7 +1271,7 @@ img { max-width: 100%; height: auto; }
 .home {
   background: #fff;
   --warm: #faf4e4;
-  --soft: #f4f8f5;
+  --soft: #F5F8FC;
   --line: #ece3cf;
   --radius-large: 20px;
 }
@@ -1354,8 +1354,7 @@ img { max-width: 100%; height: auto; }
 /* ===== 5. Binance / OKX 大卡（统一浅色，品牌色只做点缀）===== */
 .exchange-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .exchange-card { display: flex; flex-direction: column; gap: 16px; padding: 32px 32px 28px; border: 1px solid #E4E9F0; border-top: 4px solid transparent; border-radius: 22px; background: #fff; box-shadow: 0 10px 30px rgba(20,32,51,.05); }
-.exchange-card--binance { border-top-color: #F0B90B; box-shadow: 0 14px 36px rgba(20,32,51,.07); }
-.exchange-card--okx { border-top-color: #20252B; box-shadow: 0 8px 24px rgba(20,32,51,.04); }
+.exchange-card--binance, .exchange-card--okx { border-top-color: #173B70; box-shadow: 0 10px 30px rgba(20,32,51,.05); }
 .exchange-head { display: flex; align-items: center; gap: 12px; }
 .exchange-logo { width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; }
 .exchange-head h3 { margin: 0; font-size: 24px; font-weight: 800; color: #17233B; }
@@ -1363,16 +1362,13 @@ img { max-width: 100%; height: auto; }
 .exchange-links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .exchange-links li { position: relative; padding-inline-start: 18px; font-size: 15px; }
 .exchange-links li::before { content: ""; position: absolute; inset-inline-start: 3px; top: 50%; width: 6px; height: 6px; border-radius: 50%; transform: translateY(-50%); }
-.exchange-card--binance .exchange-links li::before { background: #F0B90B; }
-.exchange-card--okx .exchange-links li::before { background: #20252B; }
+.exchange-links li::before { background: #173B70; }
 .exchange-links a { color: var(--ink); }
 .exchange-links a:hover { color: var(--green); }
 .exchange-cta { margin-top: auto; display: inline-block; text-align: center; padding: 12px 18px; border-radius: 12px; font-size: 15px; font-weight: 700; border: 1px solid transparent; transition: background .15s ease, color .15s ease, border-color .15s ease; }
 .exchange-cta:hover { text-decoration: none; }
-.exchange-card--binance .exchange-cta { background: #FFF7D6; color: #7A5900; border-color: #F0B90B; }
-.exchange-card--binance .exchange-cta:hover { background: #F0B90B; color: #0b1f18; }
-.exchange-card--okx .exchange-cta { background: #F5F6F8; color: #182230; border-color: #CDD3DC; }
-.exchange-card--okx .exchange-cta:hover { background: #182230; color: #fff; }
+.exchange-card--binance .exchange-cta, .exchange-card--okx .exchange-cta { background: #173B70; color: #fff; border-color: #173B70; }
+.exchange-card--binance .exchange-cta:hover, .exchange-card--okx .exchange-cta:hover { background: #122A4A; color: #fff; border-color: #122A4A; }
 
 /* ===== 6. USDT / P2P 主题索引 ===== */
 .topic-index { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
@@ -1487,4 +1483,223 @@ img { max-width: 100%; height: auto; }
   .home-footer .container { grid-template-columns: 1fr 1fr; gap: 24px; }
   .home-footer__brand { grid-column: 1 / -1; }
   .home-footer__bottom { flex-direction: column; gap: 6px; }
+}
+
+/* ============================================================
+   Hub 页设计系统（basics / wallets / p2p / security）
+   去卡片化 · 深蓝主色 #173B70 · 留白分隔 · 每页一个标志性组件
+   作用域 .hub，变量独立于 .home，普通标题深蓝，仅 Warning/Critical 用橙红
+   ============================================================ */
+.hub {
+  --heading: #173B70;
+  --hub-text: #172033;
+  --hub-muted: #667085;
+  --hub-line: #E5EAF0;
+  --hub-soft: #F5F8FC;
+  --hub-warm: #FBF7EF;
+  --hub-danger: #B42318;
+  --hub-danger-soft: #FFF3F1;
+  --hub-danger-border: #F4C7C3;
+  --hub-warning: #D97706;
+  --hub-warning-soft: #FFF7E8;
+  background: #fff;
+}
+.hub .container { max-width: 1080px; }
+.hub .container--narrow { max-width: 900px; }
+
+/* ---- Hero（无卡，白底，收窄）---- */
+.hub-hero { padding: 48px 0 12px; }
+.hub-hero__inner { max-width: 900px; }
+.hub-hero h1 { margin: 0 0 14px; font-size: clamp(34px, 4.2vw, 46px); line-height: 1.2; font-weight: 800; color: var(--heading); letter-spacing: -0.01em; }
+.hub-hero__lead { margin: 0 0 20px; max-width: 680px; font-size: 17px; line-height: 1.85; color: var(--hub-muted); }
+.hub-hero__meta { margin: 0; font-size: 13px; color: var(--hub-muted); }
+.hub-hero__meta strong { color: var(--hub-text); font-weight: 700; }
+
+.hub-cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 22px 0 18px; }
+.hub-btn { display: inline-block; padding: 12px 22px; border-radius: 10px; font-size: 15px; font-weight: 700; border: 1px solid transparent; text-decoration: none; }
+.hub-btn--primary { background: var(--heading); color: #fff; }
+.hub-btn--primary:hover { background: #122A4A; color: #fff; text-decoration: none; }
+.hub-btn--text { color: var(--heading); padding-inline: 4px; }
+.hub-btn--text::after { content: " ←"; font-weight: 800; display: inline-block; transition: transform .15s ease; }
+.hub-btn--text:hover { color: #1959C7; text-decoration: none; }
+.hub-btn--text:hover::after { transform: translateX(-4px); }
+.hub-btn--warn { background: #fff; color: #B45309; border-color: #F0B90B; }
+.hub-btn--warn:hover { background: #FFF7D6; color: #7A5900; text-decoration: none; }
+
+/* ---- 文字锚点导航 ---- */
+.hub-anchor-nav { display: flex; gap: 24px; flex-wrap: wrap; padding-block: 16px; border-top: 1px solid var(--hub-line); border-bottom: 1px solid var(--hub-line); margin-top: 24px; }
+.hub-anchor-nav a { color: var(--hub-muted); font-size: 14.5px; font-weight: 500; text-decoration: none; }
+.hub-anchor-nav a:hover { color: var(--heading); }
+
+/* ---- 区块：留白分隔，浅底自带背景线 ---- */
+.hub-section { padding-block: 72px; }
+.hub-section + .hub-section { border-top: 1px solid #EEF1F5; }
+.hub-section--soft { background: var(--hub-soft); border-top: 1px solid var(--hub-line); border-bottom: 1px solid var(--hub-line); }
+.hub-section--soft + .hub-section { border-top: none; }
+.hub-section--warm { background: var(--hub-warm); border-top: 1px solid #F0E6D6; border-bottom: 1px solid #F0E6D6; }
+.hub-section--danger-soft { background: var(--hub-danger-soft); border-top: 1px solid var(--hub-danger-border); border-bottom: 1px solid var(--hub-danger-border); }
+
+.hub-head { max-width: 760px; margin-bottom: 28px; }
+.hub-kicker { display: inline-block; margin-bottom: 8px; color: var(--heading); font-size: 13px; font-weight: 700; }
+.hub-head h2 { margin: 0 0 10px; font-size: 28px; line-height: 1.3; font-weight: 800; color: var(--heading); }
+.hub-head p { margin: 0; font-size: 16px; line-height: 1.85; color: var(--hub-muted); }
+
+/* ---- 大章节编号（basics 标志组件）---- */
+.hub-chapter { margin-bottom: 44px; }
+.hub-chapter:last-child { margin-bottom: 0; }
+.hub-chapter__num { font-size: 40px; font-weight: 800; color: #C6D4E8; line-height: 1; margin-bottom: 6px; }
+.hub-chapter h3 { margin: 0 0 4px; font-size: 22px; font-weight: 800; color: var(--hub-text); }
+.hub-chapter__lead { margin: 0 0 6px; font-size: 14px; color: var(--hub-muted); }
+
+/* ---- 文章入口列表（统一：标题 + 说明 + 分隔线 + 箭头）---- */
+.hub-links { display: flex; flex-direction: column; }
+.hub-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 15px 4px; border-bottom: 1px solid var(--hub-line); color: inherit; text-decoration: none; }
+.hub-link:last-child { border-bottom: none; }
+.hub-link__text { display: flex; flex-direction: column; gap: 2px; }
+.hub-link__title { font-size: 16px; font-weight: 700; color: var(--hub-text); }
+.hub-link__desc { font-size: 14px; color: var(--hub-muted); }
+.hub-link__arrow { color: #C0C8D4; font-weight: 700; transition: transform .15s ease, color .15s ease; flex-shrink: 0; }
+.hub-link:hover .hub-link__title { color: var(--heading); }
+.hub-link:hover .hub-link__arrow { color: var(--heading); transform: translateX(-4px); }
+.hub-links--all { display: inline-block; margin-top: 16px; font-size: 14px; font-weight: 700; color: var(--heading); text-decoration: none; }
+.hub-links--all:hover { color: #1959C7; }
+
+/* ---- 步骤轴（wallets/p2p/security 流程）---- */
+.hub-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+.hub-steps--4 { grid-template-columns: repeat(4, 1fr); }
+.hub-step { display: flex; flex-direction: column; gap: 4px; }
+.hub-step__num { font-size: 15px; font-weight: 800; color: var(--heading); }
+.hub-step__bar { height: 1px; background: var(--hub-line); margin: 6px 0 10px; }
+.hub-step__title { font-size: 16px; font-weight: 700; color: var(--hub-text); }
+.hub-step__desc { font-size: 13.5px; line-height: 1.6; color: var(--hub-muted); }
+.hub-step a { color: inherit; text-decoration: none; }
+.hub-step a:hover .hub-step__title { color: var(--heading); }
+
+/* ---- 多栏目录（security 四类 / wallets 三组 / p2p 买卖双栏）---- */
+.hub-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.hub-cols--3 { grid-template-columns: repeat(3, 1fr); }
+.hub-cols--2 { grid-template-columns: repeat(2, 1fr); }
+.hub-col h3 { margin: 0 0 12px; font-size: 17px; font-weight: 800; color: var(--hub-text); }
+.hub-col h3 a { color: inherit; text-decoration: none; }
+.hub-col h3 a:hover { color: var(--heading); }
+.hub-col ul { margin: 0; padding: 0; list-style: none; }
+.hub-col li { margin: 8px 0; font-size: 15px; line-height: 1.6; }
+.hub-col li a { color: var(--hub-muted); text-decoration: none; }
+.hub-col li a:hover { color: var(--heading); }
+.hub-col p { margin: 0; font-size: 14px; color: var(--hub-muted); line-height: 1.7; }
+.hub-col__more { display: inline-block; margin-top: 10px; font-size: 13.5px; font-weight: 700; color: var(--heading); text-decoration: none; }
+.hub-col__more:hover { color: #1959C7; }
+
+/* ---- 表格（wallets/p2p/security 对比与识别）---- */
+.hub-table-wrap { overflow-x: auto; margin: 8px 0 0; }
+.hub-table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 480px; }
+.hub-table th, .hub-table td { padding: 12px 14px; text-align: right; border-bottom: 1px solid #E4E8EE; vertical-align: top; }
+.hub-table th { background: #F6F8FB; color: var(--hub-text); font-weight: 700; white-space: nowrap; }
+.hub-table td { color: var(--hub-text); }
+.hub-table td:first-child { font-weight: 700; }
+
+/* ---- Notice 三级 ---- */
+.hub-notice { display: flex; gap: 14px; padding: 18px 20px; border-radius: 12px; border: 1px solid transparent; margin: 16px 0 0; font-size: 15px; line-height: 1.85; }
+.hub-notice strong { font-weight: 800; }
+.hub-notice--info { background: var(--hub-soft); border-color: #D8E2F0; }
+.hub-notice--warning { background: var(--hub-warning-soft); border-color: #F3D9A4; }
+.hub-notice--critical { background: var(--hub-danger-soft); border-color: var(--hub-danger-border); }
+.hub-notice__icon { flex: 0 0 22px; font-weight: 800; font-size: 16px; line-height: 1.6; }
+.hub-notice--info .hub-notice__icon { color: var(--heading); }
+.hub-notice--warning .hub-notice__icon { color: var(--hub-warning); }
+.hub-notice--critical .hub-notice__icon { color: var(--hub-danger); }
+.hub-notice__body { color: var(--hub-text); }
+.hub-notice__body p { margin: 0; }
+.hub-notice__body ul { margin: 6px 0 0; padding-inline-start: 20px; }
+.hub-notice__body li { margin: 4px 0; }
+
+/* ---- 底部 4 入口 ---- */
+.hub-follow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.hub-follow a { display: block; padding: 14px 16px; border: 1px solid var(--hub-line); border-radius: 12px; color: var(--hub-text); font-weight: 700; text-decoration: none; font-size: 15px; text-align: center; transition: border-color .15s ease, color .15s ease; }
+.hub-follow a:hover { border-color: var(--heading); color: var(--heading); text-decoration: none; }
+
+/* ---- 核验日志 ---- */
+.hub-vlog { border-top: 1px solid var(--hub-line); }
+.hub-vlog-row { display: grid; grid-template-columns: 150px 1fr auto; gap: 16px; align-items: center; padding: 14px 4px; border-bottom: 1px solid var(--hub-line); }
+.hub-vlog-row:last-child { border-bottom: none; }
+.hub-vlog-date { font-size: 13.5px; color: var(--hub-muted); }
+.hub-vlog-topic { font-size: 15px; font-weight: 700; color: var(--hub-text); }
+.hub-vlog-badge { justify-self: end; font-size: 12px; font-weight: 700; padding: 3px 12px; border-radius: 999px; background: var(--hub-soft); color: var(--heading); border: 1px solid #D8E2F0; white-space: nowrap; }
+
+/* ---- 面包屑覆盖 ---- */
+.hub .breadcrumb { font-size: 13px; color: #7A8493; margin-bottom: 24px; }
+.hub .breadcrumb a { color: #667085; }
+.hub .breadcrumb a:hover { color: #1959C7; }
+
+/* ---- 监管状态徽章（绿=许可 / 橙=限制待确认 / 红=禁令） ---- */
+.hub-status { display: inline-flex; align-items: center; gap: 7px; padding: 4px 12px; border-radius: 999px; font-size: 12.5px; font-weight: 700; white-space: nowrap; }
+.hub-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+.hub-status--licensed { background: #E8F5EC; color: #1E7A46; border: 1px solid #BFE3CB; }
+.hub-status--developing { background: #FFF4E0; color: #B45309; border: 1px solid #F3D9A4; }
+.hub-status--restricted { background: #FDEBEB; color: #B42318; border: 1px solid #F3C6C2; }
+
+/* ---- 国家目录行（无卡片列表：国旗 + 名称 + 货币 + 特征 + 箭头） ---- */
+.hub-country-list { display: flex; flex-direction: column; }
+.hub-country { display: flex; align-items: center; gap: 16px; padding: 16px 4px; border-bottom: 1px solid var(--hub-line); text-decoration: none; color: inherit; flex-wrap: wrap; }
+.hub-country:last-child { border-bottom: none; }
+.hub-country__flag { width: 44px; height: 30px; object-fit: cover; border-radius: 4px; border: 1px solid var(--hub-line); flex-shrink: 0; }
+.hub-country__main { display: flex; flex-direction: column; gap: 2px; min-width: 120px; }
+.hub-country__name { font-size: 16px; font-weight: 700; color: var(--hub-text); }
+.hub-country__cur { font-size: 13px; color: var(--hub-muted); }
+.hub-country__feature { flex: 1 1 260px; font-size: 14px; line-height: 1.6; color: var(--hub-muted); }
+.hub-country__arrow { color: #C0C8D4; font-weight: 700; flex-shrink: 0; transition: transform .15s ease, color .15s ease; }
+.hub-country:hover .hub-country__name { color: var(--heading); }
+.hub-country:hover .hub-country__arrow { color: var(--heading); transform: translateX(-4px); }
+
+/* ---- 国家详情页扩展 ---- */
+.hub .container--country { max-width: 1000px; }
+.hub-notice--success { background: #EAF6EF; border-color: #BFE3CB; }
+.hub-notice--success .hub-notice__icon { color: #1E7A46; }
+.hub-cap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 13px 4px; border-bottom: 1px solid var(--hub-line); }
+.hub-cap:last-child { border-bottom: none; }
+.hub-cap__name { font-size: 15px; font-weight: 600; color: var(--hub-text); }
+.hub-cap__state { font-size: 12.5px; font-weight: 700; color: #1959C7; background: #EEF4FC; border: 1px solid #D8E2F0; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+.hub-hero__flag { width: 46px; height: 32px; object-fit: cover; border-radius: 5px; border: 1px solid var(--hub-line); margin-bottom: 16px; display: block; }
+.hub-hero .hub-status { margin-top: 6px; }
+
+/* ---- 响应式 ---- */
+@media (max-width: 900px) {
+  .hub-cols { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .hub-steps, .hub-steps--4 { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .hub-follow { grid-template-columns: repeat(2, 1fr); }
+  .hub-section { padding-block: 56px; }
+}
+@media (max-width: 600px) {
+  .hub-cols { grid-template-columns: 1fr; }
+  .hub-steps, .hub-steps--4 { grid-template-columns: 1fr; gap: 16px; }
+  .hub-step { flex-direction: row; align-items: flex-start; gap: 12px; }
+  .hub-step__bar { display: none; }
+  .hub-step__num { min-width: 28px; padding-top: 2px; }
+  .hub-follow { grid-template-columns: 1fr 1fr; }
+  .hub-section { padding-block: 48px; }
+  .hub-vlog-row { grid-template-columns: 1fr auto; gap: 4px 12px; }
+  .hub-vlog-topic { grid-column: 1 / -1; }
+  .hub-hero h1 { font-size: 30px; }
+  .hub-head h2 { font-size: 24px; }
+}
+
+/* ===== 文章目录筛选列表 ===== */
+.art-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.art-filter { padding: 8px 16px; border-radius: 999px; border: 1px solid #D8E2F0; background: #fff; color: #475467; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; transition: background .15s ease, color .15s ease, border-color .15s ease; }
+.art-filter:hover { border-color: #173B70; color: #173B70; }
+.art-filter.active { background: #173B70; color: #fff; border-color: #173B70; }
+.art-list { list-style: none; margin: 0; padding: 0; }
+.art-item { display: flex; align-items: center; gap: 12px; padding: 14px 4px; border-bottom: 1px solid #E5EAF0; }
+.art-item:last-child { border-bottom: none; }
+.art-title { flex: 1; min-width: 0; color: #172033; font-weight: 600; font-size: 15.5px; text-decoration: none; }
+.art-title:hover { color: #173B70; }
+.art-arrow { color: #98A2B3; flex-shrink: 0; }
+.art-cat { font-size: 12px; font-weight: 700; color: #1959C7; background: #EEF4FC; border: 1px solid #D8E2F0; padding: 2px 10px; border-radius: 999px; white-space: nowrap; flex-shrink: 0; }
+.art-date { font-size: 13px; color: #667085; white-space: nowrap; flex-shrink: 0; }
+@media (max-width: 640px) {
+  .art-item { flex-wrap: wrap; gap: 6px 10px; }
+  .art-title { flex-basis: 100%; order: 1; }
+  .art-cat { order: 2; }
+  .art-date { order: 3; }
+  .art-arrow { order: 4; margin-inline-start: auto; }
 }
