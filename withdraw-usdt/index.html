@@ -34,7 +34,7 @@
         "description": "سحب USDT من Binance خطوة بخطوة: كيف تعرف أن شبكة الوجهة متوافقة، هل تحتاج Memo، الحد الأدنى والرسوم، وماذا تفعل إذا اكتمل السحب ولم يصل الرصيد.",
         "inLanguage": "ar",
         "datePublished": "2026-09-03",
-        "dateModified": "2026-09-06",
+        "dateModified": "2026-09-19",
         "author": { "@type": "Organization", "name": "فريق تحرير ArabTrail", "url": "https://arabtrail.com/about/" },
         "publisher": { "@type": "Organization", "name": "ArabTrail", "logo": { "@type": "ImageObject", "url": "https://arabtrail.com/assets/logo.svg" } },
         "mainEntityOfPage": { "@type": "WebPage", "@id": "https://arabtrail.com/withdraw-usdt/" }
@@ -52,9 +52,9 @@
         "name": "كيفية سحب USDT من Binance",
         "step": [
           { "@type": "HowToStep", "position": 1, "name": "حدد وجهة السحب وانسخ العنوان", "text": "قرر إن كنت تسحب إلى محفظة شخصية أم إلى منصة أخرى، ثم انسخ عنوان الاستقبال الصحيح للشبكة المختارة." },
-          { "@type": "HowToStep", "position": 2, "name": "افتح السحب في Binance", "text": "من محفظتك في Binance، اختر USDT ثم اضغط سحب." },
+          { "@type": "HowToStep", "position": 2, "name": "افتح السحب في Binance", "text": "من محفظتك في Binance، اختر USDT ثم اضغط سحب. في التطبيق الحالي المسار هو: Assets ثم Overview ثم Send ثم Withdraw Asset." },
           { "@type": "HowToStep", "position": 3, "name": "اختر الشبكة المطابقة", "text": "اختر نفس الشبكة التي حددتها في وجهة الاستقبال، وأدخل Memo أو Tag إن كانت الوجهة تطلبه." },
-          { "@type": "HowToStep", "position": 4, "name": "ألصق العنوان وأدخل المبلغ", "text": "ألصق العنوان، وأدخل المبلغ فوق الحد الأدنى، وراجع الرسوم المعروضة." },
+          { "@type": "HowToStep", "position": 4, "name": "ألصق العنوان وأدخل المبلغ", "text": "ألصق العنوان، وأدخل المبلغ فوق الحد الأدنى. يمكنك اختيار مبلغ الاستلام (Receive amount) فتضاف رسوم الشبكة فوقه، أو مبلغ السحب (Withdrawal amount) فتُخصم الرسوم منه. راجع الرسوم والمبلغ النهائي قبل المتابعة." },
           { "@type": "HowToStep", "position": 5, "name": "أكمل التحقق وأكد", "text": "أكمل التحقق (2FA أو بريد)، ثم أكد العملية وتابع الحالة عبر معرف المعاملة." }
         ]
       },
@@ -62,12 +62,10 @@
         "@type": "FAQPage",
         "mainEntity": [
           { "@type": "Question", "name": "هل أحتاج Memo أو Tag عند سحب USDT؟", "acceptedAnswer": { "@type": "Answer", "text": "لا توجد قاعدة واحدة تنطبق على كل العملات والشبكات. تعتمد الحاجة إلى Memo أو Tag على صفحة الإيداع في الجهة المستقبلة. إن ظهرت خانة Memo أو Tag فانسخها، وإن لم تظهر فلا تضف رقمًا من عندك." } },
-          { "@type": "Question", "name": "كم يستغرق وصول USDT؟", "acceptedAnswer": { "@type": "Answer", "text": "يعتمد على الشبكة وازدحامها وعدد التأكيدات المطلوب لدى الجهة المستقبلة، وليس وقتًا ثابتًا." } },
-          { "@type": "Question", "name": "ماذا يحدث إذا اخترت شبكة خاطئة؟", "acceptedAnswer": { "@type": "Answer", "text": "يعتمد على وجهة الاستقبال ومن يملك المفتاح. في محفظة شخصية قد تتمكن من الوصول إذا كانت المحفظة تدعم تلك الشبكة، لكن الاسترداد ليس مضمونًا. في المنصات يعتمد على دعمها ولا توجد نتيجة مضمونة." } },
-          { "@type": "Question", "name": "هل يمكن استرداد USDT بعد اختيار الشبكة الخطأ؟", "acceptedAnswer": { "@type": "Answer", "text": "ممكن في بعض الحالات وغير مضمون في أخرى. إن كانت الوجهة محفظة تملك مفتاحها وتدعم الشبكة، فقد تصل إليها؛ أما إن كانت منصة فلا بد من التواصل مع دعمها وتزويده بـ TxID." } },
-          { "@type": "Question", "name": "ما الحد الأدنى للسحب؟", "acceptedAnswer": { "@type": "Answer", "text": "يختلف حسب العملة والشبكة، ويظهر لك في شاشة السحب نفسها قبل التأكيد، وقد يتغير دون إشعار." } },
-          { "@type": "Question", "name": "أين أجد معرف المعاملة (TxID)؟", "acceptedAnswer": { "@type": "Answer", "text": "يظهر في تفاصيل السحب داخل سجل عمليات Binance بعد التأكيد." } },
-          { "@type": "Question", "name": "هل يجب اختبار المبلغ أولًا؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم، إذا كانت أول مرة أو المبلغ كبير، أرسل مبلغًا صغيرًا تجريبيًا أولًا للتأكد من صحة العنوان والشبكة." } }
+          { "@type": "Question", "name": "كم يستغرق وصول USDT؟", "acceptedAnswer": { "@type": "Answer", "text": "لا يوجد وقت ثابت. يعتمد الوصول على ازدحام الشبكة وعدد التأكيدات التي تطلبها الجهة المستقبلة، وقد تصل بعض الشبكات خلال دقائق." } },
+          { "@type": "Question", "name": "ماذا أفعل إذا اخترت شبكة خاطئة؟", "acceptedAnswer": { "@type": "Answer", "text": "يعتمد على وجهة الاستقبال ومن يملك المفتاح. في محفظة شخصية قد تتمكن من الوصول إذا كانت تدعم الشبكة، لكن الاسترداد ليس مضمونًا. في المنصات يعتمد على دعمها ولا توجد نتيجة مضمونة." } },
+          { "@type": "Question", "name": "ما الحد الأدنى ورسوم السحب؟", "acceptedAnswer": { "@type": "Answer", "text": "يختلف حسب العملة والشبكة، ويظهر في شاشة السحب نفسها قبل التأكيد، وقد يتغير دون إشعار." } },
+          { "@type": "Question", "name": "أين أجد معرف المعاملة (TxID)؟", "acceptedAnswer": { "@type": "Answer", "text": "يظهر في تفاصيل السحب داخل سجل عمليات Binance بعد التأكيد، ويمكن من خلاله فتح المعاملة على مستكشف الشبكة." } }
         ]
       }
     ]
@@ -93,64 +91,68 @@
     </div>
   </header>
 
-  <main data-pagefind-body>
+  <main class="binance-guide" data-pagefind-body>
     <div class="container article">
       <nav class="breadcrumb" aria-label="مسار التنقل">
         <a href="/">الرئيسية</a> › <a href="/usdt/"><span class="ltr">USDT</span></a> › سحب <span class="ltr">USDT</span> من <span class="ltr">Binance</span>
       </nav>
 
+      <div class="guide-kicker"><span class="ltr">USDT</span> · <span class="ltr">Binance</span></div>
+
       <h1>كيفية سحب <span class="ltr">USDT</span> من <span class="ltr">Binance</span> بأمان: إلى محفظة أو منصة أخرى؟</h1>
 
-      <p>قبل أي خطوة، اسأل نفسك سؤالًا واحدًا: <strong>إلى أين ترسل الأموال؟</strong> إلى محفظة شخصية تملك مفتاحها الخاص، أم إلى حسابك على منصة أخرى؟ الجواب يغيّر نقطتين فقط لكنهما الأهم: هل تحتاج <span class="ltr">Memo</span> أو <span class="ltr">Tag</span>، وكيف تتصرف إذا لم تصل الأموال.</p>
+      <p class="guide-lead">لسحب <span class="ltr">USDT</span> من <span class="ltr">Binance</span> بأمان، انسخ عنوان الإيداع من الجهة المستقبلة واختر الشبكة نفسها في الطرفين. لا تختَر الشبكة لأنها الأرخص فقط، وأدخل <span class="ltr">Memo</span>/<span class="ltr">Tag</span> فقط إذا طلبته جهة الاستقبال.</p>
 
-      <p>أما الخطأ الذي يهددك في الحالتين معًا فهو نفسه: <strong>اختيار شبكة لا تطابق شبكة الاستقبال</strong>. وهذا الدليل يشرح الخطوات أولًا، ثم يعالج كل سيناريو على حدة.</p>
-
-      <p class="updated">آخر تحديث: سبتمبر 2026</p>
-
-            <div class="evidence-card">
-        <div class="evidence-title">ما الذي راجعناه في الواجهة؟</div>
-        <ul>
-          <li><span class="ev-tag hands-on">فحص عملي</span> راجعنا خطوات سحب <span class="ltr">USDT</span> من المنصة داخل الواجهة، حتى شاشة تأكيد العملية.</li>
-          <li><span class="ev-tag interface">تحقق من الواجهة</span> ما يظهر في شاشة السحب — اختيار الشبكة، حقل العنوان و<span class="ltr">Memo/Tag</span>، والحد الأدنى للسحب والرسوم.</li>
-          <li><span class="ev-tag official">مصدر رسمي</span> متطلبات الشبكة والرسوم من مركز مساعدة المنصة.</li>
-        </ul>
-        <div class="evidence-foot"><span class="ev-date">آخر تحقق: سبتمبر <span class="ltr">2026</span></span> · لا نقبل مدفوعات مقابل تغيير أي تقييم · <a href="/how-we-test/">منهجية التحقق</a></div>
+      <div class="guide-meta">
+        <a href="/team/">فريق تحرير <span class="ltr">ArabTrail</span></a>
+        <span class="guide-meta-dot">·</span>
+        <span>آخر تحديث: 19 سبتمبر 2026</span>
+        <span class="guide-meta-dot">·</span>
+        <span>قراءة 7 دقائق</span>
+        <span class="verify-status"><img src="/assets/icons/badge-check.svg" alt="" aria-hidden="true"> تم التحقق</span>
       </div>
 
-<div class="summary-card">
+      <p>قبل أي خطوة، اسأل نفسك سؤالًا واحدًا: <strong>إلى أين ترسل الأموال؟</strong> إلى محفظة شخصية تملك مفتاحها الخاص، أم إلى حسابك على منصة أخرى؟ الجواب يغيّر نقطتين فقط لكنهما الأهم: هل تحتاج <span class="ltr">Memo</span> أو <span class="ltr">Tag</span>، وكيف تتصرف إذا لم تصل الأموال. أما الخطأ الذي يهددك في الحالتين معًا فهو نفسه: <strong>اختيار شبكة لا تطابق شبكة الاستقبال</strong>.</p>
+
+      <div class="summary-card">
         <table>
-          <tr><th>المنصة</th><td><span class="ltr">Binance</span></td></tr>
-          <tr><th>وجهة السحب</th><td>محفظة شخصية أو منصة أخرى</td></tr>
-          <tr><th>الأهم</th><td>تطابق الشبكة + دعم العقد في الوجهة</td></tr>
+          <tr><th>الوجهة</th><td>محفظة شخصية أم منصة أخرى</td></tr>
+          <tr><th>أهم خطوة</th><td>تطابق الشبكة في الطرفين</td></tr>
           <tr><th>الرسوم والحد الأدنى</th><td>يظهران في شاشة السحب قبل التأكيد</td></tr>
-          <tr><th>مدة الوصول</th><td>تعتمد على الشبكة وعدد التأكيدات، وليست وقتًا ثابتًا</td></tr>
+          <tr><th>التتبع</th><td>معرف المعاملة <span class="ltr">TxID</span></td></tr>
         </table>
+      </div>
+
+      <div class="evidence-card">
+        <div class="evidence-title">على ماذا بنينا هذا الدليل؟</div>
+        <ul>
+          <li><span class="ev-tag official">مصدر رسمي</span> دليل السحب ومتطلبات الشبكة و<span class="ltr">Memo/Tag</span> ومعرف المعاملة من مركز مساعدة <span class="ltr">Binance</span>.</li>
+          <li><span class="ev-tag interface">تحقق من الواجهة</span> ما يظهر في شاشة السحب — اختيار الشبكة، حقل العنوان و<span class="ltr">Memo/Tag</span>، والحد الأدنى والرسوم.</li>
+          <li><span class="ev-tag official">لقطة من <span class="ltr">Binance</span> الرسمي</span> لقطات الشاشة في هذا الدليل مأخوذة من مركز مساعدة <span class="ltr">Binance</span> الرسمي.</li>
+        </ul>
+        <div class="evidence-foot"><span class="ev-date">آخر تحقق: سبتمبر <span class="ltr">2026</span></span> · لا نقبل مدفوعات مقابل تغيير أي تقييم · <a href="/how-we-test/">منهجية التحقق</a></div>
       </div>
 
       <div class="toc">
         <div class="toc-title">محتويات الدليل</div>
         <ol>
-          <li><a href="#where">إلى أين تسحب: محفظة أم منصة؟</a></li>
-          <li><a href="#before">قبل أن تبدأ: تحقق من هذه النقاط</a></li>
-          <li><a href="#compatible">كيف أعرف أن شبكة <span class="ltr">USDT</span> في الوجهة متوافقة؟</a></li>
-          <li><a href="#steps">خطوات السحب</a></li>
-          <li><a href="#memo">هل أحتاج إلى <span class="ltr">Memo</span> أو <span class="ltr">Tag</span> عند إرسال <span class="ltr">USDT</span>؟</a></li>
-          <li><a href="#min">الحد الأدنى للسحب وأين تظهر الرسوم</a></li>
-          <li><a href="#arrival">متى تصل الأموال؟</a></li>
-          <li><a href="#success">كيف تعرف أن السحب نجح؟</a></li>
-          <li><a href="#problem">ماذا أفعل إذا ظهرت حالة السحب مكتملة ولم يصل <span class="ltr">USDT</span>؟</a></li>
-          <li><a href="#recovery">هل يمكن استرداد <span class="ltr">USDT</span> بعد اختيار الشبكة الخطأ؟</a></li>
-          <li><a href="#safety">تحذير أمني قبل أي استرداد</a></li>
-          <li><a href="#mistakes">أخطاء شائعة</a></li>
+          <li><a href="#before">قبل أن تبدأ: محفظة أم منصة؟</a></li>
+          <li><a href="#network">كيف تختار الشبكة الصحيحة؟</a></li>
+          <li><a href="#steps">خطوات السحب (5 خطوات)</a></li>
+          <li><a href="#memo">هل تحتاج <span class="ltr">Memo</span> أو <span class="ltr">Tag</span>؟</a></li>
+          <li><a href="#fees">الحد الأدنى والرسوم</a></li>
+          <li><a href="#status">حالة السحب و<span class="ltr">TxID</span> ووقت الوصول</a></li>
+          <li><a href="#problem">ماذا لو لم يصل الرصيد؟</a></li>
+          <li><a href="#recovery">الشبكة الخطأ والاسترداد</a></li>
+          <li><a href="#safety">قائمة أمان قبل السحب</a></li>
           <li><a href="#faq">الأسئلة الشائعة</a></li>
         </ol>
       </div>
 
-      <h2 id="where">إلى أين تسحب: محفظة شخصية أم منصة أخرى؟</h2>
+      <h2 id="before">قبل أن تبدأ: محفظة شخصية أم منصة أخرى؟</h2>
       <p><strong>محفظة شخصية تملك مفاتيحها الخاصة:</strong> قد تتمكن من الوصول إلى الأموال إذا كانت المحفظة تدعم الشبكة التي استُخدمت، لأنك تتحكم بالمفتاح الخاص. لكن هذا ليس استردادًا مضمونًا؛ فإذا كان العنوان خاطئًا أو فُقد المفتاح أو كانت الشبكة غير قابلة للوصول، فقد تبقى الأموال غير قابلة للاستخدام.</p>
       <p><strong>منصة أخرى:</strong> لا تملك المنصة المرسلة مفتاح عنوان الإيداع لدى المنصة المستقبلة، لذلك يجب التواصل مع دعم المنصة المستقبلة. قد تفرض رسومًا أو ترفض الاسترداد، ولا توجد نتيجة مضمونة.</p>
-
-      <h2 id="before">قبل أن تبدأ: تحقق من هذه النقاط</h2>
+      <p>قبل أي سحب تحقق من هذه النقاط:</p>
       <ol>
         <li><strong>العنوان صحيح</strong>: انسخ العنوان والصقه، ولا تكتبه يدويًا.</li>
         <li><strong>الشبكة مطابقة</strong>: شبكة الإرسال في <span class="ltr">Binance</span> يجب أن تطابق شبكة الاستقبال.</li>
@@ -158,50 +160,66 @@
         <li><strong>المبلغ فوق الحد الأدنى</strong>: لكل شبكة حد أدنى، يظهر في شاشة السحب.</li>
         <li><strong>أدخل <span class="ltr">Memo</span> إن طلبته الوجهة</strong>: بعض المنصات تشترطه لتوجيه الإيداع إلى حسابك.</li>
       </ol>
-      <div class="callout warning">
-        <span class="callout-title">تنبيه مهم</span>
-        لا تختَر الشبكة بناءً على انخفاض الرسوم فقط. يجب أن تكون الشبكة مدعومة في الجهة المستقبلة ومتوافقة مع عنوان الإيداع فيها. وإذا كان المبلغ كبيرًا أو هذه أول مرة، أرسل مبلغًا صغيرًا تجريبيًا أولًا.
-      </div>
 
-      <h2 id="compatible">كيف أعرف أن شبكة <span class="ltr">USDT</span> في الوجهة متوافقة؟</h2>
+      <h2 id="network">كيف تختار الشبكة الصحيحة؟</h2>
+      <div class="callout warning">
+        <span class="callout-title">لا تختَر <span class="ltr">TRC20</span> أو <span class="ltr">BEP20</span> أو <span class="ltr">ERC20</span> بناءً على الرسوم وحدها</span>
+        يجب أن تكون الشبكة مدعومة في الجهة المستقبلة ومتوافقة مع عنوان الإيداع فيها. وإذا كان المبلغ كبيرًا أو هذه أول مرة، أرسل مبلغًا صغيرًا تجريبيًا أولًا.
+      </div>
       <p>لا تعتمد على شكل العنوان وحده لتحديد الشبكة. قد يبدأ العنوان بـ <span class="ltr">0x</span> على شبكات مختلفة مثل <span class="ltr">Ethereum</span> و<span class="ltr">BNB Chain</span> وشبكات <span class="ltr">EVM</span> أخرى. اختر الشبكة من صفحة الإيداع في الوجهة نفسها، وليس بناءً على تشابه العنوان أو انخفاض الرسوم.</p>
-      <p>الخطوات العملية:</p>
+      <p>الترتيب الصحيح:</p>
       <ol>
         <li>افتح صفحة إيداع <span class="ltr">USDT</span> في الجهة المستقبلة.</li>
         <li>لاحظ الشبكات التي تعرضها المنصة أو المحفظة لهذه العملة.</li>
         <li>اختر شبكة مدعومة في الجهتين (المرسل والمستقبل) وليس أرخص شبكة فقط.</li>
         <li>تأكد أن الجهة المستقبلة تدعم عقد <span class="ltr">USDT</span> على تلك الشبكة تحديدًا، وليس الشبكة فحسب.</li>
+        <li>انسخ العنوان، ثم اختر الشبكة نفسها في <span class="ltr">Binance</span>.</li>
       </ol>
 
-      <h2 id="steps">خطوات السحب</h2>
+      <h2 id="steps">خطوات السحب (5 خطوات)</h2>
 
       <div class="step">
-        <div class="step-head"><span class="step-num">1</span> حدد الوجهة وانسخ العنوان</div>
+        <div class="step-head"><span class="step-num">1</span><h3>حدد الوجهة وانسخ العنوان</h3></div>
         <p>قرر إن كنت تسحب إلى محفظة شخصية أم إلى منصة أخرى. في الحالتين، حدد <span class="ltr">USDT</span> واختر الشبكة من صفحة الإيداع في الوجهة، ثم انسخ عنوان الاستقبال الصحيح.</p>
       </div>
 
       <div class="step">
-        <div class="step-head"><span class="step-num">2</span> افتح السحب في <span class="ltr">Binance</span></div>
-        <p>من محفظتك في <span class="ltr">Binance</span>، اختر <span class="ltr">USDT</span> ثم اضغط <strong>«سحب»</strong>.</p>
+        <div class="step-head"><span class="step-num">2</span><h3>افتح السحب في <span class="ltr">Binance</span></h3></div>
+        <p>من محفظتك في <span class="ltr">Binance</span>، اختر <span class="ltr">USDT</span> ثم اضغط <strong>«سحب»</strong>. في التطبيق الحالي المسار هو: <span class="ltr">Assets</span> → <span class="ltr">Overview</span> → <span class="ltr">Send</span> → <span class="ltr">Withdraw Asset</span>.</p>
       </div>
 
+      <figure class="guide-screenshot">
+        <img src="/assets/screenshots/withdraw-usdt-1-entry.webp" alt="شاشة بدء سحب USDT في Binance" width="1200" height="676" loading="lazy">
+        <figcaption>بدء سحب <span class="ltr">USDT</span> — لقطة من <span class="ltr">Binance</span> الرسمي.</figcaption>
+      </figure>
+
       <div class="step">
-        <div class="step-head"><span class="step-num">3</span> اختر نفس الشبكة</div>
+        <div class="step-head"><span class="step-num">3</span><h3>اختر نفس الشبكة</h3></div>
         <p>اختر الشبكة نفسها التي حددتها في الوجهة (<span class="ltr">TRC20</span> أو <span class="ltr">BEP20</span> أو <span class="ltr">ERC20</span>). لتختار الشبكة الأنسب، راجع <a href="/usdt-trc20-or-bep20/">دليل الشبكات</a>.</p>
       </div>
 
       <div class="step">
-        <div class="step-head"><span class="step-num">4</span> ألصق العنوان وأدخل المبلغ</div>
-        <p>ألصق العنوان الذي نسخته، وأدخل المبلغ فوق الحد الأدنى، ثم راجع الرسوم المعروضة قبل المتابعة.</p>
+        <div class="step-head"><span class="step-num">4</span><h3>ألصق العنوان وأدخل المبلغ</h3></div>
+        <p>ألصق العنوان الذي نسخته، ثم أدخل المبلغ فوق الحد الأدنى. يقدم <span class="ltr">Binance</span> طريقتين لحساب المبلغ:</p>
+        <ul>
+          <li><strong>مبلغ الاستلام (<span class="ltr">Receive amount</span>)</strong>: تدخل المبلغ الذي تريد أن يصل فعلًا إلى الطرف الآخر، وتُضاف رسوم الشبكة فوقه إلى إجمالي السحب.</li>
+          <li><strong>مبلغ السحب (<span class="ltr">Withdrawal amount</span>)</strong>: تدخل إجمالي ما تريد سحبه، وتُخصم رسوم الشبكة منه.</li>
+        </ul>
+        <p>راجع رسوم الشبكة والمبلغ النهائي الذي سيصل قبل المتابعة.</p>
       </div>
 
+      <figure class="guide-screenshot">
+        <img src="/assets/screenshots/withdraw-usdt-2-address.webp" alt="إدخال العنوان واختيار الشبكة والمبلغ عند سحب USDT" width="1200" height="676" loading="lazy">
+        <figcaption>إدخال العنوان واختيار الشبكة والمبلغ — لقطة من <span class="ltr">Binance</span> الرسمي.</figcaption>
+      </figure>
+
       <div class="step">
-        <div class="step-head"><span class="step-num">5</span> أكمل التحقق وأكد</div>
+        <div class="step-head"><span class="step-num">5</span><h3>أكمل التحقق وأكد</h3></div>
         <p>أكمل التحقق المطلوب (<span class="ltr">2FA</span> أو رمز البريد)، ثم أكد العملية. بعدها تابع الحالة عبر معرف المعاملة.</p>
       </div>
 
-      <h2 id="memo">هل أحتاج إلى <span class="ltr">Memo</span> أو <span class="ltr">Tag</span> عند إرسال <span class="ltr">USDT</span>؟</h2>
-      <p>لا توجد قاعدة واحدة تنطبق على كل العملات والشبكات. تعتمد الحاجة إلى <span class="ltr">Memo</span> أو <span class="ltr">Tag</span> على صفحة الإيداع في الجهة المستقبلة، وعلى طريقة إدارة العناوين لديها.</p>
+      <h2 id="memo">هل تحتاج <span class="ltr">Memo</span> أو <span class="ltr">Tag</span>؟</h2>
+      <p>لا توجد قاعدة واحدة تنطبق على كل العملات والشبكات. <strong>لا تُعامل <span class="ltr">USDT</span> على أنها تحتاج دائمًا إلى <span class="ltr">Memo</span> أو لا تحتاج إليه أبدًا</strong>؛ الحكم يعود إلى صفحة الإيداع للشبكة المحددة في الجهة المستقبلة.</p>
       <p>قبل السحب:</p>
       <ol>
         <li>افتح صفحة إيداع <span class="ltr">USDT</span> في الجهة المستقبلة.</li>
@@ -212,9 +230,8 @@
       </ol>
       <p>قد يؤدي غياب <span class="ltr">Memo</span> أو <span class="ltr">Tag</span> المطلوب إلى وصول الأموال إلى العنوان المشترك دون ربطها بحسابك. وفي هذه الحالة يجب التواصل مع الجهة المستقبلة، ولا تضمن <span class="ltr">Binance</span> نجاح الاسترداد.</p>
 
-      <h2 id="min">الحد الأدنى للسحب وأين تظهر الرسوم</h2>
-      <p>يعرض <span class="ltr">Binance</span> رسوم السحب والحد الأدنى للمبلغ في صفحة السحب نفسها. قد تختلف هذه القيم حسب العملة والشبكة وإعدادات المنصة، وقد تتغير دون إشعار مسبق.</p>
-      <p>لا تستخدم رقمًا قديمًا من مقال أو فيديو. قبل التأكيد، راجع:</p>
+      <h2 id="fees">الحد الأدنى والرسوم</h2>
+      <p>يعرض <span class="ltr">Binance</span> رسوم السحب والحد الأدنى للمبلغ في صفحة السحب نفسها. قد تختلف هذه القيم حسب العملة والشبكة وإعدادات المنصة، وقد تتغير دون إشعار مسبق. لا تستخدم رقمًا قديمًا من مقال أو فيديو. قبل التأكيد، راجع:</p>
       <ul>
         <li>الشبكة المختارة؛</li>
         <li>الحد الأدنى للسحب؛</li>
@@ -224,20 +241,22 @@
       </ul>
       <p>راجع <a href="/binance-fees/">رسوم Binance كاملة</a> لفهم البنية.</p>
 
-      <h2 id="arrival">متى تصل الأموال؟</h2>
-      <p>لا يوجد وقت وصول ثابت مضمون. الشبكات الأسرع مثل <span class="ltr">TRC20</span> و<span class="ltr">BEP20</span> غالبًا ما تصل في دقائق، بينما قد تتأخر <span class="ltr">ERC20</span> في أوقات الازدحام. العامل الحاسم هو <strong>ازدحام الشبكة لحظة الإرسال</strong>، وعدد التأكيدات الذي تطلبه الجهة المستقبلة قبل إظهار الرصيد، وليس تصريح المنصة المرسلة.</p>
-
-      <h2 id="success">كيف تعرف أن السحب نجح؟</h2>
-      <p>ظهور حالة «مكتملة» في <span class="ltr">Binance</span> يعني عادةً أن طلب السحب عولج وأُرسل إلى الشبكة، لكنه لا يعني بالضرورة أن الرصيد ظهر فورًا في الجهة المستقبلة.</p>
-      <p>تحقق من ثلاث مراحل منفصلة:</p>
+      <h2 id="status">حالة السحب و<span class="ltr">TxID</span> ووقت الوصول</h2>
+      <p>ظهور حالة «مكتملة» في <span class="ltr">Binance</span> يعني عادةً أن طلب السحب عولج وأُرسل إلى الشبكة، لكنه لا يعني بالضرورة أن الرصيد ظهر فورًا في الجهة المستقبلة. تحقق من ثلاث مراحل منفصلة:</p>
       <ol>
-        <li><strong>حالة السحب داخل <span class="ltr">Binance</span></strong>: هل انتقلت من «قيد المعالجة» إلى «مكتملة»؟</li>
-        <li><strong>حالة المعاملة على مستكشف الشبكة</strong>: انسخ معرف المعاملة <span class="ltr">TxID</span> وافتحه على المستكشف لترى عدد التأكيدات.</li>
-        <li><strong>تسجيل الإيداع داخل المحفظة أو المنصة المستقبلة</strong>: هل أظهرت الرصيد فعلًا؟</li>
+        <li><strong><span class="ltr">Binance</span>: <span class="ltr">Completed</span></strong> — هل انتقلت حالة السحب من «قيد المعالجة» إلى «مكتملة»؟</li>
+        <li><strong><span class="ltr">Blockchain</span>: <span class="ltr">Confirmed</span></strong> — انسخ معرف المعاملة <span class="ltr">TxID</span> وافتحه على مستكشف الشبكة لترى عدد التأكيدات.</li>
+        <li><strong><span class="ltr">Recipient</span>: <span class="ltr">Credited</span></strong> — هل أظهرت المحفظة أو المنصة المستقبلة الرصيد فعلًا؟</li>
       </ol>
+      <p>أما وقت الوصول فلا يوجد له ثابت مضمون. قد تصل بعض الشبكات خلال دقائق، لكن الوصول يعتمد على ازدحام الشبكة لحظة الإرسال وعدد التأكيدات التي تطلبها الجهة المستقبلة، وليس على تصريح المنصة المرسلة.</p>
       <p>إذا كانت المعاملة مؤكدة على البلوكشين ولم يظهر الرصيد، فتواصل مع دعم الجهة المستقبلة وأرسل <span class="ltr">TxID</span> والشبكة والعنوان والمبلغ.</p>
 
-      <h2 id="problem">ماذا أفعل إذا ظهرت حالة السحب مكتملة ولم يصل <span class="ltr">USDT</span>؟</h2>
+      <figure class="guide-screenshot">
+        <img src="/assets/screenshots/withdraw-usdt-3-history.webp" alt="سجل عمليات السحب ومعرف المعاملة TxID" width="1200" height="676" loading="lazy">
+        <figcaption>سجل السحب ومعرف المعاملة <span class="ltr">TxID</span> — لقطة من <span class="ltr">Binance</span> الرسمي.</figcaption>
+      </figure>
+
+      <h2 id="problem">ماذا لو لم يصل الرصيد؟</h2>
       <p>أول خطوة: لا تتصرف باندفاع. اجمع بيانات المعاملة — عنوان الإرسال والاستقبال، والشبكة، و<span class="ltr">TxID</span> — ثم افحص الحالة على مستكشف الشبكة. التصرف الصحيح يعتمد على حالة السحب:</p>
       <div class="table-wrap">
         <table>
@@ -251,48 +270,26 @@
         </table>
       </div>
 
-      <h2 id="recovery">هل يمكن استرداد <span class="ltr">USDT</span> بعد اختيار الشبكة الخطأ؟</h2>
+      <h2 id="recovery">الشبكة الخطأ والاسترداد</h2>
       <p>الاسترداد <strong>ممكن في بعض الحالات وغير مضمون في أخرى</strong>، ويتوقف على مَن يملك مفتاح عنوان الاستقبال، وعلى دعم المحفظة أو المنصة للشبكة المستخدمة.</p>
       <ul>
         <li><strong>محفظة شخصية تملك مفتاحها</strong>: قد تتمكن من الوصول إلى الأموال بإضافة نفس الشبكة يدويًا، بشرط أن تدعمها المحفظة. لكن إن كان العنوان خاطئًا أو فُقد المفتاح، فقد تبقى الأموال غير قابلة للاستخدام.</li>
         <li><strong>منصة أخرى</strong>: لا تملك <span class="ltr">Binance</span> مفتاح عنوان الإيداع لدى المنصة المستقبلة، فلا بد من التواصل مع دعمها وتزويده بـ <span class="ltr">TxID</span> والشبكة والعنوان. قد تفرض رسومًا أو ترفض الاسترداد.</li>
       </ul>
-      <p>لا تدفع لأي «متخصص استرداد أموال» يعِدك بنتيجة مؤكدة — هؤلاء غالبًا محتالون. راجع <a href="/p2p-scams/">خريطة الاحتيال في P2P</a> لتعرف كيف يعملون.</p>
+      <p>لا تدفع لأي «متخصص استرداد أموال» يعِدك بنتيجة مؤكدة — هؤلاء غالبًا محتالون.</p>
 
-      <h2 id="safety">تحذير أمني قبل أي استرداد</h2>
-      <p><strong>لا تشارك عبارة الاسترداد أو المفتاح الخاص مع أي شخص بحجة استرداد <span class="ltr">USDT</span>.</strong> إذا كانت الأموال في محفظة شخصية، فإن من يملك المفتاح أو عبارة الاسترداد يستطيع نقلها. استخدم دعم <span class="ltr">Binance</span> أو دعم الجهة المستقبلة فقط عبر الموقع أو التطبيق الرسمي.</p>
-      <ul>
+      <h2 id="safety">قائمة أمان قبل السحب</h2>
+      <p><strong>لا تشارك عبارة الاسترداد (<span class="ltr">Seed Phrase</span>) أو المفتاح الخاص مع أي شخص بحجة استرداد <span class="ltr">USDT</span>.</strong> من يملك المفتاح أو عبارة الاسترداد يستطيع نقل الأموال. استخدم دعم <span class="ltr">Binance</span> أو دعم الجهة المستقبلة فقط عبر الموقع أو التطبيق الرسمي.</p>
+      <ul class="checklist">
         <li>انسخ العنوان بدلًا من كتابته يدويًا.</li>
         <li>بعد اللصق، قارن الأحرف الأولى والأخيرة من العنوان.</li>
-        <li>عند المبالغ الكبيرة، أرسل مبلغًا صغيرًا تجريبيًا أولًا.</li>
+        <li>عند المبالغ الكبيرة أو العنوان الجديد، أرسل مبلغًا صغيرًا تجريبيًا أولًا.</li>
         <li>لا تختَر شبكة لمجرد أن رسومها أرخص.</li>
-        <li>أغلق أي برنامج تحكم عن بُعد أثناء السحب.</li>
-        <li>لا تصدق أشخاصًا أو جهات تعدك بـ «استرداد مضمون» للأموال.</li>
+        <li>أدخل <span class="ltr">Memo</span>/<span class="ltr">Tag</span> فقط إذا طلبته جهة الاستقبال.</li>
+        <li>راجع شاشة التأكيد النهائية قبل السحب — تظهر فيها الشبكة والعنوان مرة أخرى.</li>
+        <li>لا تشارك عبارة الاسترداد أو المفتاح الخاص مع أي شخص.</li>
+        <li>لا تصدق جهات تعدك بـ «استرداد مضمون» للأموال.</li>
       </ul>
-
-      <h2 id="mistakes">أخطاء شائعة</h2>
-      <div class="faq">
-        <details>
-          <summary>اختيار شبكة غير مطابقة</summary>
-          <p>السبب الأول لفقدان الأموال أو تعليقها. تحقق دائمًا من تطابق الشبكة في الطرفين ومن دعم العقد في الوجهة.</p>
-        </details>
-        <details>
-          <summary>كتابة العنوان يدويًا</summary>
-          <p>خطأ إملائي واحد يرسل الأموال لعنوان خاطئ. انسخ والصق دائمًا.</p>
-        </details>
-        <details>
-          <summary>نسيان <span class="ltr">Memo</span> أو <span class="ltr">Tag</span> المطلوب</summary>
-          <p>قد تصل الأموال إلى عنوان المنصة دون أن تُقيَّد باسمك. أدخله إن ظهرت خانته في صفحة الإيداع.</p>
-        </details>
-        <details>
-          <summary>سحب مبلغ أقل من الحد الأدنى</summary>
-          <p>سترفض المنصة العملية أو تعتبرها غير صالحة. تحقق من الحد الأدنى للشبكة.</p>
-        </details>
-        <details>
-          <summary>إرسال المبلغ الكامل دون اختبار</summary>
-          <p>أرسل مبلغًا صغيرًا أولًا عند التعامل مع عنوان جديد أو شبكة جديدة.</p>
-        </details>
-      </div>
 
       <h2 id="faq">الأسئلة الشائعة</h2>
       <div class="faq">
@@ -302,27 +299,19 @@
         </details>
         <details>
           <summary>كم يستغرق وصول <span class="ltr">USDT</span>؟</summary>
-          <p>يعتمد على الشبكة وازدحامها وعدد التأكيدات المطلوب لدى الجهة المستقبلة، وليس وقتًا ثابتًا.</p>
+          <p>لا يوجد وقت ثابت. يعتمد الوصول على ازدحام الشبكة وعدد التأكيدات التي تطلبها الجهة المستقبلة، وقد تصل بعض الشبكات خلال دقائق.</p>
         </details>
         <details>
-          <summary>ماذا يحدث إذا اخترت شبكة خاطئة؟</summary>
+          <summary>ماذا أفعل إذا اخترت شبكة خاطئة؟</summary>
           <p>يعتمد على وجهة الاستقبال ومن يملك المفتاح. في محفظة شخصية قد تتمكن من الوصول إذا كانت تدعم الشبكة، لكن الاسترداد ليس مضمونًا. في المنصات يعتمد على دعمها ولا توجد نتيجة مضمونة.</p>
         </details>
         <details>
-          <summary>هل يمكن استرداد <span class="ltr">USDT</span> بعد اختيار الشبكة الخطأ؟</summary>
-          <p>ممكن في بعض الحالات وغير مضمون في أخرى. إن كانت الوجهة محفظة تملك مفتاحها وتدعم الشبكة، فقد تصل إليها؛ أما إن كانت منصة فلا بد من التواصل مع دعمها وتزويده بـ <span class="ltr">TxID</span>.</p>
-        </details>
-        <details>
-          <summary>ما الحد الأدنى للسحب؟</summary>
-          <p>يختلف حسب العملة والشبكة، ويظهر لك في شاشة السحب نفسها قبل التأكيد، وقد يتغير دون إشعار.</p>
+          <summary>ما الحد الأدنى ورسوم السحب؟</summary>
+          <p>يختلف حسب العملة والشبكة، ويظهر في شاشة السحب نفسها قبل التأكيد، وقد يتغير دون إشعار.</p>
         </details>
         <details>
           <summary>أين أجد معرف المعاملة (<span class="ltr">TxID</span>)؟</summary>
-          <p>يظهر في تفاصيل السحب داخل سجل عمليات <span class="ltr">Binance</span> بعد التأكيد.</p>
-        </details>
-        <details>
-          <summary>هل يجب اختبار المبلغ أولًا؟</summary>
-          <p>نعم، إذا كانت أول مرة أو المبلغ كبير، أرسل مبلغًا صغيرًا تجريبيًا أولًا للتأكد من صحة العنوان والشبكة.</p>
+          <p>يظهر في تفاصيل السحب داخل سجل عمليات <span class="ltr">Binance</span> بعد التأكيد، ويمكن من خلاله فتح المعاملة على مستكشف الشبكة.</p>
         </details>
       </div>
 
@@ -331,34 +320,31 @@
       <p>ولا تخلط بين ثلاث مراحل: حالة <span class="ltr">Binance</span>، وتأكيدات الشبكة عبر <span class="ltr">TxID</span>، وتسجيل الإيداع في الوجهة. إن لم تصل الأموال، اجمع بيانات المعاملة أولًا، واعلم أن الاسترداد ممكن في بعض الحالات وغير مضمون في أخرى، ولا تشارك عبارة الاسترداد مع أي شخص.</p>
 
       <div class="related">
-        <h2>اقرأ أيضًا</h2>
+        <h2>الخطوة التالية</h2>
         <ul>
-          <li><a href="/transfer-usdt/">كيفية تحويل USDT من منصة إلى أخرى</a></li>
-          <li><a href="/usdt-trc20-or-bep20/">TRC20 أم BEP20 أم ERC20: أي شبكة تختار؟</a></li>
-          <li><a href="/usdt-wrong-network/">أرسلت USDT عبر الشبكة الخطأ؟ ماذا تفعل؟</a></li>
-          <li><a href="/usdt-transfer-not-arriving/">تحويل USDT لم يصل: كيف تتحقق من حالة المعاملة؟</a></li>
-          <li><a href="/binance-fees/">رسوم Binance كاملة</a></li>
-          <li><a href="/is-binance-safe/">هل Binance آمن؟ أمان المنصة وأمان حسابك</a></li>
+          <li><a href="/usdt-trc20-or-bep20/">اختر شبكة USDT الصحيحة</a></li>
+          <li><a href="/transfer-usdt/">حوّل USDT إلى منصة أخرى</a></li>
+          <li><a href="/usdt-transfer-not-arriving/">تحويل USDT لم يصل؟ افحص حالة المعاملة</a></li>
         </ul>
       </div>
 
       <div class="signup-card">
         <div class="signup-head">
           <img src="/assets/binance-logo.webp" alt="Binance" class="signup-logo" width="44" height="44">
-          <h3>أنشئ حسابك على Binance</h3>
+          <h3>أنشئ حسابك على <span class="ltr">Binance</span></h3>
         </div>
-        <p class="signup-desc">سجّل عبر الرابط الرسمي ثم أكمل KYC لشراء وسحب USDT.</p>
-        <a href="https://www.binance.com/join?ref=FSFSL090" class="btn" rel="nofollow sponsored noopener">سجّل في Binance الآن</a>
-        <p class="signup-disclosure">رمز الإحالة FSFSL090 — قد يحصل ArabTrail على عمولة عند التسجيل، دون أي تكلفة إضافية عليك.</p>
+        <p class="signup-desc">إذا لم يكن لديك حساب بعد، سجّل عبر الرابط الرسمي أدناه. التسجيل مجاني، وقد تحتاج إلى إكمال التحقق من الهوية <span class="ltr">KYC</span> للوصول إلى خدمات الإيداع والسحب.</p>
+        <a href="https://www.binance.com/join?ref=FSFSL090" rel="nofollow sponsored noopener" target="_blank" class="btn btn-primary">سجّل في <span class="ltr">Binance</span> الآن</a>
+        <p class="signup-disclosure">رمز الإحالة <span class="ltr">FSFSL090</span> — قد يحصل <span class="ltr">ArabTrail</span> على عمولة عند التسجيل، دون أي تكلفة إضافية عليك.</p>
       </div>
 
       <p class="updated">إعداد: <a href="/team/">فريق تحرير <span class="ltr">ArabTrail</span></a>· <a href="/how-we-test/">منهجية التحقق</a></p>
 
       <p class="disclosure">
-        هذا المقال لأغراض تعليمية فقط وليس نصيحة مالية. قد تتغير واجهة المنصة ورسومها ومدة معالجة المعاملات، فاعتمد على ما يظهر لك في حسابك.
+        هذا المقال لأغراض تعليمية فقط وليس نصيحة مالية. قد تتغير واجهة المنصة ورسومها ومدة معالجة المعاملات، فاعتمد على ما يظهر لك في حسابك. إن قررت استخدام <span class="ltr">Binance</span>، سجّل عبر <a href="https://www.binance.com/join?ref=FSFSL090" rel="nofollow sponsored noopener">الرابط الرسمي</a> — قد يحصل <span class="ltr">ArabTrail</span> على عمولة عند التسجيل عبر بعض الروابط، دون أي تكلفة إضافية عليك.
       </p>
 
-      <p class="sources">المصادر: <a href="https://www.binance.com/en/support/faq/detail/115003670492" rel="nofollow noopener">دليل السحب من Binance</a> · <a href="https://www.binance.com/en/support/faq/detail/40b87335db904481888ef406b105442b" rel="nofollow noopener">شرح Memo/Tag</a> · <a href="https://www.binance.com/en/support/faq/detail/115003743192" rel="nofollow noopener">استكشاف مشاكل عدم وصول الإيداع</a> · <a href="https://www.binance.com/en/support/faq/detail/d9ff84dccc24423cbe6d59859d86afe3" rel="nofollow noopener">رسوم السحب</a></p>
+      <p class="sources">المصادر: <a href="https://www.binance.com/en/support/faq/detail/115003670492" rel="nofollow noopener">Binance — كيفية سحب العملات الرقمية</a> · <a href="https://www.binance.com/en/support/faq/detail/40b87335db904481888ef406b105442b" rel="nofollow noopener">Binance — استرداد الإيداع بـ Memo/Tag خاطئ أو مفقود</a> · <a href="https://www.binance.com/en/support/faq/detail/2c325e53daf04442adbaf8f6ba052f71" rel="nofollow noopener">Binance — كيف أجد معرف المعاملة (TxID)</a> · <a href="https://www.binance.com/en/support/faq/detail/22c5be4c4753453981c182c4a6669896" rel="nofollow noopener">Binance — أسئلة شائعة حول عمليات السحب غير الناجحة</a> · <a href="https://www.binance.com/en/support/faq/detail/d9ff84dccc24423cbe6d59859d86afe3" rel="nofollow noopener">Binance — رسوم السحب</a> · <a href="https://www.binance.com/en/support/faq/detail/115003743192" rel="nofollow noopener">Binance — استكشاف مشاكل عدم وصول الإيداع</a></p>
     </div>
   </main>
 
