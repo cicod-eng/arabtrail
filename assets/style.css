@@ -1349,27 +1349,28 @@ img { max-width: 100%; height: auto; }
 .about-point strong { display: block; font-size: 15px; font-weight: 700; color: var(--green-dark); }
 .about-point p { margin: 2px 0 0; font-size: 14px; line-height: 1.65; color: var(--muted); }
 
-/* ===== 5. Binance / OKX 大卡 ===== */
-.exchange-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.exchange-card { display: flex; flex-direction: column; gap: 16px; padding: 32px; border: 1px solid var(--border); border-radius: var(--radius-large); background: var(--surface); box-shadow: 0 10px 32px rgba(20,32,51,.07); }
+/* ===== 5. Binance / OKX 大卡（统一浅色，品牌色只做点缀）===== */
+.exchange-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.exchange-card { display: flex; flex-direction: column; gap: 16px; padding: 32px 32px 28px; border: 1px solid #E4E9F0; border-top: 4px solid transparent; border-radius: 22px; background: #fff; box-shadow: 0 10px 30px rgba(20,32,51,.05); }
+.exchange-card--binance { border-top-color: #F0B90B; box-shadow: 0 14px 36px rgba(20,32,51,.07); }
+.exchange-card--okx { border-top-color: #20252B; box-shadow: 0 8px 24px rgba(20,32,51,.04); }
 .exchange-head { display: flex; align-items: center; gap: 12px; }
-.exchange-logo { width: 44px; height: 44px; border-radius: 10px; background: #fff; border: 1px solid var(--border); padding: 6px; object-fit: contain; flex-shrink: 0; }
-.exchange-head h3 { margin: 0; font-size: 24px; font-weight: 800; color: var(--green-dark); }
+.exchange-logo { width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; }
+.exchange-head h3 { margin: 0; font-size: 24px; font-weight: 800; color: #17233B; }
 .exchange-desc { margin: 0; font-size: 15px; line-height: 1.7; color: var(--muted); }
-.exchange-links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.exchange-links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .exchange-links li { position: relative; padding-inline-start: 18px; font-size: 15px; }
-.exchange-links li::before { content: "•"; position: absolute; inset-inline-start: 2px; color: var(--accent); font-weight: 700; }
+.exchange-links li::before { content: ""; position: absolute; inset-inline-start: 3px; top: 50%; width: 6px; height: 6px; border-radius: 50%; transform: translateY(-50%); }
+.exchange-card--binance .exchange-links li::before { background: #F0B90B; }
+.exchange-card--okx .exchange-links li::before { background: #20252B; }
 .exchange-links a { color: var(--ink); }
 .exchange-links a:hover { color: var(--green); }
-.exchange-cta { margin-top: auto; }
-.exchange-card--dark { background: #0b1f18; border-color: #0b1f18; }
-.exchange-card--dark .exchange-head h3 { color: #fff; }
-.exchange-card--dark .exchange-desc { color: rgba(255,255,255,.72); }
-.exchange-card--dark .exchange-links li::before { color: #f0b90b; }
-.exchange-card--dark .exchange-links a { color: #fff; }
-.exchange-card--dark .exchange-links a:hover { color: #f0b90b; }
-.exchange-card--dark .exchange-cta { background: #f0b90b; color: #0b1f18; border-color: #f0b90b; }
-.exchange-card--dark .exchange-cta:hover { background: #ffd23e; color: #0b1f18; text-decoration: none; }
+.exchange-cta { margin-top: auto; display: inline-block; text-align: center; padding: 12px 18px; border-radius: 12px; font-size: 15px; font-weight: 700; border: 1px solid transparent; transition: background .15s ease, color .15s ease, border-color .15s ease; }
+.exchange-cta:hover { text-decoration: none; }
+.exchange-card--binance .exchange-cta { background: #FFF7D6; color: #7A5900; border-color: #F0B90B; }
+.exchange-card--binance .exchange-cta:hover { background: #F0B90B; color: #0b1f18; }
+.exchange-card--okx .exchange-cta { background: #F5F6F8; color: #182230; border-color: #CDD3DC; }
+.exchange-card--okx .exchange-cta:hover { background: #182230; color: #fff; }
 
 /* ===== 6. USDT / P2P 主题索引 ===== */
 .topic-index { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
