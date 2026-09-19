@@ -39,18 +39,8 @@
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "الرئيسية",
-            "item": "https://arabtrail.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "اتصل بنا",
-            "item": "https://arabtrail.com/contact/"
-          }
+          { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://arabtrail.com/" },
+          { "@type": "ListItem", "position": 2, "name": "اتصل بنا", "item": "https://arabtrail.com/contact/" }
         ]
       }
     ]
@@ -76,32 +66,87 @@
     </div>
   </header>
 
-  <main data-pagefind-body>
-    <div class="container article">
+  <main data-pagefind-body class="hub">
+    <!-- Hero -->
+    <div class="container container--legal hub-hero">
       <nav class="breadcrumb" aria-label="مسار التنقل"><a href="/">الرئيسية</a> › اتصل بنا</nav>
-      <h1>اتصل بنا</h1>
-
-      <p>نرحب بملاحظاتك حول محتوى <span class="ltr">ArabTrail</span>. إذا وجدت خطأ، أو لاحظت أن معلومة معينة أصبحت قديمة، أو لديك اقتراح لتحسين أحد الأدلة، يسعدنا أن نراجع بلاغك.</p>
-
-      <h2>كيف تراسلنا؟</h2>
-      <p>أرسل رسالتك إلى: <a href="mailto:hola@arabtrail.com"><span class="ltr">hola@arabtrail.com</span></a></p>
-
-      <h2>ما الذي يسرّع مراجعة البلاغ؟</h2>
-      <ul>
-        <li>رابط الصفحة التي تحتاج إلى مراجعة.</li>
-        <li>وصف موجز للمعلومة أو الخطوة التي تعتقد أنها غير دقيقة أو قديمة.</li>
-        <li>رابط المصدر الرسمي إن كان متاحًا.</li>
-      </ul>
-
-      <h2>ما الذي لا نقدمه؟</h2>
-      <p>لا يقدم <span class="ltr">ArabTrail</span> نصائح استثمارية أو مالية أو قانونية أو ضريبية، ولا نقدم دعمًا فنيًا لحسابات المنصات. لأي مشكلة في حسابك أو إيداع أو سحب، تواصل مع الدعم الرسمي للمنصة المعنية مباشرة.</p>
-
-      <h2>تنبيه أمني</h2>
-      <div class="callout warning">
-        <span class="callout-title">لا تشارك بياناتك</span>
-        لا نطلب أبدًا كلمة المرور أو رمز التحقق أو المفتاح الخاص أو العبارة السرية. لا ترسل هذه البيانات إلى أي شخص، بما في ذلك عبر البريد الإلكتروني.
+      <div class="hub-hero__inner">
+        <h1>اتصل بنا</h1>
+        <p class="hub-hero__lead">هل وجدت معلومة قديمة أو خطوة غير دقيقة؟ أرسل لنا رابط الصفحة والملاحظة، وسنراجعها مقابل المصادر الرسمية.</p>
       </div>
     </div>
+
+    <!-- البريد الإلكتروني -->
+    <section class="hub-section" id="email">
+      <div class="container container--legal">
+        <div class="hub-head">
+          <span class="hub-kicker">البريد الإلكتروني</span>
+          <h2>كيف تراسلنا؟</h2>
+        </div>
+        <p style="font-size: 21px; font-weight: 700; margin: 0 0 16px; color: #172033;"><a href="mailto:hola@arabtrail.com" style="color: inherit; text-decoration: none;"><span class="ltr">hola@arabtrail.com</span></a></p>
+        <a class="hub-btn hub-btn--primary" href="mailto:hola@arabtrail.com"><span class="ltr">إرسال رسالة</span></a>
+      </div>
+    </section>
+
+    <!-- ما الذي يسرّع المراجعة -->
+    <section class="hub-section" id="steps">
+      <div class="container container--legal">
+        <div class="hub-head">
+          <span class="hub-kicker">لتسريع المراجعة</span>
+          <h2>ما الذي يسرّع معالجة بلاغك؟</h2>
+        </div>
+        <div class="hub-links">
+          <div class="hub-link"><span class="hub-link__text"><span class="hub-link__title"><span class="ltr">01</span> · رابط الصفحة</span><span class="hub-link__desc">رابط الصفحة التي تحتاج إلى مراجعة.</span></span></div>
+          <div class="hub-link"><span class="hub-link__text"><span class="hub-link__title"><span class="ltr">02</span> · وصف المشكلة باختصار</span><span class="hub-link__desc">وصف موجز للمعلومة أو الخطوة التي تعتقد أنها غير دقيقة أو قديمة.</span></span></div>
+          <div class="hub-link"><span class="hub-link__text"><span class="hub-link__title"><span class="ltr">03</span> · المصدر الرسمي إن توفر</span><span class="hub-link__desc">رابط المصدر الرسمي إن كان متاحًا.</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ما لا نقدمه -->
+    <section class="hub-section hub-section--soft" id="not-providing">
+      <div class="container container--legal">
+        <div class="hub-head">
+          <span class="hub-kicker">حدودنا</span>
+          <h2>ما الذي لا نقدمه؟</h2>
+          <p>لا يقدم <span class="ltr">ArabTrail</span> نصائح استثمارية أو مالية أو قانونية أو ضريبية، ولا نقدم دعمًا فنيًا لحسابات المنصات. لأي مشكلة في حسابك أو إيداع أو سحب، تواصل مع الدعم الرسمي للمنصة المعنية مباشرة.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- تنبيه أمني -->
+    <section class="hub-section" id="security">
+      <div class="container container--legal">
+        <div class="hub-head">
+          <span class="hub-kicker">مهم</span>
+          <h2>تنبيه أمني</h2>
+        </div>
+        <div class="hub-notice hub-notice--critical">
+          <span class="hub-notice__icon">!</span>
+          <div class="hub-notice__body">
+            <p><strong><span class="ltr">ArabTrail</span> لا يطلب أبدًا كلمة المرور أو رمز التحقق أو المفتاح الخاص أو العبارة السرية.</strong> لا ترسل هذه البيانات إلى أي شخص، بما في ذلك عبر البريد الإلكتروني.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- روابط ذات صلة -->
+    <section class="hub-section" id="related">
+      <div class="container container--legal">
+        <div class="hub-head">
+          <span class="hub-kicker">ذات صلة</span>
+          <h2>معلومات إضافية</h2>
+        </div>
+        <div class="hub-cols hub-cols--2">
+          <div class="hub-col">
+            <a class="hub-link" href="/corrections-policy/"><span class="hub-link__text"><span class="hub-link__title">سياسة التصحيح</span><span class="hub-link__desc">ماذا يحدث عند اكتشاف خطأ</span></span><span class="hub-link__arrow">←</span></a>
+          </div>
+          <div class="hub-col">
+            <a class="hub-link" href="/how-we-test/"><span class="hub-link__text"><span class="hub-link__title">كيف نتحقق من المعلومات</span><span class="hub-link__desc">منهجية المراجعة</span></span><span class="hub-link__arrow">←</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
