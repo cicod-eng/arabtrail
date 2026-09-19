@@ -34,7 +34,7 @@
         "description": "أسباب عدم وصول رمز التحقق من Binance، وكيف تعرف السبب في حالتك، والخطوات الصحيحة بالترتيب، ومتى تتواصل مع الدعم الرسمي.",
         "inLanguage": "ar",
         "datePublished": "2026-09-13",
-        "dateModified": "2026-09-13",
+        "dateModified": "2026-09-19",
         "author": { "@type": "Organization", "name": "فريق تحرير ArabTrail", "url": "https://arabtrail.com/about/" },
         "publisher": { "@type": "Organization", "name": "ArabTrail", "logo": { "@type": "ImageObject", "url": "https://arabtrail.com/assets/logo.svg" } },
         "mainEntityOfPage": { "@type": "WebPage", "@id": "https://arabtrail.com/binance-verification-code-not-arriving/" }
@@ -53,7 +53,7 @@
           { "@type": "Question", "name": "لماذا لا تصلك الرسالة القصيرة SMS من Binance؟", "acceptedAnswer": { "@type": "Answer", "text": "غالبًا بسبب ضعف الإشارة، أو تطبيق حظر يحجب رقم المرسل، أو أن الرسالة ذهبت إلى مجلد الرسائل غير المرغوب فيها. في بعض البلدان تكون تغطية الرسائل القصيرة غير مكتملة، وينصح عندها باستخدام Google Authenticator أو مفاتيح المرور Passkeys بدلًا منها." } },
           { "@type": "Question", "name": "ماذا تفعل إذا لم يصلك رمز البريد الإلكتروني أيضًا؟", "acceptedAnswer": { "@type": "Answer", "text": "افحص مجلد الرسائل غير المرغوب فيها أو المهملات، وإن كنت مسجّلًا عبر Apple ID مع ميزة إخفاء بريدي الإلكتروني فقد يُرسل الرمز إلى عنوان مؤقت غير العنوان الظاهر في حسابك. انتظر قليلًا قبل طلب رمز جديد." } },
           { "@type": "Question", "name": "لماذا يُرفض رمز Google Authenticator؟", "acceptedAnswer": { "@type": "Answer", "text": "أحد الأسباب الشائعة هو اختلاف وقت الهاتف عن الوقت الفعلي. فعّل ضبط التاريخ والوقت تلقائيًا على الجهاز، وتأكد أنك اخترت حساب Binance الصحيح داخل التطبيق، واستخدم أحدث رمز فقط." } },
-          { "@type": "Question", "name": "هل طلب الرمز مرات كثيرة يفاقم المشكلة؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم. الطلبات المتكررة تولّد رموزًا قديمة متأخرة تسبب ارتباكًا، وقد يؤدي الطلب المتكرر خلال فترة قصيرة إلى تقييد المحاولات أو قفل الحساب مؤقتًا. انتظر بضع دقائق قبل إعادة الطلب، واستخدم أحدث رمز فقط." } },
+          { "@type": "Question", "name": "هل طلب الرمز مرات كثيرة يفاقم المشكلة؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم. الطلبات المتكررة تولّد رموزًا قديمة متأخرة تسبب ارتباكًا، وقد يؤدي الطلب المتكرر خلال فترة قصيرة إلى تقييد المحاولات أو ظهور أخطاء إضافية. انتظر بضع دقائق قبل إعادة الطلب، واستخدم أحدث رمز فقط." } },
           { "@type": "Question", "name": "هل يعني عدم وصول الرمز أن حسابي مقفل؟", "acceptedAnswer": { "@type": "Answer", "text": "ليس بالضرورة. عدم وصول الرمز مشكلة في القناة غالبًا (رسائل أو بريد أو تطبيق مصادقة)، وليست بالضرورة تقييدًا للحساب. إذا ظهرت رسالة مختلفة بشأن قيد أو تجميد، فهذا موضوع آخر." } },
           { "@type": "Question", "name": "متى يجب التواصل مع دعم Binance؟", "acceptedAnswer": { "@type": "Answer", "text": "إذا جرّبت كل الخطوات وانتظرت فترة معقولة وما زال الرمز لا يصل، أو إذا كنت تشك أن رقم هاتفك مرتبط بحساب آخر. تواصل عبر الدعم الرسمي داخل التطبيق أو الموقع فقط." } }
         ]
@@ -81,46 +81,30 @@
     </div>
   </header>
 
-  <main data-pagefind-body>
+  <main class="binance-guide" data-pagefind-body>
     <div class="container article">
       <nav class="breadcrumb" aria-label="مسار التنقل">
         <a href="/">الرئيسية</a> › <a href="/binance/"><span class="ltr">Binance</span></a> › عدم وصول رمز التحقق
       </nav>
 
+      <div class="guide-kicker"><span class="ltr">Binance</span> · الأمان</div>
+
       <h1>لماذا لا يصل رمز التحقق من <span class="ltr">Binance</span>؟ الأسباب والحلول بالترتيب</h1>
 
-      <p><strong>إذا لم يصلك رمز التحقق من <span class="ltr">Binance</span>، فابدأ أولًا بالقناة نفسها قبل أن تفترض وجود مشكلة في الحساب.</strong> من الأسباب الشائعة: عدم الضغط على زر <span class="ltr">Get Code</span>، وصول رسالة البريد إلى مجلد غير المرغوب فيه، وجود مشكلة في استقبال <span class="ltr">SMS</span>، أو عدم تزامن الوقت عند استخدام <span class="ltr">Google Authenticator</span>.</p>
+      <p class="guide-lead">إذا لم يصلك رمز التحقق من <span class="ltr">Binance</span>، فابدأ أولًا بالقناة نفسها قبل أن تفترض وجود مشكلة في الحساب: تأكد أنك ضغطت زر <span class="ltr">Get Code</span>، وافحص مجلد الرسائل غير المرغوب فيها، وجرّب جهازًا أو شبكة أخرى، واستخدم أحدث رمز فقط.</p>
 
-      <p>كما أن طلب رمز جديد مرات متتالية خلال فترة قصيرة قد يزيد الارتباك، لأنك قد تستقبل رمزًا متأخرًا بعد أن أصبح غير صالح.</p>
-
-      <p>قد تُحل المشكلة بخطوات بسيطة، لكن مدة الحل تختلف حسب قناة التحقق والشبكة وحالة الحساب. توصي <span class="ltr">Binance</span> بالانتظار نحو 10 دقائق قبل إعادة المحاولة إذا لم يصل الرمز. سنشرح هنا الأسباب بالترتيب، وكيف تعرف السبب في حالتك، ومتى تتوقف عن المحاولة وتتواصل مع الدعم الرسمي.</p>
-
-      <p>سواء كنت تبحث عن مشكلة «كود <span class="ltr">Binance</span> لا يصل» أو «رمز <span class="ltr">SMS</span> لا يصل»، فابدأ بتحديد ما إذا كان الرمز لم يُرسل أصلًا أم وصل لكنه أصبح غير صالح.</p>
-
-      <p class="updated">آخر تحديث: سبتمبر 2026</p>
-
-      <div class="toc">
-        <div class="toc-title">محتويات الدليل</div>
-        <ol>
-          <li><a href="#order">الترتيب الصحيح للتحقق</a></li>
-          <li><a href="#sms">الرسالة القصيرة <span class="ltr">SMS</span></a></li>
-          <li><a href="#email">البريد الإلكتروني</a></li>
-          <li><a href="#authenticator"><span class="ltr">Google Authenticator</span></a></li>
-          <li><a href="#region">لماذا قد تختلف المشكلة حسب بلدك؟</a></li>
-          <li><a href="#support">متى تتوقف وتتواصل مع الدعم؟</a></li>
-          <li><a href="#never">ما الذي لا تشاركه أبدًا؟</a></li>
-          <li><a href="#faq">الأسئلة الشائعة</a></li>
-        </ol>
+      <div class="guide-meta">
+        <a href="/team/">فريق تحرير <span class="ltr">ArabTrail</span></a>
+        <span class="guide-meta-dot">·</span>
+        <span>آخر تحديث: 19 سبتمبر 2026</span>
+        <span class="guide-meta-dot">·</span>
+        <span>قراءة 6 دقائق</span>
+        <span class="verify-status"><img src="/assets/icons/badge-check.svg" alt="" aria-hidden="true"> تم التحقق</span>
       </div>
 
-      <div class="evidence-card">
-        <div class="evidence-title">ما الذي تحققنا منه؟</div>
-        <ul>
-          <li><span class="ev-tag official">مصدر رسمي</span> أسباب عدم وصول الرمز والحلول المقترحة من مركز مساعدة <span class="ltr">Binance</span> الرسمي، بما في ذلك صفحات الرسائل القصيرة وأخطاء المصادقة الثنائية.</li>
-          <li><span class="ev-tag interface">تحقق من الواجهة</span> وجود زر <span class="ltr">Get Code</span> في صفحة التحقق، وخيارات إعادة الضبط داخل إعدادات الأمان في الحساب.</li>
-        </ul>
-        <div class="evidence-foot"><span class="ev-date">آخر تحقق: سبتمبر <span class="ltr">2026</span></span> · لا نقبل مدفوعات مقابل تغيير أي تقييم · <a href="/how-we-test/">منهجية التحقق</a></div>
-      </div>
+      <p>كما أن طلب رمز جديد مرات متتالية خلال فترة قصيرة قد يزيد الارتباك، لأنك قد تستقبل رمزًا متأخرًا بعد أن أصبح غير صالح. قد تتأخر الرسالة عدة دقائق؛ انتظر قبل طلب رمز جديد، واستخدم أحدث رمز فقط.</p>
+
+      <p>قد تُحل المشكلة بخطوات بسيطة، لكن مدة الحل تختلف حسب قناة التحقق والشبكة وحالة الحساب. سنشرح هنا الأسباب بالترتيب، وكيف تعرف السبب في حالتك، ومتى تتوقف عن المحاولة وتتواصل مع الدعم الرسمي.</p>
 
       <div class="summary-card">
         <table>
@@ -129,21 +113,76 @@
           <tr><td>وصل الرمز لكنه مرفوض</td><td>تحقق من أحدث رمز، وتزامن الوقت، واختيار الحساب الصحيح في <span class="ltr">Authenticator</span></td></tr>
         </table>
       </div>
+
+      <div class="evidence-card">
+        <div class="evidence-title">على ماذا بنينا هذا الدليل؟</div>
+        <ul>
+          <li><span class="ev-tag official">مصدر رسمي</span> أسباب عدم وصول الرمز والحلول المقترحة من مركز مساعدة <span class="ltr">Binance</span> الرسمي، بما في ذلك صفحات الرسائل القصيرة وأخطاء المصادقة الثنائية وإعادة ضبطها.</li>
+          <li><span class="ev-tag interface">تحقق من الواجهة</span> وجود زر <span class="ltr">Get Code</span> في صفحة التحقق، وخيارات إعادة الضبط داخل إعدادات الأمان في الحساب.</li>
+        </ul>
+        <div class="evidence-foot"><span class="ev-date">آخر تحقق: سبتمبر <span class="ltr">2026</span></span> · لا نقبل مدفوعات مقابل تغيير أي تقييم · <a href="/how-we-test/">منهجية التحقق</a></div>
+      </div>
+
+      <div class="toc">
+        <div class="toc-title">محتويات الدليل</div>
+        <ol>
+          <li><a href="#order">ترتيب الفحص الصحيح (7 خطوات)</a></li>
+          <li><a href="#sms">الرسالة القصيرة <span class="ltr">SMS</span></a></li>
+          <li><a href="#email">البريد الإلكتروني</a></li>
+          <li><a href="#authenticator"><span class="ltr">Google Authenticator</span></a></li>
+          <li><a href="#region">لماذا قد تختلف المشكلة حسب بلدك؟</a></li>
+          <li><a href="#restriction">قيود مؤقتة بعد إعادة ضبط <span class="ltr">2FA</span></a></li>
+          <li><a href="#support">متى تتوقف وتتواصل مع الدعم؟</a></li>
+          <li><a href="#never">ما الذي لا تشاركه أبدًا؟</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+        </ol>
+      </div>
+
+      <h2 id="order">ترتيب الفحص الصحيح (7 خطوات)</h2>
       <p>الترتيب مهم: <strong>ابدأ بأبسط الاحتمالات أولًا قبل الانتقال إلى الأكثر تعقيدًا.</strong></p>
 
-      <h2 id="order">الترتيب الصحيح للتحقق</h2>
-      <ol>
-        <li><strong>تأكد أنك ضغطت زر <span class="ltr">Get Code</span>.</strong> بعض الشاشات تعرض خانة الرمز لكنها لا ترسل شيئًا حتى تضغط هذا الزر.</li>
-        <li><strong>انتظر حتى 10 دقائق</strong> إذا لم يصل الرمز. بعض الرسائل تتأخر، وقد توصي المنصة بالانتظار قبل إعادة المحاولة.</li>
-        <li><strong>استخدم أحدث رمز فقط.</strong> تجاهل أي رسائل قديمة، وأدخل آخر رمز وصل إليك.</li>
-        <li><strong>افحص مجلد الرسائل غير المرغوب فيها.</strong> في البريد الإلكتروني (Spam / Trash) وفي الرسائل المحظورة على الهاتف.</li>
-        <li><strong>جرّب شبكة أخرى أو جهازًا آخر.</strong> بدّل بين <span class="ltr">Wi-Fi</span> وبيانات الهاتف، أو جرّب المتصفح بدل التطبيق أو العكس.</li>
-        <li><strong>استخدم طريقة <span class="ltr">2FA</span> بديلة</strong> إن كانت مفعلة مسبقًا في حسابك.</li>
-        <li><strong>إذا استمرت المشكلة،</strong> انتقل إلى إعادة ضبط وسيلة التحقق أو إلى الدعم الرسمي.</li>
-      </ol>
+      <div class="step">
+        <div class="step-head"><span class="step-num">1</span><h3>تأكد أنك ضغطت زر <span class="ltr">Get Code</span></h3></div>
+        <p>بعض الشاشات تعرض خانة الرمز لكنها لا ترسل شيئًا حتى تضغط هذا الزر.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-head"><span class="step-num">2</span><h3>انتظر عدة دقائق</h3></div>
+        <p>بعض الرسائل تتأخر قبل أن تصل. انتظر قبل أن تطلب رمزًا جديدًا، ولا تملأ الخانة قبل وصوله.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-head"><span class="step-num">3</span><h3>استخدم أحدث رمز فقط</h3></div>
+        <p>تجاهل أي رسائل قديمة، وأدخل آخر رمز وصل إليك.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-head"><span class="step-num">4</span><h3>افحص مجلد الرسائل غير المرغوب فيها</h3></div>
+        <p>في البريد الإلكتروني (<span class="ltr">Spam</span> / <span class="ltr">Trash</span>) وفي الرسائل المحظورة على الهاتف.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-head"><span class="step-num">5</span><h3>جرّب شبكة أخرى أو جهازًا آخر</h3></div>
+        <p>بدّل بين <span class="ltr">Wi-Fi</span> وبيانات الهاتف، أو جرّب المتصفح بدل التطبيق أو العكس.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-head"><span class="step-num">6</span><h3>استخدم طريقة <span class="ltr">2FA</span> بديلة</h3></div>
+        <p>إن كانت مفعلة مسبقًا في حسابك، مثل <span class="ltr">Passkey</span> أو <span class="ltr">Google Authenticator</span>.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-head"><span class="step-num">7</span><h3>إذا استمرت المشكلة</h3></div>
+        <p>انتقل إلى إعادة ضبط وسيلة التحقق أو إلى الدعم الرسمي.</p>
+      </div>
+
+      <figure class="guide-screenshot">
+        <img src="/assets/screenshots/verification-code-1-input.webp" alt="إدخال رمز التحقق في Binance" width="1200" height="676" loading="lazy">
+        <figcaption>خانة إدخال رمز التحقق وزر <span class="ltr">Get Code</span> — لقطة من <span class="ltr">Binance</span> الرسمي.</figcaption>
+      </figure>
 
       <h2 id="sms">الرسالة القصيرة <span class="ltr">SMS</span></h2>
-      <p>إذا لم تصلك رسالة <span class="ltr">SMS</span>، تحقق بالترتيب:</p>
+      <p>إذا كانت مشكلتك أن <span class="ltr">SMS</span> لا تصل، تحقق بالترتيب:</p>
       <ul>
         <li><strong>الإشارة ووضع الطيران.</strong> تأكد من وجود إشارة شبكة، وأن وضع الطيران مغلق.</li>
         <li><strong>تطبيقات الحظر والفلترة.</strong> بعض تطبيقات حظر المكالمات أو مكافحة الرسائل المزعجة أو الجدار الناري قد تحجب رسائل الأرقام الدولية. عطّلها مؤقتًا وحاول من جديد.</li>
@@ -151,9 +190,10 @@
         <li><strong>أعد تشغيل الهاتف.</strong> خطوة بسيطة تحل كثيرًا من حالات تأخر الرسائل.</li>
         <li><strong>التحقق الصوتي إن كان متاحًا.</strong> في بعض الشاشات يمكنك استلام الرمز بمكالمة صوتية بدل الرسالة.</li>
       </ul>
-      <p>إذا استمرت المشكلة بعد هذه النقاط، فقد يكون السبب متعلقًا بتغطية الرسائل القصيرة في بلدك، وهذا موضح في <a href="#region">القسم التالي</a>.</p>
+      <p>إذا استمرت المشكلة بعد هذه النقاط، فقد يكون السبب متعلقًا بتغطية الرسائل القصيرة في بلدك، وهذا موضح في <a href="#region">قسم اختلاف الدول</a>.</p>
 
       <h2 id="email">البريد الإلكتروني</h2>
+      <p>إذا كانت مشكلتك أن رمز البريد لا يصل، تحقق بالترتيب:</p>
       <ul>
         <li><strong>مجلد غير المرغوب فيه والمهملات.</strong> مزوّد البريد قد يصنّف رسائل المنصة تلقائيًا على أنها مزعجة أو ترويجية.</li>
         <li><strong>إذا أنشأت الحساب باستخدام <span class="ltr">Apple ID</span> مع ميزة <span class="ltr">Hide My Email</span>،</strong> فقد تمر رسائل التحقق عبر عنوان خاص أنشأته <span class="ltr">Apple</span> وتتم إعادة توجيهها إلى البريد المرتبط بحساب <span class="ltr">Apple</span>. يمكنك مراجعة ذلك من: <span class="ltr">Settings → Apple ID → Sign-In &amp; Security</span>.</li>
@@ -169,7 +209,11 @@
         <li><strong>إذا كان الوقت صحيحًا وما زال الرمز مرفوضًا،</strong> جرّب تسجيل الدخول من التطبيق بدل المتصفح، أو استخدم نافذة التصفح الخاص، أو امسح ملفات تعريف الارتباط وذاكرة التخزين المؤقت قبل التفكير في إعادة ضبط <span class="ltr">Authenticator</span>.</li>
       </ul>
       <p>إذا فقدت جهاز المصادقة بالكامل، فستحتاج إلى إعادة ضبط المصادقة الثنائية عبر خيار مخصص في شاشة الدخول. راجع <a href="/enable-2fa/">كيف تحمي حسابك باستخدام 2FA</a> لفهم كيفية عمله قبل أن تصل إلى هذه الحالة.</p>
-      <p><strong>مهم:</strong> بعد تغيير أو إعادة ضبط تطبيق المصادقة، قد تفرض <span class="ltr">Binance</span> قيودًا أمنية مؤقتة على بعض العمليات مثل السحب والتحويلات الداخلية و<span class="ltr">P2P</span> لمدة تصل إلى 48 ساعة.</p>
+
+      <figure class="guide-screenshot">
+        <img src="/assets/screenshots/verification-code-2-options.webp" alt="اختيار طريقة تحقق بديلة في Binance" width="1200" height="676" loading="lazy">
+        <figcaption>صفحة الأمان وخيارات التحقق البديلة — لقطة من <span class="ltr">Binance</span> الرسمي.</figcaption>
+      </figure>
 
       <h2 id="region">لماذا قد تختلف المشكلة حسب بلدك؟</h2>
       <p>تغطية رسائل <span class="ltr">SMS</span> الخاصة بالتحقق ليست متطابقة في جميع البلدان والمناطق. توضح <span class="ltr">Binance</span> أن دعم التحقق عبر الرسائل القصيرة يعتمد على البلد أو المنطقة، وتنشر قائمة محدثة بالمناطق المدعومة.</p>
@@ -183,6 +227,18 @@
       </ul>
       <p>ولا تفترض أن المشكلة من شركة الاتصالات لمجرد تأخر رسالة واحدة؛ فقد تتغير أسباب التأخير حسب الشبكة والجهاز والوقت.</p>
 
+      <h2 id="restriction">قيود مؤقتة بعد إعادة ضبط <span class="ltr">2FA</span></h2>
+      <div class="callout warning">
+        <span class="callout-title">انتبه: قيود تصل إلى 48 ساعة</span>
+        بعد تغيير أو إعادة ضبط المصادقة الثنائية أو رقم الهاتف، قد تفرض <span class="ltr">Binance</span> قيودًا أمنية مؤقتة على السحب والتحويلات الداخلية وبيع <span class="ltr">P2P</span> وخدمات الدفع لمدة تصل إلى 48 ساعة.
+      </div>
+      <p>هذا ليس خطأ في حسابك، بل إجراء أمني مؤقت. لا تطلب إعادة الضبط إلا إذا فقدت الوسيلة الأصلية فعلًا، وتحقق من قدرتك على الدخول بالطرق الأخرى قبل هذه الخطوة.</p>
+
+      <figure class="guide-screenshot">
+        <img src="/assets/screenshots/verification-code-3-reset.webp" alt="إعادة ضبط المصادقة الثنائية وتحذير القيود" width="1200" height="676" loading="lazy">
+        <figcaption>مسار إعادة ضبط <span class="ltr">2FA</span> والقيود المؤقتة — لقطة من <span class="ltr">Binance</span> الرسمي.</figcaption>
+      </figure>
+
       <h2 id="support">متى تتوقف وتتواصل مع الدعم؟</h2>
       <p>لا تدخل في حلقة إعادة الطلب إلى ما لا نهاية. جرّب الخطوات أعلاه، وانتظر فترة معقولة (قد تستغرق بعض الرسائل عدة دقائق، وفي بعض الحالات أطول)، ثم تواصل مع الدعم الرسمي إذا:</p>
       <ul>
@@ -193,7 +249,7 @@
       <p>تواصل عبر أيقونة الدعم داخل التطبيق أو الموقع الرسمي فقط. وإذا ظهر أن المشكلة أوسع من الرمز، فقد يكون الحساب قيد مراجعة، وهنا راجع <a href="/binance-account-restricted/">ماذا تفعل إذا تم تقييد حساب Binance</a>.</p>
 
       <h2 id="never">ما الذي لا تشاركه أبدًا؟</h2>
-      <div class="callout warning">
+      <div class="callout danger">
         <span class="callout-title">قاعدة لا تساوم عليها</span>
         <ul>
           <li><strong>لا تشارك رمز التحقق مع أي شخص</strong>، حتى لو ادعى أنه دعم رسمي. الدعم الحقيقي لن يطلب منك رمز التحقق أبدًا.</li>
@@ -219,7 +275,7 @@
         </details>
         <details>
           <summary>هل طلب الرمز مرات كثيرة يفاقم المشكلة؟</summary>
-          <p>نعم. الطلبات المتكررة تولّد رموزًا قديمة متأخرة تسبب ارتباكًا، وقد يؤدي الطلب المتكرر خلال فترة قصيرة إلى تقييد المحاولات أو قفل الحساب مؤقتًا. انتظر بضع دقائق قبل إعادة الطلب، واستخدم أحدث رمز فقط.</p>
+          <p>نعم. الطلبات المتكررة تولّد رموزًا قديمة متأخرة تسبب ارتباكًا، وقد يؤدي الطلب المتكرر خلال فترة قصيرة إلى تقييد المحاولات أو ظهور أخطاء إضافية. انتظر بضع دقائق قبل إعادة الطلب، واستخدم أحدث رمز فقط.</p>
         </details>
         <details>
           <summary>هل يعني عدم وصول الرمز أن حسابي مقفل؟</summary>
@@ -232,8 +288,17 @@
       </div>
 
       <h2>الخلاصة</h2>
-      <p>ابدأ بأبسط الاحتمالات: تأكد أنك ضغطت زر <span class="ltr">Get Code</span>، واستخدم أحدث رمز، وافحص مجلد غير المرغوب فيه، ثم انتقل إلى الإشارة وتطبيقات الحظر وتزامن وقت <span class="ltr">Authenticator</span>. قد تُحل المشكلة بخطوات بسيطة، لكن مدة الحل تختلف حسب قناة التحقق والشبكة وحالة الحساب؛ وتوصي <span class="ltr">Binance</span> بالانتظار نحو 10 دقائق قبل إعادة المحاولة.</p>
+      <p>ابدأ بأبسط الاحتمالات: تأكد أنك ضغطت زر <span class="ltr">Get Code</span>، واستخدم أحدث رمز، وافحص مجلد غير المرغوب فيه، ثم انتقل إلى الإشارة وتطبيقات الحظر وتزامن وقت <span class="ltr">Authenticator</span>. قد تُحل المشكلة بخطوات بسيطة، لكن مدة الحل تختلف حسب قناة التحقق والشبكة وحالة الحساب؛ وقد تتأخر الرسالة عدة دقائق قبل أن تصل.</p>
       <p>القاعدة الذهبية: <strong>لا تشارك رمز التحقق مع أي شخص، ولا تعتمد على <span class="ltr">SMS</span> وحدها إذا كانت لديك بدائل أكثر استقرارًا؛ يمكنك استخدام تطبيق مصادقة أو <span class="ltr">Passkey</span> كوسيلة تحقق أساسية، مع الاحتفاظ بوسيلة تحقق بديلة متى سمحت إعدادات الحساب بذلك.</strong></p>
+
+      <div class="related">
+        <h2>الخطوة التالية</h2>
+        <ul>
+          <li><a href="/enable-2fa/">كيف تحمي حسابك باستخدام 2FA</a></li>
+          <li><a href="/binance-account-restricted/">ماذا تفعل إذا تم تقييد أو تجميد حساب Binance</a></li>
+          <li><a href="/fake-binance-account/">كيف تميز حساب Binance المزيف؟</a></li>
+        </ul>
+      </div>
 
       <div class="signup-card">
         <div class="signup-head">
@@ -243,17 +308,6 @@
         <p class="signup-desc">سجّل عبر الرابط الرسمي ثم أكمل <span class="ltr">KYC</span> وفعّل <span class="ltr">Google Authenticator</span> لتتجنب الاعتماد على الرسائل القصيرة. إنشاء الحساب مجاني ولا يتطلب إيداعًا مسبقًا.</p>
         <a href="https://www.binance.com/join?ref=FSFSL090" class="btn" rel="nofollow sponsored noopener">سجّل في <span class="ltr">Binance</span> الآن</a>
         <p class="signup-disclosure">رمز الإحالة <span class="ltr">FSFSL090</span> — قد يحصل <span class="ltr">ArabTrail</span> على عمولة عند التسجيل، دون أي تكلفة إضافية عليك.</p>
-      </div>
-
-      <div class="related">
-        <h2>اقرأ أيضًا</h2>
-        <ul>
-          <li><a href="/enable-2fa/">كيف تحمي حسابك باستخدام 2FA</a></li>
-          <li><a href="/register-binance/">كيفية التسجيل في Binance خطوة بخطوة</a></li>
-          <li><a href="/binance-account-restricted/">ماذا تفعل إذا تم تقييد أو تجميد حساب Binance</a></li>
-          <li><a href="/fake-binance-account/">كيف تميز حساب Binance المزيف؟</a></li>
-          <li><a href="/is-binance-safe/">هل Binance آمن؟ العوامل والمخاطر</a></li>
-        </ul>
       </div>
 
       <p class="updated">إعداد: <a href="/team/">فريق تحرير <span class="ltr">ArabTrail</span></a>· <a href="/how-we-test/">منهجية التحقق</a></p>
@@ -266,7 +320,7 @@
         إفصاح: قد يحصل <span class="ltr">ArabTrail</span> على عمولة إذا سجّلت عبر بعض الروابط التابعة، دون تكلفة إضافية عليك.
       </p>
 
-      <p class="sources">المصادر: <a href="https://www.binance.me/ar/support/faq/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%84%D8%A7-%D9%8A%D9%85%D9%83%D9%86%D9%86%D9%8A-%D8%AA%D9%84%D9%82%D9%8A-%D8%B1%D9%85%D9%88%D8%B2-%D8%A7%D9%84%D8%AA%D8%AD%D9%82%D9%82-%D8%B9%D8%A8%D8%B1-%D8%A7%D9%84%D8%B1%D8%B3%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D8%B1%D8%A9-sms-115003783891" rel="nofollow noopener">Binance — لماذا لا أستقبل رموز التحقق عبر الرسائل القصيرة SMS</a> · <a href="https://www.binance.com/en-NZ/support/faq/detail/93959f1614744ef7a32c9a0759928103" rel="nofollow noopener">Binance — حل مشكلة خطأ رمز المصادقة الثنائية</a></p>
+      <p class="sources">المصادر: <a href="https://www.binance.com/en/support/faq/detail/115003783891" rel="nofollow noopener">Binance — لماذا لا أستقبل رموز التحقق عبر الرسائل القصيرة SMS</a> · <a href="https://www.binance.com/en/support/faq/detail/93959f1614744ef7a32c9a0759928103" rel="nofollow noopener">Binance — حل مشكلة خطأ رمز المصادقة الثنائية</a> · <a href="https://www.binance.com/en/support/faq/detail/2de25ddf8c5b4f59adaebe9452f7b64b" rel="nofollow noopener">Binance — إعادة ضبط المصادقة الثنائية عند عدم الوصول للحساب</a></p>
     </div>
   </main>
 
