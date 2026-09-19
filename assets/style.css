@@ -1262,3 +1262,226 @@ img { max-width: 100%; height: auto; }
   .wallet-guide .evidence-card ul { flex-direction: column; gap: 6px; }
   .wallet-guide .guide-meta { gap: 6px; }
 }
+
+/* ============================================================
+   首页 v2 — 去卡片化 · 拉开层级 · 路线感
+   品牌色保留（祖母绿 + 金 + 沙），只在 <main class="home"> 生效
+   组件语义：卡片=选择 / 列表=阅读 / 时间轴=流程 / 表格=比较 / 提示框=风险 / 日志=核验
+   ============================================================ */
+.home {
+  background: #fff;
+  --warm: #faf4e4;
+  --soft: #f4f8f5;
+  --line: #ece3cf;
+  --radius-large: 20px;
+}
+.home .container-wide { max-width: 1200px; }
+.home .container-mid { max-width: 1100px; }
+.home .container-narrow { max-width: 920px; }
+
+/* ===== 视觉权重三档（Level 1 / 2 / 3）：留白 ===== */
+.home .lv1 { margin-block: 96px; }
+.home .lv2 { margin-block: 76px; }
+.home .lv3 { margin-block: 56px; }
+.home .sec-block { margin-block: 0; }
+.home .sec-block--first { margin-top: 48px; }
+
+/* section 标题：三种形态（A 重要入口 / B 目录 / C 日志），字号随级别分层 */
+.home .sec { max-width: 720px; margin-bottom: 32px; }
+.home .sec h2 { margin: 0 0 10px; font-size: 32px; line-height: 1.25; font-weight: 800; color: var(--green-dark); }
+.home .lv2 .sec h2 { font-size: 28px; }
+.home .lv3 .sec h2 { font-size: 24px; }
+.home .sec p { margin: 0; font-size: 16px; line-height: 1.8; color: var(--muted); }
+.home .sec--sm { margin-bottom: 24px; }
+.home .sec.sec--sm h2 { font-size: 22px; }
+
+/* ===== 1. Hero 两栏 ===== */
+.home-hero { padding: 64px 0 0; }
+.home-hero__grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 48px; align-items: center; }
+.home-hero h1 { margin: 0 0 16px; font-size: clamp(38px, 5vw, 52px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; color: var(--green-dark); }
+.home-hero__lead { margin: 0 0 24px; max-width: 560px; font-size: 17px; line-height: 1.85; color: var(--muted); }
+.trust-line { margin: 22px 0 0; font-size: 13px; color: var(--muted); }
+.home-hero .search-box { margin: 26px 0 0; }
+
+/* Hero 视觉：三步路线 */
+.home-hero__aside { background: var(--warm); border: 1px solid var(--border); border-radius: var(--radius-large); padding: 28px 26px; }
+.hv-step { display: flex; align-items: center; gap: 14px; }
+.hv-dot { width: 40px; height: 40px; border-radius: 50%; background: var(--surface); border: 1px solid var(--border); color: var(--green-dark); font-weight: 800; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.hv-label { font-weight: 700; font-size: 16px; color: var(--ink); }
+.hv-bar { width: 1px; height: 18px; margin-inline-start: 20px; background: var(--line); }
+
+/* ===== 2. 国家卡（4+3）===== */
+.flag-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.flag-card { display: flex; flex-direction: column; gap: 6px; min-height: 158px; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); color: inherit; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+.flag-card:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(20,32,51,.06); border-color: var(--accent); text-decoration: none; }
+.flag-img { height: 24px; width: 36px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border); flex-shrink: 0; }
+.flag-card h3 { margin: 6px 0 0; font-size: 19px; font-weight: 800; color: var(--green-dark); }
+.flag-tags { margin: 0; font-size: 13px; color: var(--muted); }
+.flag-currency { margin: 0; font-size: 13px; color: var(--muted); }
+.flag-go { margin-top: auto; padding-top: 8px; font-size: 14px; font-weight: 700; color: var(--green); }
+.flag-card:hover .flag-go { color: var(--accent-dark); }
+
+/* ===== 3. 新手路线（时间轴）===== */
+.route { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; position: relative; }
+.route::before { content: ""; position: absolute; top: 23px; right: 8.33%; left: 8.33%; height: 1px; background: var(--line); }
+.route-step { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+.route-num { width: 46px; height: 46px; border-radius: 50%; background: var(--surface); border: 1px solid var(--line); color: var(--green-dark); font-weight: 800; font-size: 19px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: border-color .15s ease; }
+.route-step:hover .route-num { border-color: var(--accent); }
+.route-body h3 { margin: 0; font-size: 18px; font-weight: 700; color: var(--green-dark); }
+.route-body p { margin: 4px 0 0; font-size: 14px; line-height: 1.6; color: var(--muted); }
+.route-link { display: inline-block; margin-top: 6px; font-size: 13.5px; font-weight: 700; color: var(--green); }
+.route-link:hover { color: var(--accent-dark); }
+
+/* ===== 浅底区块（三种底色交替：白 / 浅米 / 浅绿灰）===== */
+.strip { margin-block: 0; }
+.strip--soft { background: var(--soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.strip--warm { background: var(--warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.strip .container { padding: 48px 20px; }
+
+/* ===== 4. About 浅底区 ===== */
+.about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+.about-main h2 { margin: 0 0 12px; font-size: 24px; font-weight: 800; color: var(--green-dark); }
+.about-copy { margin: 0 0 16px; font-size: 16px; line-height: 1.85; color: var(--ink); }
+.about-note { margin: 0; font-size: 13px; color: var(--muted); }
+.about-points { display: flex; flex-direction: column; gap: 18px; }
+.about-point { display: flex; gap: 14px; align-items: flex-start; }
+.about-point img { width: 28px; height: 28px; flex-shrink: 0; margin-top: 2px; }
+.about-point strong { display: block; font-size: 15px; font-weight: 700; color: var(--green-dark); }
+.about-point p { margin: 2px 0 0; font-size: 14px; line-height: 1.65; color: var(--muted); }
+
+/* ===== 5. Binance / OKX 大卡 ===== */
+.exchange-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.exchange-card { display: flex; flex-direction: column; gap: 16px; padding: 32px; border: 1px solid var(--border); border-radius: var(--radius-large); background: var(--surface); box-shadow: 0 10px 32px rgba(20,32,51,.07); }
+.exchange-head { display: flex; align-items: center; gap: 12px; }
+.exchange-logo { width: 44px; height: 44px; border-radius: 10px; background: #fff; border: 1px solid var(--border); padding: 6px; object-fit: contain; flex-shrink: 0; }
+.exchange-head h3 { margin: 0; font-size: 24px; font-weight: 800; color: var(--green-dark); }
+.exchange-desc { margin: 0; font-size: 15px; line-height: 1.7; color: var(--muted); }
+.exchange-links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.exchange-links li { position: relative; padding-inline-start: 18px; font-size: 15px; }
+.exchange-links li::before { content: "•"; position: absolute; inset-inline-start: 2px; color: var(--accent); font-weight: 700; }
+.exchange-links a { color: var(--ink); }
+.exchange-links a:hover { color: var(--green); }
+.exchange-cta { margin-top: auto; }
+.exchange-card--dark { background: #0b1f18; border-color: #0b1f18; }
+.exchange-card--dark .exchange-head h3 { color: #fff; }
+.exchange-card--dark .exchange-desc { color: rgba(255,255,255,.72); }
+.exchange-card--dark .exchange-links li::before { color: #f0b90b; }
+.exchange-card--dark .exchange-links a { color: #fff; }
+.exchange-card--dark .exchange-links a:hover { color: #f0b90b; }
+.exchange-card--dark .exchange-cta { background: #f0b90b; color: #0b1f18; border-color: #f0b90b; }
+.exchange-card--dark .exchange-cta:hover { background: #ffd23e; color: #0b1f18; text-decoration: none; }
+
+/* ===== 6. USDT / P2P 主题索引 ===== */
+.topic-index { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.topic-index-title { margin: 0 0 8px; font-size: 17px; font-weight: 800; color: var(--green-dark); }
+.topic-index-item { display: flex; flex-direction: column; gap: 2px; padding: 16px 4px; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none; transition: background .12s ease; }
+.topic-index-item:hover { background: #fafaf7; text-decoration: none; }
+.topic-index-name { font-size: 16px; font-weight: 700; color: var(--ink); transition: color .12s ease; }
+.topic-index-item:hover .topic-index-name { color: var(--green); }
+.topic-index-desc { font-size: 14px; color: var(--muted); }
+.topic-index-all { display: inline-block; margin-top: 16px; font-size: 14px; font-weight: 700; color: var(--green); }
+.topic-index-all:hover { color: var(--accent-dark); }
+
+/* ===== 7. Wallet / Security 知识目录 ===== */
+.knowledge { display: grid; grid-template-columns: 1fr 1fr; }
+.knowledge-col { padding: 4px 28px; }
+.knowledge-col + .knowledge-col { border-inline-start: 1px solid var(--line); }
+.knowledge-col:first-child { padding-inline-start: 0; }
+.knowledge-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.knowledge-head img { width: 26px; height: 26px; flex-shrink: 0; }
+.knowledge-head h3 { margin: 0; font-size: 18px; font-weight: 800; color: var(--green-dark); }
+.knowledge-item { display: block; padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+.knowledge-item:hover { color: var(--green); text-decoration: none; }
+.knowledge-item:last-of-type { border-bottom: none; }
+.knowledge-all { display: inline-block; margin-top: 16px; font-size: 14px; font-weight: 700; color: var(--green); }
+.knowledge-all:hover { color: var(--accent-dark); }
+
+/* ===== 8. 最新文章 1+4（白底）===== */
+.latest { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: stretch; }
+.latest-feature { display: flex; flex-direction: column; gap: 10px; padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-large); color: inherit; text-decoration: none; box-shadow: 0 10px 32px rgba(20,32,51,.07); transition: transform .15s ease, box-shadow .15s ease; }
+.latest-feature:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(20,32,51,.09); text-decoration: none; }
+.latest-cat { font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--green); }
+.latest-feature h3 { margin: 0; font-size: 20px; line-height: 1.5; font-weight: 800; color: var(--green-dark); }
+.latest-feature p { margin: 0; font-size: 15px; line-height: 1.7; color: var(--muted); }
+.latest-date { font-size: 13px; color: var(--muted); }
+.latest-feature .latest-date { margin-top: auto; }
+.latest-list { display: flex; flex-direction: column; }
+.latest-item { display: flex; flex-direction: column; gap: 3px; padding: 14px 2px; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none; }
+.latest-item:last-child { border-bottom: none; }
+.latest-item .latest-title { font-size: 15.5px; font-weight: 700; color: var(--ink); line-height: 1.55; }
+.latest-item:hover .latest-title { color: var(--green); }
+.latest-item .latest-date { font-size: 12.5px; }
+
+/* ===== 9. 核验日志 ===== */
+.vlog { border-top: 1px solid var(--line); }
+.vlog-row { display: grid; grid-template-columns: 150px 1.2fr 1.6fr auto; gap: 16px; align-items: center; padding: 16px 4px; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none; }
+.vlog-row:last-child { border-bottom: none; }
+.vlog-row:hover .vlog-topic { color: var(--green); }
+.vlog-date { font-size: 13.5px; color: var(--muted); font-weight: 500; }
+.vlog-topic { font-size: 15px; font-weight: 700; color: var(--ink); }
+.vlog-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
+.vlog-badge { justify-self: end; font-size: 12px; font-weight: 700; padding: 3px 12px; border-radius: 999px; white-space: nowrap; }
+.vlog-badge--hands { background: var(--green); color: #fff; }
+.vlog-badge--official { background: var(--green-soft); color: var(--green-dark); border: 1px solid var(--green); }
+
+/* ===== 10. 验证方法 3 栏 ===== */
+.method-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.method-col { display: flex; flex-direction: column; gap: 8px; }
+.method-icon { width: 40px; height: 40px; flex-shrink: 0; }
+.method-col h3 { margin: 0; font-size: 17px; font-weight: 800; color: var(--green-dark); }
+.method-col p { margin: 0; font-size: 14.5px; line-height: 1.7; color: var(--muted); }
+.method-link { display: inline-block; margin-top: 24px; font-size: 15px; font-weight: 700; color: var(--green); }
+.method-link:hover { color: var(--accent-dark); }
+
+/* ===== 11. Footer 4 列 ===== */
+.home-footer .container { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+.home-footer__brand p { margin: 0; color: rgba(255,255,255,.72); font-size: .85rem; line-height: 1.7; }
+.home-footer__col h4 { margin: 0 0 10px; font-size: .82rem; font-weight: 700; color: var(--accent); }
+.home-footer__col a { display: block; margin: 6px 0; color: rgba(255,255,255,.82); font-size: .85rem; }
+.home-footer__col a:hover { color: var(--accent); }
+.home-footer__bottom { grid-column: 1 / -1; margin-top: 12px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.16); display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .78rem; color: rgba(255,255,255,.6); }
+.home-footer__bottom a { color: rgba(255,255,255,.72); }
+.home-footer__bottom a:hover { color: var(--accent); }
+
+/* ===== 响应式 ===== */
+@media (max-width: 960px) {
+  .home .lv1 { margin-block: 72px; }
+  .home .lv2 { margin-block: 64px; }
+  .home .lv3 { margin-block: 52px; }
+  .flag-grid { grid-template-columns: repeat(3, 1fr); }
+  .route { grid-template-columns: repeat(3, 1fr); row-gap: 28px; }
+  .route::before { display: none; }
+  .home-hero__grid, .about-grid, .latest { grid-template-columns: 1fr; }
+  .home-hero__aside { display: none; }
+  .vlog-row { grid-template-columns: 130px 1fr auto; }
+  .vlog-desc { grid-column: 2 / -1; }
+}
+@media (max-width: 640px) {
+  .home .lv1 { margin-block: 64px; }
+  .home .lv2 { margin-block: 56px; }
+  .home .lv3 { margin-block: 44px; }
+  .home .lv1 .sec h2, .home .lv2 .sec h2, .home .lv3 .sec h2 { font-size: 26px; }
+  .home .sec p { font-size: 15px; }
+  .home-hero { padding: 40px 0 0; }
+  .home-hero h1 { font-size: 30px; }
+  .flag-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .flag-card { min-height: 0; padding: 16px; }
+  .route { grid-template-columns: 1fr; gap: 0; }
+  .route::before { display: block; top: 23px; bottom: 23px; right: 22px; left: auto; width: 1px; height: auto; }
+  .route-step { flex-direction: row; align-items: flex-start; text-align: start; gap: 16px; padding: 22px 0; }
+  .route-step:first-child { padding-top: 4px; }
+  .route-num { width: 44px; height: 44px; }
+  .exchange-grid, .topic-index, .knowledge, .method-row { grid-template-columns: 1fr; }
+  .exchange-grid, .topic-index { gap: 32px; }
+  .knowledge-col { padding: 0; }
+  .knowledge-col + .knowledge-col { border-inline-start: none; border-top: 1px solid var(--line); padding-top: 24px; margin-top: 8px; }
+  .latest { grid-template-columns: 1fr; gap: 20px; }
+  .vlog-row { grid-template-columns: 1fr auto; gap: 4px 12px; padding: 14px 0; }
+  .vlog-date { grid-column: 1; }
+  .vlog-badge { grid-column: 2; grid-row: 1; }
+  .vlog-topic { grid-column: 1 / -1; }
+  .vlog-desc { display: none; }
+  .home-footer .container { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .home-footer__brand { grid-column: 1 / -1; }
+  .home-footer__bottom { flex-direction: column; gap: 6px; }
+}

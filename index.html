@@ -54,281 +54,415 @@
     </div>
   </header>
 
-  <main data-pagefind-body>
-    <div class="container container-wide">
-      <!-- 1. Hero -->
-      <section class="hero">
-        <h1>دليل العملات الرقمية للمبتدئين في العالم العربي</h1>
-        <p class="lead">
-          تعلّم العملات الرقمية من الصفر، واختر المنصة وطريقة شراء <span class="ltr">USDT</span> المناسبة لبلدك، مع أدلة عملية تغطي <span class="ltr">Binance</span> و<span class="ltr">OKX</span> و<span class="ltr">P2P</span> والمحافظ والأمان — ومعلومات محدثة للسعودية والإمارات ومصر والكويت وقطر والبحرين وعمان.
-        </p>
-        <div class="btn-row">
-          <a href="/countries/" class="btn btn-primary">ابدأ حسب بلدك</a>
-          <a href="/binance-vs-okx/" class="btn btn-secondary">قارن <span class="ltr">Binance</span> و<span class="ltr">OKX</span></a>
-        </div>
-        <div class="search-box">
-          <div id="search"></div>
-        </div>
-      </section>
+  <main class="home" data-pagefind-body>
 
-      <!-- 2. 国家入口 -->
-      <section class="topic-section" id="countries">
-        <h2 class="topic-title">أدلة حسب الدولة</h2>
-        <p class="topic-sub">الخدمات وطرق الدفع والوضع التنظيمي تختلف من دولة إلى أخرى. اختر بلدك أولاً للحصول على معلومات دقيقة.</p>
-        <div class="country-grid">
-          <div class="country-card">
-            <img src="/assets/flags/saudi-arabia.svg" alt="علم السعودية" class="country-flag" width="48" height="32" loading="lazy">
-            <h3><a href="/countries/saudi-arabia/">السعودية</a></h3>
-            <p class="country-code"><span class="ltr">SAR</span></p>
-            <p class="country-tags"><span class="ltr">USDT</span> · <span class="ltr">Binance</span> · <span class="ltr">OKX</span></p>
-            <a href="/countries/saudi-arabia/" class="country-link">عرض الدليل ←</a>
+    <!-- 1. Hero（两栏，无卡片） -->
+    <section class="home-hero">
+      <div class="container container-wide">
+        <div class="home-hero__grid">
+          <div class="home-hero__main">
+            <h1>دليل العملات الرقمية للمبتدئين في العالم العربي</h1>
+            <p class="home-hero__lead">
+              تعلّم من الصفر، واختر المنصة وطريقة شراء <span class="ltr">USDT</span> المناسبة لبلدك، مع أدلة عملية تغطي <span class="ltr">Binance</span> و<span class="ltr">OKX</span> و<span class="ltr">P2P</span> والمحافظ والأمان.
+            </p>
+            <div class="btn-row">
+              <a href="/basics/" class="btn btn-primary">ابدأ من هنا</a>
+              <a href="/exchanges/" class="btn btn-secondary">استكشف الأدلة</a>
+            </div>
+            <div class="search-box">
+              <div id="search"></div>
+            </div>
+            <p class="trust-line">مراجعة يدوية · مصادر رسمية · تحديثات حسب الدولة</p>
           </div>
-          <div class="country-card">
-            <img src="/assets/flags/uae.svg" alt="علم الإمارات" class="country-flag" width="48" height="32" loading="lazy">
-            <h3><a href="/countries/uae/">الإمارات</a></h3>
-            <p class="country-code"><span class="ltr">AED</span></p>
-            <p class="country-tags"><span class="ltr">USDT</span> · <span class="ltr">Binance</span> · <span class="ltr">OKX</span></p>
-            <a href="/countries/uae/" class="country-link">عرض الدليل ←</a>
-          </div>
-          <div class="country-card">
-            <img src="/assets/flags/egypt.svg" alt="علم مصر" class="country-flag" width="48" height="32" loading="lazy">
-            <h3><a href="/countries/egypt/">مصر</a></h3>
-            <p class="country-code"><span class="ltr">EGP</span></p>
-            <p class="country-tags"><span class="ltr">USDT</span> · <span class="ltr">Binance</span> · <span class="ltr">OKX</span></p>
-            <a href="/countries/egypt/" class="country-link">عرض الدليل ←</a>
-          </div>
-          <div class="country-card">
-            <img src="/assets/flags/kuwait.svg" alt="علم الكويت" class="country-flag" width="48" height="32" loading="lazy">
-            <h3><a href="/countries/kuwait/">الكويت</a></h3>
-            <p class="country-code"><span class="ltr">KWD</span></p>
-            <p class="country-tags"><span class="ltr">USDT</span> · <span class="ltr">Binance</span> · <span class="ltr">OKX</span></p>
-            <a href="/countries/kuwait/" class="country-link">عرض الدليل ←</a>
-          </div>
-          <div class="country-card">
-            <img src="/assets/flags/qatar.svg" alt="علم قطر" class="country-flag" width="48" height="32" loading="lazy">
-            <h3><a href="/countries/qatar/">قطر</a></h3>
-            <p class="country-code"><span class="ltr">QAR</span></p>
-            <p class="country-tags"><span class="ltr">USDT</span> · <span class="ltr">Binance</span> · <span class="ltr">OKX</span></p>
-            <a href="/countries/qatar/" class="country-link">عرض الدليل ←</a>
-          </div>
-          <div class="country-card">
-            <img src="/assets/flags/bahrain.svg" alt="علم البحرين" class="country-flag" width="48" height="32" loading="lazy">
-            <h3><a href="/countries/bahrain/">البحرين</a></h3>
-            <p class="country-code"><span class="ltr">BHD</span></p>
-            <p class="country-tags"><span class="ltr">USDT</span> · <span class="ltr">Binance</span> · <span class="ltr">OKX</span></p>
-            <a href="/countries/bahrain/" class="country-link">عرض الدليل ←</a>
-          </div>
-          <div class="country-card">
-            <img src="/assets/flags/oman.svg" alt="علم عمان" class="country-flag" width="48" height="32" loading="lazy">
-            <h3><a href="/countries/oman/">عمان</a></h3>
-            <p class="country-code"><span class="ltr">OMR</span></p>
-            <p class="country-tags"><span class="ltr">USDT</span> · <span class="ltr">Binance</span> · <span class="ltr">OKX</span></p>
-            <a href="/countries/oman/" class="country-link">عرض الدليل ←</a>
+          <div class="home-hero__aside" aria-hidden="true">
+            <div class="hv-step"><span class="hv-dot ltr">01</span><span class="hv-label">افهم الأساسيات</span></div>
+            <div class="hv-bar"></div>
+            <div class="hv-step"><span class="hv-dot ltr">02</span><span class="hv-label">اشترِ <span class="ltr">USDT</span></span></div>
+            <div class="hv-bar"></div>
+            <div class="hv-step"><span class="hv-dot ltr">03</span><span class="hv-label">احفظ بأمان</span></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 3. 新手路径 -->
-      <section class="topic-section" id="start">
-        <h2 class="topic-title">ابدأ من هنا</h2>
-        <p class="topic-sub">إذا كنت جديدًا في العملات الرقمية، اتبع هذا المسار بالترتيب.</p>
-        <div class="start-grid">
-          <div class="start-card">
-            <div class="start-head"><span class="start-num">1</span><img src="/assets/icons/book-open.svg" alt="" class="start-icon" width="24" height="24" loading="lazy"></div>
-            <h3>افهم الأساسيات</h3>
-            <p>تعرف أولاً على العملات الرقمية و<span class="ltr">USDT</span> والمحافظ.</p>
-            <a href="/basics/" class="btn btn-secondary">أساسيات العملات الرقمية</a>
+    <!-- 2. 国家入口（一级视觉，卡片 4+3） -->
+    <section class="sec-block sec-block--first lv1">
+      <div class="container container-wide">
+        <div class="sec">
+          <h2>اختر بلدك</h2>
+          <p>القواعد وطرق الدفع والتوفر تختلف من دولة إلى أخرى.</p>
+        </div>
+        <div class="flag-grid">
+          <a href="/countries/saudi-arabia/" class="flag-card">
+            <img src="/assets/flags/saudi-arabia.svg" alt="علم السعودية" class="flag-img" width="36" height="24" loading="lazy">
+            <h3>السعودية</h3>
+            <p class="flag-tags"><span class="ltr">Binance</span> · <span class="ltr">USDT</span> · <span class="ltr">P2P</span></p>
+            <p class="flag-currency">الريال السعودي</p>
+            <span class="flag-go">دليل السعودية ←</span>
+          </a>
+          <a href="/countries/uae/" class="flag-card">
+            <img src="/assets/flags/uae.svg" alt="علم الإمارات" class="flag-img" width="36" height="24" loading="lazy">
+            <h3>الإمارات</h3>
+            <p class="flag-tags"><span class="ltr">Binance</span> · <span class="ltr">USDT</span> · <span class="ltr">VARA</span></p>
+            <p class="flag-currency">الدرهم الإماراتي</p>
+            <span class="flag-go">دليل الإمارات ←</span>
+          </a>
+          <a href="/countries/egypt/" class="flag-card">
+            <img src="/assets/flags/egypt.svg" alt="علم مصر" class="flag-img" width="36" height="24" loading="lazy">
+            <h3>مصر</h3>
+            <p class="flag-tags">الوضع القانوني · <span class="ltr">P2P</span></p>
+            <p class="flag-currency">الجنيه المصري</p>
+            <span class="flag-go">اعرف القيود أولًا ←</span>
+          </a>
+          <a href="/countries/kuwait/" class="flag-card">
+            <img src="/assets/flags/kuwait.svg" alt="علم الكويت" class="flag-img" width="36" height="24" loading="lazy">
+            <h3>الكويت</h3>
+            <p class="flag-tags"><span class="ltr">USDT</span> · <span class="ltr">P2P</span></p>
+            <p class="flag-currency">الدينار الكويتي</p>
+            <span class="flag-go">دليل الكويت ←</span>
+          </a>
+          <a href="/countries/qatar/" class="flag-card">
+            <img src="/assets/flags/qatar.svg" alt="علم قطر" class="flag-img" width="36" height="24" loading="lazy">
+            <h3>قطر</h3>
+            <p class="flag-tags"><span class="ltr">USDT</span> · <span class="ltr">Binance</span></p>
+            <p class="flag-currency">الريال القطري</p>
+            <span class="flag-go">دليل قطر ←</span>
+          </a>
+          <a href="/countries/bahrain/" class="flag-card">
+            <img src="/assets/flags/bahrain.svg" alt="علم البحرين" class="flag-img" width="36" height="24" loading="lazy">
+            <h3>البحرين</h3>
+            <p class="flag-tags"><span class="ltr">Binance</span> · <span class="ltr">CBB</span></p>
+            <p class="flag-currency">الدينار البحريني</p>
+            <span class="flag-go">دليل البحرين ←</span>
+          </a>
+          <a href="/countries/oman/" class="flag-card">
+            <img src="/assets/flags/oman.svg" alt="علم عمان" class="flag-img" width="36" height="24" loading="lazy">
+            <h3>عمان</h3>
+            <p class="flag-tags"><span class="ltr">USDT</span> · <span class="ltr">OKX</span></p>
+            <p class="flag-currency">الريال العماني</p>
+            <span class="flag-go">دليل عمان ←</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 新手路线（二级视觉，时间轴，浅底） -->
+    <section class="strip strip--soft lv2">
+      <div class="container container-mid">
+        <div class="sec">
+          <h2>ابدأ من هنا</h2>
+          <p>مسار مبسط للمبتدئ من فهم الأساسيات إلى شراء <span class="ltr">USDT</span> وحفظه بأمان.</p>
+        </div>
+        <ol class="route">
+          <li class="route-step">
+            <span class="route-num ltr">01</span>
+            <div class="route-body">
+              <h3>افهم الأساسيات</h3>
+              <p>ما هي العملات الرقمية ولماذا تحتاج إلى منصة؟</p>
+              <a href="/basics/" class="route-link">ابدأ بالأساسيات ←</a>
+            </div>
+          </li>
+          <li class="route-step">
+            <span class="route-num ltr">02</span>
+            <div class="route-body">
+              <h3>اختر منصة</h3>
+              <p>قارن بين <span class="ltr">Binance</span> و<span class="ltr">OKX</span> واختر الأنسب لك.</p>
+              <a href="/binance-vs-okx/" class="route-link">قارن المنصات ←</a>
+            </div>
+          </li>
+          <li class="route-step">
+            <span class="route-num ltr">03</span>
+            <div class="route-body">
+              <h3>أنشئ حسابك</h3>
+              <p>خطوات التسجيل والتحقق من الهوية <span class="ltr">KYC</span>.</p>
+              <a href="/register-binance/" class="route-link">شرح التسجيل ←</a>
+            </div>
+          </li>
+          <li class="route-step">
+            <span class="route-num ltr">04</span>
+            <div class="route-body">
+              <h3>اشترِ <span class="ltr">USDT</span></h3>
+              <p>طرق الشراء بالعملة المحلية حسب بلدك.</p>
+              <a href="/countries/" class="route-link">طرق الشراء ←</a>
+            </div>
+          </li>
+          <li class="route-step">
+            <span class="route-num ltr">05</span>
+            <div class="route-body">
+              <h3>استخدم <span class="ltr">P2P</span> بأمان</h3>
+              <p>كيف تختار البائع وتتجنب الاحتيال.</p>
+              <a href="/p2p-buy-usdt/" class="route-link">دليل <span class="ltr">P2P</span> ←</a>
+            </div>
+          </li>
+          <li class="route-step">
+            <span class="route-num ltr">06</span>
+            <div class="route-body">
+              <h3>اسحب إلى محفظتك</h3>
+              <p>اختر الشبكة الصحيحة قبل التحويل.</p>
+              <a href="/withdraw-usdt/" class="route-link">دليل السحب ←</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. About（三级视觉，浅米色两栏，无卡片） -->
+    <section class="strip strip--warm lv3">
+      <div class="container container-narrow">
+        <div class="about-grid">
+          <div class="about-main">
+            <h2>لماذا <span class="ltr">ArabTrail</span>؟</h2>
+            <p class="about-copy">دليل عربي مستقل يشرح العملات الرقمية بطريقة عملية، من اختيار المنصة إلى شراء <span class="ltr">USDT</span> وحفظه بأمان، مع مراجعة كل دولة على حدة وتوثيق تاريخ كل تحقق.</p>
+            <p class="about-note"><span class="ltr">ArabTrail</span> موقع تعليمي مستقل ولا يقدم نصائح استثمارية.</p>
           </div>
-          <div class="start-card">
-            <div class="start-head"><span class="start-num">2</span><img src="/assets/icons/arrow-left-right.svg" alt="" class="start-icon" width="24" height="24" loading="lazy"></div>
-            <h3>اختر منصة تداول</h3>
-            <p>تعرف على الفرق بين <span class="ltr">Binance</span> و<span class="ltr">OKX</span> واختر المنصة المناسبة لك.</p>
-            <a href="/binance-vs-okx/" class="btn btn-secondary">اختيار منصة</a>
-          </div>
-          <div class="start-card">
-            <div class="start-head"><span class="start-num">3</span><img src="/assets/icons/user-check.svg" alt="" class="start-icon" width="24" height="24" loading="lazy"></div>
-            <h3>أنشئ حسابك</h3>
-            <p>تعرف على خطوات التسجيل والتحقق من الهوية <span class="ltr">KYC</span>.</p>
-            <a href="/register-binance/" class="btn btn-secondary">شرح التسجيل</a>
-          </div>
-          <div class="start-card">
-            <div class="start-head"><span class="start-num">4</span><img src="/assets/icons/circle-dollar-sign.svg" alt="" class="start-icon" width="24" height="24" loading="lazy"></div>
-            <h3>اشترِ <span class="ltr">USDT</span></h3>
-            <p>تعرف على طرق شراء <span class="ltr">USDT</span> بالعملة المحلية.</p>
-            <a href="/countries/" class="btn btn-secondary">طرق الشراء حسب البلد</a>
-          </div>
-          <div class="start-card">
-            <div class="start-head"><span class="start-num">5</span><img src="/assets/icons/handshake.svg" alt="" class="start-icon" width="24" height="24" loading="lazy"></div>
-            <h3>استخدم <span class="ltr">P2P</span> بأمان</h3>
-            <p>تعرف على كيفية اختيار البائع وتجنب الاحتيال.</p>
-            <a href="/p2p-buy-usdt/" class="btn btn-secondary">دليل <span class="ltr">P2P</span></a>
-          </div>
-          <div class="start-card">
-            <div class="start-head"><span class="start-num">6</span><img src="/assets/icons/wallet.svg" alt="" class="start-icon" width="24" height="24" loading="lazy"></div>
-            <h3>اسحب إلى محفظتك</h3>
-            <p>تعرف على الشبكات والرسوم قبل التحويل.</p>
-            <a href="/withdraw-usdt/" class="btn btn-secondary">دليل التحويل</a>
+          <div class="about-points">
+            <div class="about-point">
+              <img src="/assets/icons/circle-dollar-sign.svg" alt="" width="28" height="28" loading="lazy">
+              <div>
+                <strong>حسب بلدك</strong>
+                <p>ما يعمل في الإمارات قد لا يعمل بالطريقة نفسها في مصر أو السعودية.</p>
+              </div>
+            </div>
+            <div class="about-point">
+              <img src="/assets/icons/badge-check.svg" alt="" width="28" height="28" loading="lazy">
+              <div>
+                <strong>نراجع المصادر</strong>
+                <p>نقارن صفحات الدعم الرسمية مع خطوات الاستخدام الفعلية.</p>
+              </div>
+            </div>
+            <div class="about-point">
+              <img src="/assets/icons/shield.svg" alt="" width="28" height="28" loading="lazy">
+              <div>
+                <strong>نوضح المخاطر</strong>
+                <p>لا نخفي القيود التنظيمية أو مخاطر <span class="ltr">P2P</span> والمحافظ.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 4. 网站定义 -->
-      <section class="topic-section" id="about-site">
-        <h2 class="topic-title">ما هو <span class="ltr">ArabTrail</span>؟</h2>
-        <p class="about-copy"><span class="ltr">ArabTrail</span> دليل عربي مستقل لتعلّم العملات الرقمية واستخدام منصات التداول بطريقة عملية.</p>
-        <ul class="about-points">
-          <li>نركّز على المبتدئ: فهم <span class="ltr">USDT</span>، اختيار المنصة، الشراء بالعملة المحلية، واستخدام <span class="ltr">P2P</span> بأمان.</li>
-          <li>نراجع كل دولة على حدة — السعودية والإمارات ومصر والكويت وقطر والبحرين وعمان.</li>
-          <li>نوثّق تاريخ آخر تحقق ومصدر كل معلومة كلما أمكن.</li>
-        </ul>
-      </section>
-
-      <!-- 5. 选择平台模块 -->
-      <section class="topic-section" id="platforms">
-        <h2 class="topic-title">اختر المنصة المناسبة لك</h2>
-        <p class="topic-sub">المنصتان تغطيان خدمات مختلفة حسب البلد. اختر بناءً على ما تريد فعله، وليس على الشهرة وحدها.</p>
-        <div class="hub-grid">
-          <div class="hub-card" id="binance">
-            <div class="hub-head"><img src="/assets/binance-logo.webp" alt="Binance" class="hub-logo" width="48" height="48" loading="lazy"><h3 class="ltr">Binance</h3></div>
-            <p class="hub-desc">أوسع تغطية لسوق <span class="ltr">P2P</span> في عدة دول عربية، مع شراء <span class="ltr">USDT</span> والتداول الفوري والسحب.</p>
-            <ul>
-              <li><span class="ltr">P2P</span> بالريال والجنيه والدرهم والدينار</li>
-              <li>تداول فوري (Spot) ومحفظة <span class="ltr">Web3</span></li>
-              <li>شراء <span class="ltr">USDT</span> بطرق دفع محلية متعددة</li>
-              <li>كيانات محلية مرخّصة في الإمارات عبر <span class="ltr">VARA</span> وفي البحرين عبر <span class="ltr">CBB</span>، مع اختلاف الخدمات والكيان القانوني حسب البلد</li>
+    <!-- 5. Binance / OKX（一级视觉，两张大卡） -->
+    <section class="sec-block lv1">
+      <div class="container container-wide">
+        <div class="sec">
+          <h2>اختر المنصة المناسبة لك</h2>
+          <p>المنصتان تغطيان خدمات مختلفة حسب البلد. اختر بناءً على ما تريد فعله، وليس على الشهرة وحدها.</p>
+        </div>
+        <div class="exchange-grid">
+          <article class="exchange-card exchange-card--dark">
+            <div class="exchange-head">
+              <img src="/assets/binance-logo.webp" alt="Binance" class="exchange-logo" width="44" height="44" loading="lazy">
+              <h3 class="ltr">Binance</h3>
+            </div>
+            <p class="exchange-desc">التسجيل، <span class="ltr">P2P</span>، السحب، والمشكلات الشائعة.</p>
+            <ul class="exchange-links">
+              <li><a href="/register-binance/">التسجيل و<span class="ltr">KYC</span></a></li>
+              <li><a href="/buy-usdt-binance/">شراء <span class="ltr">USDT</span></a></li>
+              <li><a href="/withdraw-usdt/">السحب إلى المحفظة</a></li>
             </ul>
-            <a href="/binance/" class="btn btn-secondary">تعرف على <span class="ltr">Binance</span></a>
-          </div>
-          <div class="hub-card" id="okx">
-            <div class="hub-head"><img src="/assets/okx-logo.webp" alt="OKX" class="hub-logo" width="48" height="48" loading="lazy"><h3 class="ltr">OKX</h3></div>
-            <p class="hub-desc">كيان محلي مرخّص في الإمارات (<span class="ltr">VARA</span>)، لكنها أوقفت تداول <span class="ltr">AED</span> عبر <span class="ltr">P2P</span> منذ أكتوبر <span class="ltr">2025</span>.</p>
-            <ul>
-              <li><span class="ltr">P2P</span> بالريال والجنيه المصري</li>
-              <li>تداول فوري (Spot) وإيداع بنكي بالدرهم</li>
-              <li>شراء <span class="ltr">USDT</span> عبر <span class="ltr">P2P</span> أو البطاقة</li>
-              <li>رسوم الصانع (Maker) أقل من الآخذ</li>
+            <a href="/binance/" class="btn btn-primary exchange-cta">دليل <span class="ltr">Binance</span> الكامل</a>
+          </article>
+          <article class="exchange-card">
+            <div class="exchange-head">
+              <img src="/assets/okx-logo.webp" alt="OKX" class="exchange-logo" width="44" height="44" loading="lazy">
+              <h3 class="ltr">OKX</h3>
+            </div>
+            <p class="exchange-desc">التسجيل، شراء <span class="ltr">USDT</span>، والتداول عبر <span class="ltr">P2P</span>.</p>
+            <ul class="exchange-links">
+              <li><a href="/register-okx/">التسجيل و<span class="ltr">KYC</span></a></li>
+              <li><a href="/buy-usdt-okx/">شراء <span class="ltr">USDT</span></a></li>
+              <li><a href="/okx-p2p/">التداول عبر <span class="ltr">P2P</span></a></li>
             </ul>
-            <a href="/okx/" class="btn btn-secondary">تعرف على <span class="ltr">OKX</span></a>
+            <a href="/okx/" class="btn btn-secondary exchange-cta">دليل <span class="ltr">OKX</span> الكامل</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. USDT / P2P（二级视觉，主题索引列表） -->
+    <section class="sec-block lv2">
+      <div class="container container-mid">
+        <div class="sec">
+          <h2>شراء <span class="ltr">USDT</span> والتداول عبر <span class="ltr">P2P</span></h2>
+          <p>من فهم <span class="ltr">USDT</span> إلى شرائه وبيعه بأمان عبر <span class="ltr">P2P</span> واختيار الشبكة الصحيحة.</p>
+        </div>
+        <div class="topic-index">
+          <div class="topic-index-col">
+            <h3 class="topic-index-title ltr">USDT</h3>
+            <a href="/what-is-usdt/" class="topic-index-item">
+              <span class="topic-index-name">ما هو <span class="ltr">USDT</span>؟</span>
+              <span class="topic-index-desc">شرح مبسط للعملة المستقرة واستخداماتها.</span>
+            </a>
+            <a href="/buy-usdt-binance/" class="topic-index-item">
+              <span class="topic-index-name">كيف أشتري <span class="ltr">USDT</span>؟</span>
+              <span class="topic-index-desc">طرق الشراء بالعملة المحلية.</span>
+            </a>
+            <a href="/choose-network/" class="topic-index-item">
+              <span class="topic-index-name">كيف أختار الشبكة؟</span>
+              <span class="topic-index-desc"><span class="ltr">TRC20</span> و<span class="ltr">ERC20</span> والفرق بينهما.</span>
+            </a>
+            <a href="/transfer-usdt/" class="topic-index-item">
+              <span class="topic-index-name">تحويل <span class="ltr">USDT</span></span>
+              <span class="topic-index-desc">خطوات التحويل والأخطاء الشائعة.</span>
+            </a>
+            <a href="/usdt/" class="topic-index-all">جميع أدلة <span class="ltr">USDT</span> ←</a>
+          </div>
+          <div class="topic-index-col">
+            <h3 class="topic-index-title ltr">P2P</h3>
+            <a href="/p2p-choose-seller/" class="topic-index-item">
+              <span class="topic-index-name">كيف أختار البائع؟</span>
+              <span class="topic-index-desc">ما الذي تفحصه قبل الشراء.</span>
+            </a>
+            <a href="/p2p-scams/" class="topic-index-item">
+              <span class="topic-index-name">كيف أتجنب الاحتيال؟</span>
+              <span class="topic-index-desc">علامات الخطر الشائعة.</span>
+            </a>
+            <a href="/p2p-seller-not-releasing/" class="topic-index-item">
+              <span class="topic-index-name">دفعت ولم يحرر البائع العملات</span>
+              <span class="topic-index-desc">ماذا تفعل في هذه الحالة.</span>
+            </a>
+            <a href="/p2p-appeal/" class="topic-index-item">
+              <span class="topic-index-name">كيف أقدم اعتراضًا؟</span>
+              <span class="topic-index-desc">خطوات تقديم الاعتراض داخل المنصة.</span>
+            </a>
+            <a href="/p2p/" class="topic-index-all">جميع أدلة <span class="ltr">P2P</span> ←</a>
           </div>
         </div>
-        <div class="btn-row" style="margin-top: 16px;">
-          <a href="/binance-vs-okx/" class="btn btn-primary">قارن <span class="ltr">Binance</span> و<span class="ltr">OKX</span> بالتفصيل</a>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 6. USDT + P2P -->
-      <section class="topic-section" id="usdt-p2p">
-        <h2 class="topic-title"><img src="/assets/icons/circle-dollar-sign.svg" alt="" class="topic-icon" width="20" height="20" loading="lazy">شراء <span class="ltr">USDT</span> والتداول عبر <span class="ltr">P2P</span></h2>
-        <p class="topic-sub">من فهم <span class="ltr">USDT</span> إلى شرائه وبيعه بأمان عبر <span class="ltr">P2P</span> واختيار الشبكة الصحيحة.</p>
-        <div class="topic-links">
-          <div class="topic-link"><h4><a href="/what-is-usdt/">ما هو <span class="ltr">USDT</span>؟</a></h4><p>كيف يعمل وما الذي يجعله مختلفًا.</p></div>
-          <div class="topic-link"><h4><a href="/p2p-buy-usdt/">كيفية شراء <span class="ltr">USDT</span> عبر <span class="ltr">P2P</span></a></h4><p>خطوات الشراء بأمان.</p></div>
-          <div class="topic-link"><h4><a href="/p2p-choose-seller/">كيفية اختيار بائع موثوق</a></h4><p>ما الذي تفحصه قبل الشراء.</p></div>
-          <div class="topic-link"><h4><a href="/p2p-scams/">أشهر عمليات الاحتيال في <span class="ltr">P2P</span></a></h4><p>علامات الخطر الشائعة.</p></div>
+    <!-- 7. Wallet / Security（二级视觉，双栏知识目录，浅底） -->
+    <section class="strip strip--soft lv2">
+      <div class="container container-mid">
+        <div class="sec">
+          <h2>المحافظ والأمان</h2>
         </div>
-        <div class="btn-row" style="margin-top: 12px;">
-          <a href="/usdt/" class="btn btn-secondary">جميع أدلة <span class="ltr">USDT</span></a>
-          <a href="/p2p/" class="btn btn-secondary">جميع أدلة <span class="ltr">P2P</span></a>
+        <div class="knowledge">
+          <div class="knowledge-col">
+            <div class="knowledge-head">
+              <img src="/assets/icons/wallet.svg" alt="" width="26" height="26" loading="lazy">
+              <h3>المحافظ</h3>
+            </div>
+            <a href="/what-is-wallet/" class="knowledge-item">ما هي المحفظة؟</a>
+            <a href="/what-is-private-key/" class="knowledge-item">ما هو المفتاح الخاص؟</a>
+            <a href="/seed-phrase/" class="knowledge-item">ما هي عبارة الاسترداد؟</a>
+            <a href="/wallet-vs-exchange/" class="knowledge-item">المحفظة أم المنصة؟</a>
+            <a href="/wallets/" class="knowledge-all">جميع أدلة المحافظ ←</a>
+          </div>
+          <div class="knowledge-col">
+            <div class="knowledge-head">
+              <img src="/assets/icons/shield.svg" alt="" width="26" height="26" loading="lazy">
+              <h3>الأمان</h3>
+            </div>
+            <a href="/enable-2fa/" class="knowledge-item">تفعيل المصادقة الثنائية</a>
+            <a href="/fake-binance-account/" class="knowledge-item">الحسابات المزيفة</a>
+            <a href="/is-binance-safe/" class="knowledge-item">هل <span class="ltr">Binance</span> آمن؟</a>
+            <a href="/binance-account-restricted/" class="knowledge-item">ماذا لو قُيّد حسابك؟</a>
+            <a href="/security/" class="knowledge-all">جميع أدلة الأمان ←</a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 7. 钱包与安全 -->
-      <section class="topic-section" id="wallet-safety">
-        <h2 class="topic-title"><img src="/assets/icons/shield.svg" alt="" class="topic-icon" width="20" height="20" loading="lazy">المحافظ والأمان</h2>
-        <p class="topic-sub">تخزين العملات الرقمية وحماية حسابك وتجنب أكثر الأخطاء شيوعًا.</p>
-        <div class="topic-links">
-          <div class="topic-link"><h4><a href="/what-is-wallet/">ما هي المحفظة الرقمية؟</a></h4><p>كيف تعمل المحافظ.</p></div>
-          <div class="topic-link"><h4><a href="/wallet-vs-exchange/">المحفظة أم المنصة؟</a></h4><p>متى تحتفظ بأموالك في منصة ومتى تستخدم محفظة.</p></div>
-          <div class="topic-link"><h4><a href="/seed-phrase/">ما هي عبارة الاسترداد؟</a></h4><p>لماذا هي مفتاح أموالك.</p></div>
-          <div class="topic-link"><h4><a href="/enable-2fa/">حماية الحساب بـ<span class="ltr">2FA</span></a></h4><p>تفعيل المصادقة الثنائية.</p></div>
+    <!-- 8. 最新文章（三级视觉，1 大 + 4 条列表） -->
+    <section class="sec-block lv3">
+      <div class="container container-mid">
+        <div class="sec">
+          <h2>أحدث المقالات</h2>
         </div>
-        <div class="btn-row" style="margin-top: 12px;">
-          <a href="/wallets/" class="btn btn-secondary">جميع أدلة المحافظ</a>
-          <a href="/security/" class="btn btn-secondary">جميع أدلة الأمان</a>
-        </div>
-      </section>
-
-      <!-- 8. 最新文章 -->
-      <section class="topic-section" id="latest-articles">
-        <h2 class="topic-title">أحدث المقالات</h2>
-        <p class="topic-sub">أحدث الأدلة المختارة التي نشرناها.</p>
-        <div class="post-list">
-          <article class="post-feature">
-            <h3><a href="/usdt-minimum-amount/">كم أقل مبلغ لشراء أو تحويل <span class="ltr">USDT</span>؟</a></h3>
+        <div class="latest">
+          <a href="/usdt-minimum-amount/" class="latest-feature">
+            <span class="latest-cat ltr">USDT</span>
+            <h3>كم أقل مبلغ لشراء أو تحويل <span class="ltr">USDT</span>؟</h3>
             <p>الحد الأدنى يتغير حسب طريقة الشراء والمنصة والشبكة والدولة، وأين تجد الرقم الصحيح داخل حسابك.</p>
-            <span class="post-meta">16 سبتمبر 2026</span>
-          </article>
-          <div class="post-minor">
-            <article class="post-minor-item">
-              <h4><a href="/usdt-transfer-not-arriving/">تحويل <span class="ltr">USDT</span> لم يصل؟ ماذا تفعل أولًا؟</a></h4>
-              <span class="post-meta">14 سبتمبر 2026</span>
-            </article>
-            <article class="post-minor-item">
-              <h4><a href="/binance-verification-code-not-arriving/">لماذا لا يصل رمز التحقق من <span class="ltr">Binance</span>؟</a></h4>
-              <span class="post-meta">13 سبتمبر 2026</span>
-            </article>
-            <article class="post-minor-item">
-              <h4><a href="/p2p-sell-usdt/">كيفية بيع <span class="ltr">USDT</span> في <span class="ltr">Binance P2P</span> بأمان</a></h4>
-              <span class="post-meta">11 سبتمبر 2026</span>
-            </article>
-            <article class="post-minor-item">
-              <h4><a href="/transfer-usdt/">كيفية تحويل <span class="ltr">USDT</span> من منصة إلى أخرى</a></h4>
-              <span class="post-meta">7 سبتمبر 2026</span>
-            </article>
+            <span class="latest-date">16 سبتمبر 2026</span>
+          </a>
+          <div class="latest-list">
+            <a href="/usdt-transfer-not-arriving/" class="latest-item">
+              <span class="latest-cat ltr">USDT</span>
+              <span class="latest-title">تحويل <span class="ltr">USDT</span> لم يصل؟ ماذا تفعل أولًا؟</span>
+              <span class="latest-date">14 سبتمبر 2026</span>
+            </a>
+            <a href="/binance-verification-code-not-arriving/" class="latest-item">
+              <span class="latest-cat ltr">BINANCE</span>
+              <span class="latest-title">لماذا لا يصل رمز التحقق من <span class="ltr">Binance</span>؟</span>
+              <span class="latest-date">13 سبتمبر 2026</span>
+            </a>
+            <a href="/p2p-sell-usdt/" class="latest-item">
+              <span class="latest-cat ltr">P2P</span>
+              <span class="latest-title">كيفية بيع <span class="ltr">USDT</span> في <span class="ltr">Binance P2P</span> بأمان</span>
+              <span class="latest-date">11 سبتمبر 2026</span>
+            </a>
+            <a href="/transfer-usdt/" class="latest-item">
+              <span class="latest-cat ltr">USDT</span>
+              <span class="latest-title">كيفية تحويل <span class="ltr">USDT</span> من منصة إلى أخرى</span>
+              <span class="latest-date">7 سبتمبر 2026</span>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 9. 最新核查 -->
-      <section class="topic-section" id="latest-checks">
-        <h2 class="topic-title">أحدث ما تحقق منه <span class="ltr">ArabTrail</span></h2>
-        <p class="topic-sub">نراجع الواجهات والرسوم والوضع التنظيمي باستمرار، ونسجّل تاريخ كل فحص ونوعه لأن النتائج قد تتغير حسب البلد والحساب والوقت.</p>
-        <div class="verify-list">
-          <article class="verify-card large">
-            <div class="verify-status"><img src="/assets/icons/badge-check.svg" alt="" width="13" height="13">تم التحقق</div>
-            <h3><a href="/buy-usdt-saudi-arabia/">السعودية — <span class="ltr">SAR/USDT</span> على <span class="ltr">Binance</span> و<span class="ltr">OKX</span></a></h3>
-            <p>ما يظهر في سوق <span class="ltr">P2P</span> بالريال، وطرق الدفع المحلية، والرسوم الفعلية.</p>
-            <div class="verify-meta"><span class="ev-tag hands-on">فحص عملي</span><span class="verify-date">آخر تحقق: <span class="ltr">9</span> سبتمبر <span class="ltr">2026</span></span></div>
-          </article>
-          <article class="verify-card">
-            <div class="verify-status"><img src="/assets/icons/badge-check.svg" alt="" width="13" height="13">تم التحقق</div>
-            <h3><a href="/binance-p2p-egypt/">مصر — <span class="ltr">Binance P2P</span> و<span class="ltr">EGP</span> وطرق الدفع</a></h3>
-            <p>الوضع التنظيمي وطرق الدفع المحلية المتاحة، وأي تحديثات على السوق المصري.</p>
-            <div class="verify-meta"><span class="ev-tag official">مصادر رسمية</span><span class="verify-date">آخر تحقق: <span class="ltr">9</span> سبتمبر <span class="ltr">2026</span></span></div>
-          </article>
-          <article class="verify-card">
-            <div class="verify-status"><img src="/assets/icons/badge-check.svg" alt="" width="13" height="13">تم التحقق</div>
-            <h3><a href="/binance-kuwait/">الكويت — <span class="ltr">KWD/USDT</span> والوضع التنظيمي</a></h3>
-            <p>الوضع القانوني وإمكانية الوصول، والخدمات المتاحة حاليًا بالدينار الكويتي.</p>
-            <div class="verify-meta"><span class="ev-tag official">مصادر رسمية</span><span class="verify-date">آخر تحقق: <span class="ltr">9</span> سبتمبر <span class="ltr">2026</span></span></div>
-          </article>
+    <!-- 9. 最新核验日志（三级视觉，浅米色，日志式） -->
+    <section class="strip strip--warm lv3">
+      <div class="container container-narrow">
+        <div class="sec sec--sm">
+          <h2>آخر عمليات التحقق</h2>
         </div>
-      </section>
+        <div class="vlog">
+          <a href="/buy-usdt-saudi-arabia/" class="vlog-row">
+            <span class="vlog-date">9 سبتمبر 2026</span>
+            <span class="vlog-topic">السعودية · <span class="ltr">Binance</span> / <span class="ltr">OKX</span></span>
+            <span class="vlog-desc">مراجعة سوق <span class="ltr">P2P</span> بالريال وطرق الدفع المحلية.</span>
+            <span class="vlog-badge vlog-badge--hands">فحص عملي</span>
+          </a>
+          <a href="/binance-p2p-egypt/" class="vlog-row">
+            <span class="vlog-date">9 سبتمبر 2026</span>
+            <span class="vlog-topic">مصر · <span class="ltr">Binance P2P</span></span>
+            <span class="vlog-desc">مراجعة الوضع التنظيمي وطرق الدفع المحلية.</span>
+            <span class="vlog-badge vlog-badge--official">مصدر رسمي</span>
+          </a>
+          <a href="/binance-kuwait/" class="vlog-row">
+            <span class="vlog-date">9 سبتمبر 2026</span>
+            <span class="vlog-topic">الكويت · <span class="ltr">KWD</span> / <span class="ltr">USDT</span></span>
+            <span class="vlog-desc">مراجعة الوضع القانوني والخدمات المتاحة.</span>
+            <span class="vlog-badge vlog-badge--official">مصدر رسمي</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      <!-- 10. 我们如何验证 -->
-      <section class="topic-section" id="how-we-test">
-        <h2 class="topic-title">كيف نتحقق من معلومات <span class="ltr">ArabTrail</span>؟</h2>
-        <p class="topic-sub">لا نكتفي بالقول إننا نتحقق، بل نوضح مصدر كل معلومة وطريقة فحصها وتاريخ مراجعتها.</p>
-        <div class="trust-grid" style="grid-template-columns: repeat(3, 1fr);">
-          <div class="trust-card">
+    <!-- 10. 验证方法（三级视觉，横向 3 栏） -->
+    <section class="sec-block lv3">
+      <div class="container container-narrow">
+        <div class="sec">
+          <h2>كيف نتحقق من معلومات <span class="ltr">ArabTrail</span>؟</h2>
+          <p>لا نكتفي بالقول إننا نتحقق، بل نوضح مصدر كل معلومة وطريقة فحصها وتاريخ مراجعتها.</p>
+        </div>
+        <div class="method-row">
+          <div class="method-col">
+            <img src="/assets/icons/badge-check.svg" alt="" class="method-icon" width="40" height="40" loading="lazy">
             <h3>مصادر رسمية</h3>
-            <p>نعتمد على مواقع الجهات التنظيمية والبنوك المركزية ومراكز مساعدة <span class="ltr">Binance</span> و<span class="ltr">OKX</span> عند التحقق من الرسوم والقيود والتراخيص.</p>
+            <p>نعتمد على مواقع الجهات التنظيمية والبنوك المركزية ومراكز المساعدة.</p>
           </div>
-          <div class="trust-card">
+          <div class="method-col">
+            <img src="/assets/icons/arrow-left-right.svg" alt="" class="method-icon" width="40" height="40" loading="lazy">
             <h3>فحص عملي</h3>
-            <p>نراجع واجهات المنصات وأسواق <span class="ltr">P2P</span> وطرق الدفع عندما يكون ذلك ممكنًا، ونسجّل تاريخ الفحص لأن النتائج قد تتغير حسب الدولة والحساب والوقت.</p>
+            <p>نراجع واجهات المنصات وأسواق <span class="ltr">P2P</span> وطرق الدفع الفعلية.</p>
           </div>
-          <div class="trust-card">
-            <h3>تحديث واضح</h3>
-            <p>نعرض تاريخ آخر تحديث وآخر تحقق من المصادر في الأدلة التي تتأثر بالرسوم أو <span class="ltr">KYC</span> أو <span class="ltr">P2P</span> أو التنظيم المحلي.</p>
+          <div class="method-col">
+            <img src="/assets/icons/check.svg" alt="" class="method-icon" width="40" height="40" loading="lazy">
+            <h3>تاريخ مراجعة</h3>
+            <p>نعرض تاريخ آخر تحقق وتحديث في كل دليل.</p>
           </div>
         </div>
-        <div class="btn-row" style="margin-top: 16px;">
-          <a href="/how-we-test/" class="btn btn-primary">تعرف على منهجية <span class="ltr">ArabTrail</span></a>
-        </div>
-      </section>
+        <a href="/how-we-test/" class="method-link">تعرف على منهجية التحقق والتحرير ←</a>
+      </div>
+    </section>
 
-      <!-- Affiliate 披露 -->
+    <!-- Affiliate 披露 -->
+    <div class="container container-wide">
       <p class="disclosure">
         <strong>الشفافية مهمة بالنسبة لنا.</strong> قد تحتوي بعض صفحات <span class="ltr">ArabTrail</span> على روابط إحالة. إذا أنشأت حسابًا عبر أحد هذه الروابط، فقد نحصل على عمولة دون تكلفة إضافية عليك. لا يؤثر ذلك على تقييماتنا أو المعلومات التي نقدمها.
       </p>
@@ -341,33 +475,43 @@
     </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer home-footer">
     <div class="container">
-      <p>ArabTrail — دليل عملي للمستخدم العربي. المحتوى لأغراض تعليمية فقط وليس نصيحة مالية.</p>
-      <div class="footer-links">
-        <span class="footer-group">عن <span class="ltr">ArabTrail</span></span>
-        <a href="/about/">من نحن</a>
-        <a href="/team/">فريق التحرير</a>
-        <a href="/how-we-test/">كيف نتحقق ونختبر</a>
-        <a href="/editorial-policy/">سياسة التحرير</a>
-        <a href="/corrections-policy/">سياسة التصحيح</a>
-        <a href="/affiliate-disclosure/">الإفصاح عن الروابط التابعة</a>
-        <a href="/contact/">اتصل بنا</a>
+      <div class="home-footer__brand">
+        <p><span class="ltr">ArabTrail</span> — دليل عملي مستقل للمستخدم العربي في العملات الرقمية. المحتوى لأغراض تعليمية فقط وليس نصيحة مالية.</p>
       </div>
-      <div class="footer-links">
-        <span class="footer-group">الأدلة</span>
+      <div class="home-footer__col">
+        <h4>الأدلة</h4>
         <a href="/binance/"><span class="ltr">Binance</span></a>
         <a href="/okx/"><span class="ltr">OKX</span></a>
         <a href="/usdt/"><span class="ltr">USDT</span></a>
         <a href="/p2p/"><span class="ltr">P2P</span></a>
-        <a href="/countries/">الدول</a>
+        <a href="/wallets/">المحافظ</a>
         <a href="/security/">الأمان</a>
       </div>
-      <div class="footer-links">
-        <span class="footer-group">قانوني</span>
-        <a href="/disclaimer/">إخلاء المسؤولية</a>
+      <div class="home-footer__col">
+        <h4>الدول</h4>
+        <a href="/countries/saudi-arabia/">السعودية</a>
+        <a href="/countries/uae/">الإمارات</a>
+        <a href="/countries/egypt/">مصر</a>
+        <a href="/countries/kuwait/">الكويت</a>
+        <a href="/countries/qatar/">قطر</a>
+        <a href="/countries/bahrain/">البحرين</a>
+        <a href="/countries/oman/">عمان</a>
+      </div>
+      <div class="home-footer__col">
+        <h4>عن الموقع</h4>
+        <a href="/about/">من نحن</a>
+        <a href="/team/">فريق التحرير</a>
+        <a href="/how-we-test/">كيف نتحقق ونختبر</a>
+        <a href="/editorial-policy/">سياسة التحرير</a>
+        <a href="/contact/">اتصل بنا</a>
+      </div>
+      <div class="home-footer__bottom">
+        <span>© 2026 <span class="ltr">ArabTrail</span></span>
+        <a href="/affiliate-disclosure/">الإفصاح عن الروابط التابعة</a>
         <a href="/privacy/">سياسة الخصوصية</a>
-        <a href="/terms/">الشروط والأحكام</a>
+        <a href="/disclaimer/">إخلاء المسؤولية</a>
       </div>
     </div>
   </footer>
