@@ -1168,3 +1168,97 @@ img { max-width: 100%; height: auto; }
   .binance-guide .evidence-card ul { flex-direction: column; gap: 6px; }
   .binance-guide .guide-meta { gap: 6px; }
 }
+
+/* ============================================================
+   Wallet Guide v1（钱包安全页）—— 作用域 .wallet-guide
+   使用 ArabTrail 品牌主色（伊斯兰翡翠绿 + 金 + 沙色），不做 Binance 深蓝
+   安全提示 = 橙，危险提示 = 红
+   ============================================================ */
+.wallet-guide {
+  --wg-green: #0b6e4f;
+  --wg-green-dark: #094734;
+  --wg-green-soft: #e9f2ec;
+  --wg-text: #1c1a16;
+  --wg-muted: #6b6456;
+  --wg-border: #e5dcc6;
+  --wg-accent: #d4af37;
+  --wg-accent-dark: #b8942a;
+  --wg-warning: #d97706;
+  --wg-warning-soft: #fff7e8;
+  --wg-red: #b42318;
+  --wg-red-soft: #fff3f1;
+}
+
+.wallet-guide a { color: var(--wg-green); }
+.wallet-guide a:hover { color: var(--wg-accent-dark); }
+
+/* 标题 */
+.wallet-guide .article h1 { color: var(--wg-green-dark); font-size: clamp(1.75rem, 3.5vw, 2.15rem); line-height: 1.35; }
+.wallet-guide .article h2 { color: var(--wg-green-dark); }
+
+/* 分类标签 + lead + meta */
+.wallet-guide .guide-kicker { display: inline-block; margin-bottom: 10px; color: var(--wg-green); font-size: 14px; font-weight: 700; }
+.wallet-guide .guide-lead { color: var(--wg-muted); font-size: 1.06rem; line-height: 1.9; margin: 0 0 16px; max-width: 720px; }
+.wallet-guide .guide-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--wg-muted); font-size: 0.85rem; margin-bottom: 18px; }
+.wallet-guide .guide-meta a { color: var(--wg-green); }
+.wallet-guide .guide-meta .guide-meta-dot { color: var(--wg-border); }
+
+/* 核验徽章：绿色语义 */
+.wallet-guide .verify-status { background: var(--wg-green-soft); color: var(--wg-green-dark); border-color: var(--wg-green); margin-bottom: 0; }
+
+/* 摘要卡：沙金表头 */
+.wallet-guide .summary-card { border-color: var(--wg-border); }
+.wallet-guide .summary-card th { background: #faf4e4; color: var(--wg-text); }
+.wallet-guide .summary-card th, .wallet-guide .summary-card td { border-color: var(--wg-border); }
+
+/* 证据卡：紧凑状态行 */
+.wallet-guide .evidence-card { background: var(--wg-green-soft); border: 1px solid var(--wg-border); border-radius: 12px; padding: 16px 18px; margin: 20px 0; }
+.wallet-guide .evidence-card .evidence-title { color: var(--wg-green-dark); font-size: 0.88rem; margin: 0 0 12px; }
+.wallet-guide .evidence-card ul { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0; padding: 0; list-style: none; }
+.wallet-guide .evidence-card li { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--wg-muted); line-height: 1.6; }
+.wallet-guide .evidence-card .evidence-foot { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--wg-border); font-size: 0.8rem; color: var(--wg-muted); line-height: 1.7; }
+.wallet-guide .evidence-card .evidence-foot .ev-date { color: var(--wg-green-dark); font-weight: 700; }
+.wallet-guide .ev-tag.official { background: var(--wg-green-soft); color: var(--wg-green-dark); border: 1px solid var(--wg-green); }
+.wallet-guide .ev-tag.editorial { background: #faf4e4; color: #8a6d1f; border: 1px solid var(--wg-accent); }
+
+/* 目录 */
+.wallet-guide .toc { border-inline-start: 4px solid var(--wg-green); }
+.wallet-guide .toc-title { color: var(--wg-green-dark); }
+.wallet-guide .toc a { color: var(--wg-green); }
+
+/* 步骤：金数字 */
+.wallet-guide .step-num { background: var(--wg-accent); color: var(--wg-green-dark); }
+.wallet-guide .step h2, .wallet-guide .step h3 { color: var(--wg-green-dark); }
+
+/* 提示框 */
+.wallet-guide .callout { border-inline-start-color: var(--wg-green); background: var(--wg-green-soft); }
+.wallet-guide .callout .callout-title { color: var(--wg-green-dark); }
+.wallet-guide .callout.warning { border-inline-start-color: var(--wg-warning); background: var(--wg-warning-soft); }
+.wallet-guide .callout.warning .callout-title { color: var(--wg-warning); }
+.wallet-guide .callout.danger { border-inline-start-color: var(--wg-red); background: var(--wg-red-soft); }
+.wallet-guide .callout.danger .callout-title { color: var(--wg-red); }
+
+/* FAQ */
+.wallet-guide .faq summary { color: var(--wg-green-dark); }
+
+/* 下一步 */
+.wallet-guide .related { background: var(--wg-green-soft); border: 1px solid var(--wg-border); border-radius: 12px; padding: 20px 22px; }
+.wallet-guide .related h2 { color: var(--wg-green-dark); }
+.wallet-guide .related li a { color: var(--wg-green); }
+
+/* 截图槽位 */
+.wallet-guide .guide-screenshot { margin: 16px 0; border: 1px solid var(--wg-border); border-radius: 12px; overflow: hidden; }
+.wallet-guide .guide-screenshot img { display: block; width: 100%; height: auto; }
+.wallet-guide .guide-screenshot figcaption { padding: 10px 14px; font-size: 0.82rem; color: var(--wg-muted); background: var(--wg-green-soft); }
+
+/* 正确保存检查表：绿色勾 */
+.wallet-guide .checklist { list-style: none; margin: 16px 0; padding: 0; }
+.wallet-guide .checklist li { position: relative; padding-inline-start: 32px; margin: 11px 0; line-height: 1.7; }
+.wallet-guide .checklist li::before { content: "✓"; position: absolute; inset-inline-start: 0; top: 1px; width: 21px; height: 21px; border-radius: 6px; background: var(--wg-green-soft); color: var(--wg-green); font-weight: 800; font-size: 13px; line-height: 21px; text-align: center; }
+
+/* 移动端 */
+@media (max-width: 700px) {
+  .wallet-guide .toc ol { max-height: 160px; overflow-y: auto; }
+  .wallet-guide .evidence-card ul { flex-direction: column; gap: 6px; }
+  .wallet-guide .guide-meta { gap: 6px; }
+}
