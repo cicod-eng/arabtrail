@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تداول العملات الرقمية للمبتدئين: شرح التداول الفوري على Binance — ArabTrail</title>
+  <meta name="description" content="دليل التداول الفوري Spot على Binance للمبتدئين: كيف تقرأ أزواج التداول، الفرق بين أمر السوق وأمر الحد، الرسوم الفعلية، وخطوات أول صفقة شراء وبيع.">
+  <link rel="preload" href="/assets/fonts/tajawal-400-arabic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/tajawal-700-arabic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/tajawal-800-arabic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="canonical" href="https://arabtrail.com/binance-spot-trading/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ArabTrail">
+  <meta property="og:title" content="تداول العملات الرقمية للمبتدئين: شرح التداول الفوري على Binance">
+  <meta property="og:description" content="كيف تقرأ أزواج التداول، الفرق بين أمر السوق وأمر الحد، الرسوم الفعلية، وخطوات أول صفقة شراء وبيع على Binance.">
+  <meta property="og:url" content="https://arabtrail.com/binance-spot-trading/">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:image" content="https://arabtrail.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ArabTrail">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://arabtrail.com/assets/og-image.png">
+  <meta name="twitter:image:alt" content="ArabTrail">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "تداول العملات الرقمية للمبتدئين: شرح التداول الفوري على Binance",
+        "description": "دليل التداول الفوري Spot على Binance للمبتدئين: كيف تقرأ أزواج التداول، الفرق بين أمر السوق وأمر الحد، الرسوم الفعلية، وخطوات أول صفقة شراء وبيع.",
+        "inLanguage": "ar",
+        "datePublished": "2026-09-22",
+        "dateModified": "2026-09-22",
+        "author": { "@type": "Organization", "name": "فريق تحرير ArabTrail", "url": "https://arabtrail.com/about/" },
+        "publisher": { "@type": "Organization", "name": "ArabTrail", "logo": { "@type": "ImageObject", "url": "https://arabtrail.com/assets/logo.svg" } },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://arabtrail.com/binance-spot-trading/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://arabtrail.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Binance", "item": "https://arabtrail.com/binance/" },
+          { "@type": "ListItem", "position": 3, "name": "التداول الفوري للمبتدئين" }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "كيفية تنفيذ أول صفقة شراء على Binance",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "افتح سوق التداول الفوري", "text": "من التطبيق اضغط «تداول»، أو من الموقع اختر «التداول» ثم «التداول الفوري Spot»." },
+          { "@type": "HowToStep", "position": 2, "name": "اختر زوج التداول", "text": "في شريط البحث اكتب الزوج مثل BTC/USDT ثم اختره." },
+          { "@type": "HowToStep", "position": 3, "name": "تأكد من الرصيد", "text": "تحقق من وجود USDT كافٍ في محفظة التداول قبل وضع الطلب." },
+          { "@type": "HowToStep", "position": 4, "name": "اختر نوع الأمر وأدخل الكمية", "text": "اختر أمر السوق Market أو أمر الحد Limit، ثم أدخل الكمية أو المبلغ الذي تريده." },
+          { "@type": "HowToStep", "position": 5, "name": "راجع التفاصيل وأكد", "text": "راجع السعر والرسوم والمبلغ النهائي ثم اضغط «شراء»." },
+          { "@type": "HowToStep", "position": 6, "name": "تحقق من التنفيذ", "text": "تأكد من ظهور العملة في محفظة التداول وفي سجل الأوامر." }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "ما الفرق بين التداول الفوري والعقود الآجلة؟", "acceptedAnswer": { "@type": "Answer", "text": "في التداول الفوري Spot تمتلك الأصل مباشرة وتشتريه أو تبيعه بسعر السوق، بينما العقود الآجلة Futures تتيح المضاربة على السعر دون امتلاك الأصل وباستخدام رافعة مالية. العقود الآجلة منتج متقدم عالي المخاطر، ولا يُنصح المبتدئون بالبدء بها قبل فهم إدارة المخاطر." } },
+          { "@type": "Question", "name": "هل يمكنني شراء جزء من البيتكوين وليس عملة كاملة؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم، يمكنك شراء جزء صغير من البيتكوين، ولا يشترط شراء عملة كاملة. الحد الأدنى يختلف حسب الزوج والمنصة، لكن يمكن البدء بمبالغ صغيرة." } },
+          { "@type": "Question", "name": "ما الفرق بين أمر السوق وأمر الحد؟", "acceptedAnswer": { "@type": "Answer", "text": "أمر السوق Market يُنفَّذ فورًا بأفضل سعر متاح حاليًا، بينما أمر الحد Limit يُنفَّذ فقط عند وصول السعر الذي حددته، وقد لا يُنفَّذ إذا لم يصل السوق إلى هذا المستوى." } },
+          { "@type": "Question", "name": "كم تبلغ رسوم التداول الفوري على Binance؟", "acceptedAnswer": { "@type": "Answer", "text": "الرسوم القياسية للمستخدم العادي هي 0.10% للصانع و0.10% للآخذ، ويمكن خفضها إلى نحو 0.075% عند استخدام BNB لدفع الرسوم، وتنخفض أكثر مع مستويات VIP الأعلى. راجع صفحة الرسوم داخل حسابك للقيمة المطبقة عليك." } },
+          { "@type": "Question", "name": "هل التداول يحتاج إلى معرفة تقنية عميقة؟", "acceptedAnswer": { "@type": "Answer", "text": "لا، يكفي فهم أزواج التداول ونوعي الأوامر الأساسيين (السوق والحد) والرسوم، ثم البدء بمبالغ صغيرة. الأهم من المعرفة التقنية هو الانضباط في إدارة المخاطر وعدم التسرع." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="ArabTrail"><img src="/assets/logo.svg" alt="ArabTrail" width="131" height="34"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-burger" aria-label="فتح القائمة"><span></span><span></span><span></span></label>
+      <nav class="nav-links">
+        <a href="/exchanges/">منصات التداول</a>
+        <a href="/countries/">الدول</a>
+        <a href="/usdt/"><span class="ltr">USDT</span></a>
+        <a href="/p2p/"><span class="ltr">P2P</span></a>
+        <a href="/wallets/">المحافظ</a>
+        <a href="/security/">الأمان</a>
+        <a href="/basics/">الأساسيات</a>
+        <a href="/usdt/" class="nav-cta">اشترِ <span class="ltr">USDT</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main data-pagefind-body>
+    <div class="container article">
+      <nav class="breadcrumb" aria-label="مسار التنقل">
+        <a href="/">الرئيسية</a> › <a href="/binance/"><span class="ltr">Binance</span></a> › التداول الفوري للمبتدئين
+      </nav>
+
+      <h1>تداول العملات الرقمية للمبتدئين: كيف تشتري وتبيع العملات على <span class="ltr">Binance</span> خطوة بخطوة</h1>
+
+      <p>التداول في العملات الرقمية يعني ببساطة شراء العملات وبيعها على منصة تداول، إما لتحقيق ربح من فرق السعر أو لتجميع أصل على المدى الطويل. وإذا كنت مبتدئًا، فابدأ من <strong>التداول الفوري <span class="ltr">Spot</span></strong>: تشتري فيه الأصل بسعر السوق وتصبح مالكًا له مباشرة، دون رافعة مالية أو اقتراض.</p>
+
+      <p>لا تحتاج إلى شراء بيتكوين كاملة؛ يمكنك البدء بجزء صغير منها. في هذا الدليل نشرح كيف تقرأ أزواج التداول، والفرق بين أمر السوق وأمر الحد، وكم تدفع فعليًا من رسوم، ثم نشرح أول صفقة شراء وأول صفقة بيع خطوة بخطوة — وما يجب أن تتجنبه.</p>
+
+      <p class="updated">آخر تحديث: سبتمبر 2026</p>
+
+      <div class="evidence-card">
+        <div class="evidence-title">ما الذي تحققنا منه؟</div>
+        <ul>
+          <li><span class="ev-tag official">مصدر رسمي</span> رسوم التداول الفوري (<span class="ltr">0.10%</span>) وخصم <span class="ltr">BNB</span> — من صفحة الرسوم الرسمية في <span class="ltr">Binance</span>.</li>
+          <li><span class="ev-tag official">مصدر رسمي</span> أنواع الأوامر (السوق والحد) والفرق بين التداول الفوري والعقود الآجلة — من <span class="ltr">Binance Academy</span> ومركز المساعدة.</li>
+        </ul>
+        <div class="evidence-foot"><span class="ev-date">آخر تحقق: سبتمبر <span class="ltr">2026</span></span> · لا نقبل مدفوعات مقابل تغيير أي تقييم · <a href="/how-we-test/">منهجية التحقق</a></div>
+      </div>
+
+      <div class="summary-card">
+        <table>
+          <tr><th>المنصة</th><td><span class="ltr">Binance</span></td></tr>
+          <tr><th>الموضوع</th><td>التداول الفوري <span class="ltr">Spot</span> للمبتدئين</td></tr>
+          <tr><th>المتطلب الأساسي</th><td>حساب موثّق <span class="ltr">KYC</span> + أصل رقمي في محفظة التداول</td></tr>
+          <tr><th>الرسوم القياسية</th><td><span class="ltr">0.10%</span> للصانع والآخذ، وتنخفض بخصم <span class="ltr">BNB</span> أو مستويات <span class="ltr">VIP</span></td></tr>
+          <tr><th>قيد مهم</th><td>الأسعار تتغير باستمرار، والرسوم تختلف حسب الزوج ومستوى الحساب</td></tr>
+        </table>
+      </div>
+
+      <div class="toc">
+        <div class="toc-title">محتويات الدليل</div>
+        <ol>
+          <li><a href="#before">قبل أن تبدأ</a></li>
+          <li><a href="#what-is-spot">ما هو التداول الفوري Spot؟</a></li>
+          <li><a href="#do-you-need">متى تحتاج فعلًا إلى التداول الفوري؟</a></li>
+          <li><a href="#pairs">كيف تقرأ أزواج التداول؟</a></li>
+          <li><a href="#orders">أمر السوق أم أمر الحد؟</a></li>
+          <li><a href="#step1">الوصول إلى سوق التداول الفوري</a></li>
+          <li><a href="#step2">شراء أول عملة</a></li>
+          <li><a href="#step3">بيع العملة</a></li>
+          <li><a href="#fees">الرسوم الفعلية</a></li>
+          <li><a href="#mistakes">أخطاء شائعة في أول صفقة</a></li>
+          <li><a href="#risk">إدارة المخاطر للمبتدئين</a></li>
+          <li><a href="#problems">ماذا تفعل إذا واجهت مشكلة؟</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+        </ol>
+      </div>
+
+      <h2 id="before">قبل أن تبدأ</h2>
+      <ul>
+        <li>حساب <span class="ltr">Binance</span> مُسجَّل ومكتمل التحقق من الهوية <span class="ltr">KYC</span>. إن لم يكن لديك حساب بعد، راجع <a href="/register-binance/">دليل التسجيل في Binance</a> ثم <a href="/binance-kyc/">دليل توثيق الحساب KYC</a>.</li>
+        <li>أصل رقمي في محفظة التداول، مثل <span class="ltr">USDT</span> أو <span class="ltr">BTC</span> أو <span class="ltr">BNB</span>. إن لم تكن تملك أي أصل، ابدأ بـ<a href="/buy-usdt-binance/">شراء USDT</a> أولًا.</li>
+        <li>تفعيل المصادقة الثنائية <span class="ltr">2FA</span> لحماية حسابك قبل أي تداول.</li>
+        <li>إن كنت ستنقل عملة من محفظة خارجية إلى <span class="ltr">Binance</span>، تحقق من <a href="/choose-network/">شبكة التحويل الصحيحة</a> قبل الإيداع.</li>
+      </ul>
+      <p>هذا الدليل موجّه لمن يريد التداول الفوري دون رافعة مالية. أما العقود الآجلة والرافعة المالية فهي أدوات متقدمة عالية المخاطر، ولا ننصح بالبدء بها قبل فهم إدارة المخاطر جيدًا.</p>
+
+      <h2 id="what-is-spot">ما هو التداول الفوري <span class="ltr">Spot</span>؟</h2>
+      <p>التداول الفوري هو شراء العملات الرقمية وبيعها مباشرة بسعر السوق الحالي، فتصبح مالكًا للأصل نفسه: تشتري <span class="ltr">BTC</span> أو <span class="ltr">ETH</span> أو <span class="ltr">USDT</span> فيظهر في محفظتك، ويمكنك الاحتفاظ به أو بيعه لاحقًا أو سحبه إلى محفظة خارجية.</p>
+      <p>يختلف هذا عن العقود الآجلة <span class="ltr">Futures</span> التي تتيح المضاربة على اتجاه السعر دون امتلاك الأصل، وغالبًا باستخدام رافعة مالية تضخّم الأرباح والخسائر معًا. لذلك فالتداول الفوري نقطة بداية مناسبة للمبتدئ.</p>
+      <div class="callout warning">
+        <span class="callout-title">تنبيه</span>
+        «الفوري» لا يعني بلا مخاطر: أسعار العملات الرقمية تتقلب بقوة، ويمكن أن تنخفض قيمة ما اشتريته بسرعة. لا تستثمر إلا مبلغًا تستطيع تحمّل خسارته كاملًا.
+      </div>
+
+      <h2 id="do-you-need">متى تحتاج فعلًا إلى التداول الفوري؟</h2>
+      <p>كثير من المستخدمين في الخليج ومصر يبدأون بشراء <span class="ltr">USDT</span> عبر <span class="ltr">P2P</span> بالعملة المحلية، ثم يتساءلون: وماذا بعد؟ الجواب يعتمد على هدفك.</p>
+      <p><span class="ltr">USDT</span> عملة مستقرة سعرها مرتبط بالدولار تقريبًا، فاحتفاظك بها يعني احتفاظك بالدولار تقريبًا، وليس استثمارًا يُتوقع نمو سعره. لذلك:</p>
+      <ul>
+        <li>إذا كان هدفك فقط الاحتفاظ بالدولار أو تحويل مبلغ لشخص آخر، فلا تحتاج إلى التداول الفوري إطلاقًا — يكفي أن تشتري <span class="ltr">USDT</span> وتبقيه. راجع <a href="/what-is-usdt/">ما هو USDT</a> لفهم طبيعته.</li>
+        <li>أما إذا كنت تريد امتلاك بيتكوين أو إيثيريوم أو غيرهما للاحتفاظ طويلًا أو للاستفادة من فرق السعر، فهنا تحتاج إلى التداول الفوري: تشتري <span class="ltr">USDT</span> أولًا عبر <span class="ltr">P2P</span>، ثم تذهب إلى سوق <span class="ltr">Spot</span> وتبدّله بـ<span class="ltr">BTC</span> أو <span class="ltr">ETH</span>. ابدأ بـ<a href="/buy-usdt-binance/">شراء USDT على Binance</a>.</li>
+      </ul>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">هدفك</th><th scope="col">ما تحتاج إلى فعله</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>الاحتفاظ بـ<span class="ltr">USDT</span></td><td>لا تحتاج إلى <span class="ltr">Spot</span></td></tr>
+            <tr><td>إرسال <span class="ltr">USDT</span> إلى محفظة أخرى</td><td>لا تحتاج إلى <span class="ltr">Spot</span></td></tr>
+            <tr><td>شراء <span class="ltr">BTC</span> باستخدام <span class="ltr">USDT</span></td><td>تحتاج إلى زوج <span class="ltr">BTC/USDT</span></td></tr>
+            <tr><td>شراء <span class="ltr">ETH</span> باستخدام <span class="ltr">USDT</span></td><td>تحتاج إلى زوج <span class="ltr">ETH/USDT</span></td></tr>
+            <tr><td>بيع <span class="ltr">BTC</span> والحصول على <span class="ltr">USDT</span></td><td>استخدم <span class="ltr">BTC/USDT</span> ثم اختر «بيع»</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>باختصار، التداول الفوري أداة لتحويل <span class="ltr">USDT</span> إلى أصول أخرى أو العكس، وليس خطوة إلزامية لكل من يشتري <span class="ltr">USDT</span>.</p>
+
+      <h2 id="pairs">كيف تقرأ أزواج التداول؟</h2>
+      <p>يُكتب زوج التداول على صورة <span class="ltr">BTC/USDT</span> أو <span class="ltr">ETH/USDT</span>. العملة الأولى هي الأصل الذي تشتريه أو تبيعه، والثانية هي العملة التي تدفع بها أو تستلمها.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">الزوج</th><th scope="col">العملة التي تشتريها أو تبيعها</th><th scope="col">العملة التي تدفع بها أو تستلمها</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="ltr">BTC/USDT</span></td><td>بيتكوين</td><td><span class="ltr">USDT</span></td></tr>
+            <tr><td><span class="ltr">ETH/USDT</span></td><td>إيثيريوم</td><td><span class="ltr">USDT</span></td></tr>
+            <tr><td><span class="ltr">BNB/USDT</span></td><td><span class="ltr">BNB</span></td><td><span class="ltr">USDT</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>السعر الظاهر بجوار الزوج هو سعر الصرف الحالي بين العملتين. فإذا رأيت السعر <span class="ltr">100,000</span> بجوار <span class="ltr">BTC/USDT</span>، فهذا يعني أن بيتكوين واحدة تُتداول مقابل <span class="ltr">100,000 USDT</span> في هذه اللحظة. وبما أن السعر يتغير باستمرار، فالرقم الذي تراه لحظة تنفيذ الطلب هو ما يهم فعلًا.</p>
+
+      <h2 id="orders">أمر السوق أم أمر الحد؟</h2>
+      <p>عند وضع أي طلب، ستختار بين نوعين أساسيين، وهذا هو أول قرار تحتاج إلى فهمه:</p>
+      <ul>
+        <li><strong>أمر السوق <span class="ltr">Market</span>:</strong> تنفيذ فوري بأفضل سعر متاح حاليًا. مناسب عندما تريد الشراء أو البيع الآن دون انتظار.</li>
+        <li><strong>أمر الحد <span class="ltr">Limit</span>:</strong> تحدد السعر الذي تريده، ولا يُنفَّذ الأمر إلا عندما يصل السوق إلى هذا السعر. مناسب لمن يريد سعرًا محددًا، لكن لا يوجد ضمان بأن يُنفَّذ.</li>
+        <li><strong>أمر إيقاف الخسارة <span class="ltr">Stop-Limit</span>:</strong> يُستخدم لحماية مركزك من الانخفاض الحاد، لكنه يحتاج إلى فهم أكبر ويأتي لاحقًا.</li>
+      </ul>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">العامل</th><th scope="col">أمر السوق <span class="ltr">Market</span></th><th scope="col">أمر الحد <span class="ltr">Limit</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><td>التنفيذ</td><td>فوري بأفضل سعر متاح</td><td>فقط عند وصول السعر الذي حددته</td></tr>
+            <tr><td>التحكم في السعر</td><td>لا تتحكم في السعر النهائي</td><td>تتحكم في السعر بالكامل</td></tr>
+            <tr><td>ضمان التنفيذ</td><td>يُنفَّذ غالبًا</td><td>قد لا يُنفَّذ إذا لم يصل السعر</td></tr>
+            <tr><td>المناسب لـ</td><td>الشراء أو البيع السريع</td><td>تحديد سعر معين والانتظار</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>القاعدة البسيطة: إن كنت تريد التنفيذ الآن ولا تمانع السعر الحالي، فاستخدم أمر السوق؛ وإن كنت تريد سعرًا محددًا ويمكنك الانتظار، فاستخدم أمر الحد.</p>
+      <div class="callout">
+        <span class="callout-title">ملاحظة</span>
+        لا يعني اختيار «أمر الحد» أنك ستُعامل تلقائيًا كصانع <span class="ltr">Maker</span>. إذا وضعت أمر حد بسعر أدى إلى تنفيذ الصفقة فورًا مقابل أوامر موجودة، فقد يُحتسب آخذًا <span class="ltr">Taker</span>؛ فالفرق يعتمد على طريقة التنفيذ لا على اسم الأمر.
+      </div>
+
+      <h2 id="step1">الوصول إلى سوق التداول الفوري</h2>
+      <div class="step">
+        <div class="step-head"><span class="step-num">1</span> افتح قسم التداول</div>
+        <p>من التطبيق اضغط على <strong>«تداول»</strong> في الشريط السفلي. من الموقع، افتح قائمة <strong>«التداول»</strong> العلوية ثم اختر <strong>«التداول الفوري <span class="ltr">Spot</span>»</strong>.</p>
+      </div>
+      <div class="step">
+        <div class="step-head"><span class="step-num">2</span> تعرّف على واجهة التداول</div>
+        <p>ستظهر واجهة فيها الرسم البياني للزوج الحالي في المنتصف، وقائمة الأسعار والأزواج على أحد الجانبين، ونافذة إدخال الطلب (شراء/بيع) على الجانب الآخر. لا تقلق من كثرة الأرقام؛ فكل ما تحتاجه في البداية هو نافذة الطلب وشريط البحث.</p>
+      </div>
+
+      <h2 id="step2">شراء أول عملة (مثال: <span class="ltr">BTC</span> بـ<span class="ltr">USDT</span>)</h2>
+      <div class="step">
+        <div class="step-head"><span class="step-num">1</span> اختر الزوج</div>
+        <p>في شريط البحث اكتب <span class="ltr">BTC/USDT</span> ثم اختره. سيظهر الرسم البياني وسعر البيتكوين الحالي بالـ<span class="ltr">USDT</span>.</p>
+      </div>
+      <div class="step">
+        <div class="step-head"><span class="step-num">2</span> تأكد من الرصيد</div>
+        <p>تحقق من وجود <span class="ltr">USDT</span> كافٍ في <strong>محفظة التداول</strong> لتنفيذ الصفقة. إن لم يكن كافيًا، اشترِ <span class="ltr">USDT</span> أولًا أو انقله من محفظة التمويل إلى محفظة التداول.</p>
+      </div>
+      <div class="step">
+        <div class="step-head"><span class="step-num">3</span> اختر نوع الأمر وأدخل الكمية</div>
+        <p>في نافذة الطلب اختر <strong>أمر السوق <span class="ltr">Market</span></strong> أو <strong>أمر الحد <span class="ltr">Limit</span></strong>، ثم أدخل الكمية التي تريدها أو المبلغ بالـ<span class="ltr">USDT</span>. إذا كنت تريد الشراء فورًا بالسعر الحالي، استخدم أمر السوق.</p>
+      </div>
+      <div class="step">
+        <div class="step-head"><span class="step-num">4</span> راجع التفاصيل وأكد</div>
+        <p>راجع السعر والكمية والرسوم الظاهرة والمبلغ النهائي قبل التأكيد، ثم اضغط <strong>«شراء»</strong>.</p>
+      </div>
+      <div class="step">
+        <div class="step-head"><span class="step-num">5</span> تحقق من التنفيذ</div>
+        <p>بعد التنفيذ، تحقق من ظهور <span class="ltr">BTC</span> في محفظة التداول وفي <strong>سجل الأوامر</strong>.</p>
+      </div>
+
+      <h2 id="step3">بيع العملة</h2>
+      <div class="step">
+        <div class="step-head"><span class="step-num">1</span> اختر نفس الزوج</div>
+        <p>افتح الزوج نفسه (مثل <span class="ltr">BTC/USDT</span>) وانتقل إلى تبويب <strong>«بيع»</strong> في نافذة الطلب.</p>
+      </div>
+      <div class="step">
+        <div class="step-head"><span class="step-num">2</span> أدخل الكمية وراجع السعر</div>
+        <p>أدخل كمية <span class="ltr">BTC</span> التي تريد بيعها أو المبلغ بالـ<span class="ltr">USDT</span>، واختر نوع الأمر، ثم راجع السعر والرسوم.</p>
+      </div>
+      <div class="step">
+        <div class="step-head"><span class="step-num">3</span> أكد وتحقق من الرصيد</div>
+        <p>اضغط <strong>«بيع»</strong>، ثم تحقق من وصول <span class="ltr">USDT</span> إلى محفظة التداول.</p>
+      </div>
+      <div class="callout">
+        <span class="callout-title">قاعدة قبل كل صفقة</span>
+        راجع الكمية والسعر مرتين قبل الضغط على «شراء» أو «بيع». خطأ بسيط في كتابة السعر أو الكمية قد يكلفك أكثر مما تتوقع، خاصة مع أمر السوق الذي يُنفَّذ فورًا.
+      </div>
+
+      <h2 id="fees">الرسوم الفعلية</h2>
+      <p>الرسوم القياسية للتداول الفوري للمستخدم العادي هي <span class="ltr">0.10%</span> للصانع <span class="ltr">Maker</span> و<span class="ltr">0.10%</span> للآخذ <span class="ltr">Taker</span>. عند استخدام <span class="ltr">BNB</span> لدفع الرسوم يمكن الحصول على خصم <span class="ltr">25%</span>، فتنخفض إلى نحو <span class="ltr">0.075%</span>. وتنخفض أكثر مع مستويات <span class="ltr">VIP</span> الأعلى.</p>
+      <p>الفرق بين الصانع والآخذ يعتمد على <strong>كيفية تنفيذ الطلب</strong> لا على نوع الأمر وحده. أمر الحد الذي تضيفه ويبقى في دفتر الأوامر منتظرًا طرفًا آخر لتنفيذه يُحتسب غالبًا صانعًا، بينما أمر السوق الذي يُنفَّذ فورًا يُحتسب آخذًا. لكن أمر الحد نفسه قد يُحتسب آخذًا إذا وُضع بسعر أدى إلى تنفيذه فورًا مقابل أوامر موجودة أصلًا.</p>
+      <div class="formula">الرسوم = قيمة الصفقة × نسبة الرسوم</div>
+      <div class="callout">
+        <span class="callout-title">مثال توضيحي فقط</span>
+        إذا نفّذت صفقة بقيمة <span class="ltr">1,000 USDT</span> برسوم <span class="ltr">0.10%</span>، فقيمة الرسوم = <span class="ltr">1,000 × 0.001 = 1 USDT</span>. لكن <span class="ltr">Binance</span> تخصم هذه الرسوم عادةً من <strong>الأصل الذي تستلمه</strong> نتيجة الصفقة، لا بأن تضيفها إلى المبلغ الذي تدفعه. وإن فعّلت دفع الرسوم بـ<span class="ltr">BNB</span> وكان لديك رصيد كافٍ، يمكن خصمها من <span class="ltr">BNB</span> بدلًا من الأصل المستلم. لمزيد من التفاصيل راجع <a href="/binance-fees/">دليل رسوم Binance</a>.
+      </div>
+
+      <h2 id="mistakes">أخطاء شائعة في أول صفقة</h2>
+      <ul>
+        <li>كتابة كمية أو سعر خاطئ عند وضع أمر الحد، فيُلغى الطلب أو يُنفَّذ بسعر غير متوقع.</li>
+        <li>الخلط بين «المبلغ الذي ستدفعه» و«كمية العملة» التي ستستلمها.</li>
+        <li>الضغط على أمر السوق دون مراجعة السعر الحالي، ثم التفاجؤ بفرق السعر بعد التنفيذ.</li>
+        <li>البيع الكامل في لحظة انخفاض مؤقت، ثم الندم إذا ارتد السعر.</li>
+        <li>الدخول في العقود الآجلة أو الرافعة المالية قبل فهمها، لمجرد أنها تبدو أسرع ربحًا.</li>
+        <li>وضع أمر حد بسعر بعيد جدًا عن السوق، فيبقى الطلب معلقًا لفترة طويلة دون تنفيذ.</li>
+      </ul>
+
+      <h2 id="risk">إدارة المخاطر للمبتدئين</h2>
+      <ul>
+        <li>لا تضع كل رأس مالك في عملة واحدة أو صفقة واحدة؛ وزّع ما تستثمره.</li>
+        <li>لا تستثمر أموالًا تحتاجها في مصاريفك الأساسية.</li>
+        <li>تجنّب الرافعة المالية في البداية؛ فهي تضخّم الخسائر بنفس قدر تضخيمها للأرباح.</li>
+        <li>حدد السعر الذي ستخرج عنده قبل الدخول، ولا تتخذ القرار تحت تأثير الاندفاع أو الذعر.</li>
+        <li>ابدأ بمبلغ صغير لتتعلم، ثم زد المبلغ تدريجيًا بعد أن تفهم كيف يعمل السوق.</li>
+      </ul>
+
+      <h2 id="problems">ماذا تفعل إذا واجهت مشكلة؟</h2>
+      <ul>
+        <li><strong>لم يُنفَّذ أمر الحد:</strong> قارن السعر الحالي بالسعر الذي حددته، ثم عدّل الأمر أو استخدم أمر السوق إذا كنت تريد التنفيذ الفوري.</li>
+        <li><strong>اشتريت عملة خاطئة أو بكمية خاطئة:</strong> لا تتسرع، يمكنك بيعها لاحقًا، لكن راجع قبل أي قرار جديد.</li>
+        <li><strong>لا تظهر العملة في المحفظة:</strong> تحقق من أنك تنظر إلى محفظة التداول وليس محفظة التمويل، وراجع سجل الأوامر.</li>
+        <li><strong>نُفّذ السعر النهائي مختلف قليلًا عما رأيته:</strong> إذا استخدمت أمر السوق، فقد تُنفَّذ الصفقة على أكثر من سعر حسب السيولة المتاحة، وهذا ما يُسمى الانزلاق السعري <span class="ltr">Slippage</span>، ويزداد في الأزواج قليلة السيولة أو الطلبات الكبيرة.</li>
+        <li><strong>مشكلة في الحساب أو السحب:</strong> تواصل مع الدعم الرسمي من داخل المنصة فقط، ولا تتعامل مع أي «دعم» عبر قنوات خارجية.</li>
+      </ul>
+
+      <h2>نصائح الأمان</h2>
+      <ul>
+        <li>فعّل المصادقة الثنائية <span class="ltr">2FA</span> وفعّل رمز مكافحة التصيد إن كان متاحًا في إعدادات حسابك.</li>
+        <li>لا تشارك كلمة مرور <span class="ltr">Binance</span> أو رموز <span class="ltr">2FA</span> أو رموز التحقق مع أي شخص.</li>
+        <li>استخدم الموقع أو التطبيق الرسمي فقط، وتحقق من أنك لم تفتح موقعًا مقلدًا. راجع <a href="/fake-binance-account/">كيف تميز حساب Binance المزيف</a>.</li>
+      </ul>
+
+      <h2 id="faq">الأسئلة الشائعة</h2>
+      <div class="faq">
+        <details>
+          <summary>ما الفرق بين التداول الفوري والعقود الآجلة؟</summary>
+          <p>في التداول الفوري <span class="ltr">Spot</span> تمتلك الأصل مباشرة وتشتريه أو تبيعه بسعر السوق، بينما العقود الآجلة <span class="ltr">Futures</span> تتيح المضاربة على السعر دون امتلاك الأصل وباستخدام رافعة مالية. العقود الآجلة منتج متقدم عالي المخاطر، ولا يُنصح المبتدئون بالبدء بها قبل فهم إدارة المخاطر.</p>
+        </details>
+        <details>
+          <summary>هل يمكنني شراء جزء من البيتكوين وليس عملة كاملة؟</summary>
+          <p>نعم، يمكنك شراء جزء صغير من البيتكوين، ولا يشترط شراء عملة كاملة. الحد الأدنى يختلف حسب الزوج والمنصة، لكن يمكن البدء بمبالغ صغيرة.</p>
+        </details>
+        <details>
+          <summary>ما الفرق بين أمر السوق وأمر الحد؟</summary>
+          <p>أمر السوق <span class="ltr">Market</span> يُنفَّذ فورًا بأفضل سعر متاح حاليًا، بينما أمر الحد <span class="ltr">Limit</span> يُنفَّذ فقط عند وصول السعر الذي حددته، وقد لا يُنفَّذ إذا لم يصل السوق إلى هذا المستوى.</p>
+        </details>
+        <details>
+          <summary>كم تبلغ رسوم التداول الفوري على Binance؟</summary>
+          <p>الرسوم القياسية للمستخدم العادي هي <span class="ltr">0.10%</span> للصانع و<span class="ltr">0.10%</span> للآخذ، ويمكن خفضها إلى نحو <span class="ltr">0.075%</span> عند استخدام <span class="ltr">BNB</span> لدفع الرسوم، وتنخفض أكثر مع مستويات <span class="ltr">VIP</span> الأعلى. راجع صفحة الرسوم داخل حسابك للقيمة المطبقة عليك.</p>
+        </details>
+        <details>
+          <summary>هل التداول يحتاج إلى معرفة تقنية عميقة؟</summary>
+          <p>لا، يكفي فهم أزواج التداول ونوعي الأوامر الأساسيين (السوق والحد) والرسوم، ثم البدء بمبالغ صغيرة. الأهم من المعرفة التقنية هو الانضباط في إدارة المخاطر وعدم التسرع.</p>
+        </details>
+      </div>
+
+      <h2>الخلاصة</h2>
+      <p>ابدأ بثلاث خطوات فقط: جهّز حسابًا موثّقًا وعليه رصيد <span class="ltr">USDT</span>، افتح سوق التداول الفوري واختر زوجًا مثل <span class="ltr">BTC/USDT</span>، ثم ضع أول طلب بأمر السوق بمبلغ صغير. قبل كل صفقة راجع الكمية والسعر والرسوم، ولا تدخل في الرافعة المالية أو العقود الآجلة قبل أن تفهم إدارة المخاطر.</p>
+      <p>بعد أن تُتقن الشراء والبيع، تعلّم كيف تسحب أرباحك أو تنقل أصولك بأمان من خلال <a href="/withdraw-usdt/">دليل سحب USDT إلى محفظة خارجية</a>.</p>
+
+      <div class="related">
+        <h2>اقرأ أيضًا</h2>
+        <ul>
+          <li><a href="/register-binance/">كيفية التسجيل في Binance خطوة بخطوة</a></li>
+          <li><a href="/buy-usdt-binance/">كيفية شراء USDT على Binance</a></li>
+          <li><a href="/binance-fees/">رسوم Binance: التداول والإيداع والسحب</a></li>
+          <li><a href="/what-is-cryptocurrency/">ما هي العملات الرقمية؟ دليل المبتدئين</a></li>
+          <li><a href="/withdraw-usdt/">كيفية سحب USDT إلى محفظة خارجية</a></li>
+        </ul>
+      </div>
+
+      <div class="signup-card">
+        <div class="signup-head">
+          <img src="/assets/binance-logo.webp" alt="Binance" class="signup-logo" width="44" height="44">
+          <h3>أنشئ حسابك على <span class="ltr">Binance</span></h3>
+        </div>
+        <p class="signup-desc">سجّل عبر الرابط الرسمي، ثم أكمل <span class="ltr">KYC</span> واشترِ <span class="ltr">USDT</span> لتبدأ أول صفقة تداول.</p>
+        <a href="https://www.binance.com/join?ref=FSFSL090" class="btn" rel="nofollow sponsored noopener">سجّل في <span class="ltr">Binance</span> الآن</a>
+        <p class="signup-disclosure">رمز الإحالة <span class="ltr">FSFSL090</span> — قد يحصل ArabTrail على عمولة عند التسجيل، دون أي تكلفة إضافية عليك.</p>
+      </div>
+
+      <p class="updated">إعداد: <a href="/team/">فريق تحرير <span class="ltr">ArabTrail</span></a>· <a href="/how-we-test/">منهجية التحقق</a></p>
+
+      <p class="disclosure">
+        هذا المقال لأغراض تعليمية فقط وليس نصيحة مالية أو استثمارية. قد تتغير واجهة المنصة والرسوم والأزواج حسب الدولة، فاعتمد على ما يظهر داخل حسابك وقت التنفيذ. تداول العملات الرقمية ينطوي على مخاطر عالية وقد تخسر جزءًا أو كل مبلغك.
+      </p>
+
+      <p class="sources">المصادر: <a href="https://www.binance.com/ar/fee/trading" rel="nofollow noopener">Binance — رسوم التداول الفوري</a> · <a href="https://www.binance.com/ar/academy/articles/a-complete-guide-to-cryptocurrency-trading-for-beginners" rel="nofollow noopener">Binance Academy — دليل تداول العملات الرقمية للمبتدئين</a> · <a href="https://www.binance.com/ar/support" rel="nofollow noopener">Binance — مركز المساعدة</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>ArabTrail — دليل عملي للمستخدم العربي. المحتوى لأغراض تعليمية فقط وليس نصيحة مالية.</p>
+      <div class="footer-links">
+        <span class="footer-group">عن <span class="ltr">ArabTrail</span></span>
+        <a href="/about/">من نحن</a>
+        <a href="/team/">فريق التحرير</a>
+        <a href="/how-we-test/">كيف نتحقق ونختبر</a>
+        <a href="/editorial-policy/">سياسة التحرير</a>
+        <a href="/corrections-policy/">سياسة التصحيح</a>
+        <a href="/affiliate-disclosure/">الإفصاح عن الروابط التابعة</a>
+        <a href="/contact/">اتصل بنا</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-group">قانوني</span>
+        <a href="/disclaimer/">إخلاء المسؤولية</a>
+        <a href="/privacy/">سياسة الخصوصية</a>
+        <a href="/terms/">الشروط والأحكام</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
